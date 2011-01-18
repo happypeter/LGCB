@@ -30,6 +30,15 @@ ubuntu by defualt uses `gnome-terminal`, though it's likely called simply
 “terminal” on our menu. There are a number of other terminal emulators
 available for Linux, but they all basically do the same thing; give us access
 to the shell. 
+
+## Terminal Emulators
+When using a graphical user interface, we need another program called a
+terminal emulator to interact with the shell. If we look through our desktop
+menus, we will probably find one. Ubuntu by defualt uses 
+gnome-terminal, though it's likely called simply “terminal” on our menu. 
+You can take terminal as nothing but a simple window, it by itself does
+nothing but give us access to the shell. 
+
 ## ref 
 <http://tldp.org/LDP/Bash-Beginners-Guide/html/>
 
