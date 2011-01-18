@@ -29,3 +29,5 @@ probably familiar with a graphical file manager which represents the file
 system tree as in Figure 1. Notice that the tree is usually shown upended,
 that is, with the root at the top and the various branches descending below.
 
+
+![tree](./images/tree.png)

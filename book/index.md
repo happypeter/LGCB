@@ -8,4 +8,3 @@ layout: default
 - [vim](vim.html)
 - [git](git.html)
  
-![treee](./tree.png)
