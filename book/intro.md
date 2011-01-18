@@ -55,9 +55,10 @@ when I am busy, you can study in this library(lots of wonderful links to good
 books, with my comments go along).
 
 ## How you should read this book
-The way I learn Linux, is pretty much like learning a foreign language. You do
-not learn one thing in full detail, and the move to another.(that's why it is
-not wise to learn chapter by chapter), but rather that you learn basic
+I think the right way to learn Linux is pretty much like learning a foreign language. You do
+not learn one thing in full detail, and the move to another.(that's why
+usually it is
+not wise to learn chapter by chapter), but that you learn basic
 vocablury of all necessary fileds(very basic things about bash, vim...) and then try to talk to
 sb(your computer). Of course, you will soon find out your knowledge is
 limited, then you will be happy to go back to your textbooks to learn things
@@ -70,3 +71,8 @@ and let it be possible to finish each part in one go without frustrations.
 And the above rules may still fit for the more advanced books that I will
 bring to you in this book. But this book is just the "basic vocabulary of all
 necessay fields".
+
+Note that this book is very ubuntu-centric. There are lots of Linux distros,
+ubuntu is now the most popular one among individual developers. Playing with
+only one distro can effectively avoid talking about dark corners, add the
+possibility to do things right and build confidence.
