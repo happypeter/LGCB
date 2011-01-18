@@ -54,7 +54,12 @@ vim as a editor, git to do version control and a lot more...), and of course
 when I am busy, you can study in this library(lots of wonderful links to good
 books, with my comments go along).
 
-## How you should read this book
+Note that this book is very ubuntu-centric. There are lots of Linux distros,
+ubuntu is now the most popular one among individual developers. Playing with
+only one distro can effectively avoid talking about dark corners, add the
+possibility to do things right and build confidence.
+
+## How to read this book
 I think the right way to learn Linux is pretty much like learning a foreign language. You do
 not learn one thing in full detail, and the move to another.(that's why
 usually it is
@@ -72,7 +77,8 @@ And the above rules may still fit for the more advanced books that I will
 bring to you in this book. But this book is just the "basic vocabulary of all
 necessay fields".
 
-Note that this book is very ubuntu-centric. There are lots of Linux distros,
-ubuntu is now the most popular one among individual developers. Playing with
-only one distro can effectively avoid talking about dark corners, add the
-possibility to do things right and build confidence.
+You can just start at the beginning of the book and follow it to the end. It
+isn’t written as a reference work, it's really more like a story with a
+beginning, middle, and an end.
+
+
