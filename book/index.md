@@ -3,6 +3,7 @@ layout: default
 ---
 
 - [intro](intro.html)
-- [bash](bash.html)
+- [bash-intro](bash-intro.html)
+- [bash-start](bash-start.html)
 - [vim](vim.html)
 - [git](git.html)
