@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 # bash
 ## What Is The Shell?  
