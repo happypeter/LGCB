@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 ---
 # bash
 ## What Is The Shell?  
@@ -9,8 +9,8 @@ keyboard commands and passes them to the operating system to carry
 out. (funny are the names: Shell on top of Kernel)Almost all Linux distributions supply a shell program from the
 GNU Project called bash. 
 
-The name “bash” is short for “Bourne
-Again SHell”
+The name `bash` is short for `Bourne
+Again SHell`
 a program written by Steve Bourne.
 we need
 another program called a terminal emulator to interact with the
