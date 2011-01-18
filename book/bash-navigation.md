@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Navigation
 
 The first thing we need to learn to do (besides just typing) is how to
