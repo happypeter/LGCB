@@ -54,7 +54,7 @@ vim as a editor, git to do version control and a lot more...), and of course
 when I am busy, you can study in this library(lots of wonderful links to good
 books, with my comments go along).
 
-## how you should read this book
+## How you should read this book
 The way I learn Linux, is pretty much like learning a foreign language. You do
 not learn one thing in full detail, and the move to another.(that's why it is
 not wise to learn chapter by chapter), but rather that you learn basic

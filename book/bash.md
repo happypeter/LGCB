@@ -2,6 +2,20 @@
 layout: default
 ---
 # bash
+## Why Use The Command Line?
+Have you ever noticed in the movies when the “super hacker” sits down at
+the computer, he never touches a mouse? It's because movie makers realize that
+we, as human beings, instinctively know the only way to really get anything
+done on a computer is by typing on a keyboard.
+
+Most computer users today are only familiar with the graphical user interface
+(GUI) and have been taught that the command line interface (CLI) is a
+difficult thing of the past. This is unfortunate, because a good command line
+interface is a very expressive way of communicating with a computer in much
+the same way the written word is for human beings. It's been said that
+“graphical user interfaces make easy tasks easy, while command line interfaces
+make difficult tasks possible” and this is still very true today.
+
 ## What Is The Shell?  
 When we speak of the command line, we are really referring to the shell. The
 shell is a program that takes keyboard commands and passes them to the
