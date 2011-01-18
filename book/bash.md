@@ -3,22 +3,19 @@ layout: default
 ---
 # bash
 ## What Is The Shell?  
-When we speak of the command line, we are
-really referring to the shell. The shell is a program that takes
-keyboard commands and passes them to the operating system to carry
-out. (funny are the names: Shell on top of Kernel)Almost all Linux distributions supply a shell program from the
-GNU Project called bash. 
+When we speak of the command line, we are really referring to the shell. The
+shell is a program that takes keyboard commands and passes them to the
+operating system to carry out. (funny are the names: Shell on top of
+Kernel)Almost all Linux distributions supply a shell program from the GNU
+Project called bash. 
 
-The name `bash` is short for `Bourne
-Again SHell`
-a program written by Steve Bourne.
-we need
-another program called a terminal emulator to interact with the
-shell. If we look through our desktop menus, we will probably find
-one. ubuntu by defualt uses `gnome-terminal`, though it's
-likely called simply “terminal” on our menu. There are a number of
-other terminal emulators available for Linux, but they all basically
-do the same thing; give us access to the shell. 
+The name `bash` is short for `Bourne Again SHell` a program written by Steve
+Bourne.  we need another program called a terminal emulator to interact with
+the shell. If we look through our desktop menus, we will probably find one.
+ubuntu by defualt uses `gnome-terminal`, though it's likely called simply
+“terminal” on our menu. There are a number of other terminal emulators
+available for Linux, but they all basically do the same thing; give us access
+to the shell. 
 ## ref 
 <http://tldp.org/LDP/Bash-Beginners-Guide/html/>
 
