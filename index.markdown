@@ -6,7 +6,9 @@ layout: default
 <br />
 
 [book](/LGCB/book)
-![ddd](./images/tree.png)
+
+
+
 <blockquote>
 <p>
 happypeter1983 at gmail.com

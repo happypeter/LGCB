@@ -19,17 +19,12 @@ make difficult tasks possible” and this is still very true today.
 ## What Is The Shell?  
 When we speak of the command line, we are really referring to the shell. The
 shell is a program that takes keyboard commands and passes them to the
-operating system to carry out. (funny are the names: Shell on top of
-Kernel)Almost all Linux distributions supply a shell program from the GNU
-Project called bash. 
+operating system to carry out. (funny are the names: _Shell_ on top of
+_Kernel_)Almost all Linux distributions supply a shell program from the GNU
+Project called bash, so does ubuntu. 
 
 The name `bash` is short for `Bourne Again SHell` a program written by Steve
-Bourne.  we need another program called a terminal emulator to interact with
-the shell. If we look through our desktop menus, we will probably find one.
-ubuntu by defualt uses `gnome-terminal`, though it's likely called simply
-“terminal” on our menu. There are a number of other terminal emulators
-available for Linux, but they all basically do the same thing; give us access
-to the shell. 
+Bourne.  
 
 ## Terminal Emulators
 When using a graphical user interface, we need another program called a

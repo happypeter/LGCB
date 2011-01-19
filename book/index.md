@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 - [intro](intro.html)
