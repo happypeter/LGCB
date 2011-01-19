@@ -85,7 +85,7 @@ The cp command copies files or directories. It can be used two different ways:
 
      cp item1 item2
 
-to copy the single file or directory “item1” to file or directory “item2”
+to copy the single file or directory "item1" to file or directory "item2"
 
 some examples:
 
@@ -152,7 +152,7 @@ in much the same way as cp:
 
     mv item1 item2
 
-to move or rename file or directory “item1” to “item2” or:
+to move or rename file or directory "item1" to "item2" or:
 
     mv item... directory
 
@@ -164,7 +164,7 @@ The rm command is used to remove (delete) files and directories:
 
     rm item...
 
-where “item” is one or more files or directories.
+where "item" is one or more files or directories.
 
 example:
 
