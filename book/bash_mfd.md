@@ -62,7 +62,7 @@ check this
 <http://www.linfo.org/wildcard.html>
 if you want to know more
 
-## mkdir – Create Directories
+## __mkdir__ Create Directories
 
 The mkdir command is used to create directories. It works like this:
 
@@ -79,7 +79,7 @@ would create a single directory named "dir1", while
 
 would create three directories named "dir1", "dir2", and "dir3".
 
-## cp – Copy Files And Directories
+## __cp__ Copy Files And Directories
 
 The cp command copies files or directories. It can be used two different ways:
 
@@ -143,7 +143,7 @@ copy a directory and everything in it to somewhere:
 
 see the difference, ah?
 
-## mv – Move And Rename Files
+## __mv__ Move And Rename Files
 The mv command performs both file moving and file renaming, depending on how
 it is
 used. In either case, the original filename no longer exists after the
@@ -158,7 +158,7 @@ to move or rename file or directory “item1” to “item2” or:
 
 to move one or more items from one directory to another.
 
-## rm – Remove Files And Directories
+## __rm__ Remove Files And Directories
 
 The rm command is used to remove (delete) files and directories:
 
@@ -196,9 +196,8 @@ like in:
 
     1 directory, 1 file
 
-Be careful With rm!
-Unix-like operating systems such as Linux do not have an undelete command.
-Once you delete something with rm, it's gone. Linux assumes you're smart and
-you know what you're doing.
+Be careful with __rm__!  Unix-like operating systems such as Linux do not have
+an undelete command.  Once you delete something with rm, it's gone. Linux
+assumes you're smart and you know what you're doing.
 
 
