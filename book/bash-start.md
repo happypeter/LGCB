@@ -20,8 +20,8 @@ of my machine.
 Assuming that things are good so far, let's try some typing. Type some junk at
 the prompt like so:
 
-peter@vostro:~$ sddsdss
-sddsdss: command not found
+    peter@vostro:~$ sddsdss
+    sddsdss: command not found
 
 Since this command makes no sense, the shell will tell us `command not found`
 .
@@ -43,3 +43,4 @@ one is date. This command displays the current time and date.
     peter@vostro:~$ date
     Tue Jan 18 21:46:56 CST 2011
 
+Now Linux command line is no longer a stranger to you.
