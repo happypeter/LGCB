@@ -95,13 +95,4 @@ _How to Become a Hacker_ (By Eric S.R)
 http://www.beijinglug.org
 
 http://linuxcommand.org/tlcl.php
-and you can get it by:
 
-    git clone git://github.com/happypeter/TLCL.git
-
-## listening
-
-Steve Jobs speech at Standford University (you can find it on <www.youku.com>)
-
-Song JinShan : _how to become a good programmer_ 
-<http://www.akae.cn/>
