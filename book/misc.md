@@ -1,3 +1,7 @@
+---
+layout: book
+---
+
 ## gdb
 
     b 3

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: book
 ---
 
 So let's get started. Launch the terminal emulator! Once it comes up, we

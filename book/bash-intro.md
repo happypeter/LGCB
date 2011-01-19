@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: book
 ---
 # bash
 ## Why Use The Command Line?
