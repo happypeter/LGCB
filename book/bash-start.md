@@ -23,10 +23,10 @@ the prompt like so:
     peter@vostro:~$ sddsdss
     sddsdss: command not found
 
-Since this command makes no sense, the shell will tell us `command not found`
+Since this command makes no sense, the shell will tell us "command not found"
 .
 ## Command History
-If we press the up-arrow key, we will see that the previous command “sddsdss”
+If we press the up-arrow key, we will see that the previous command "sddsdss"
 reappears after the prompt. This is called command history. Most Linux
 distributions remember the last five hundred commands by default. Press the
 down-arrow key and the previous command disappears.
