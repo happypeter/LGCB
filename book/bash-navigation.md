@@ -180,9 +180,8 @@ Shortcut  Result
    use file extensions to determine the contents/purpose of files, some
    application programs do.
 
-4. Though Linux supports long filenames which may contain embedded spaces and
-   punctuation characters, limit the punctuation characters in the names of
-   files you create to period, dash, and underscore. Most importantly, do not
-   embed spaces in filenames. If you want to represent spaces between words in
-   a filename, use underscore characters. You will thank yourself later.
+4. Though Linux supports long filenames which may contain embedded spaces, do
+   NOT embed spaces in filenames. If you want to represent spaces between
+   words in a filename, use underscore characters. You will thank yourself
+   later.
 
