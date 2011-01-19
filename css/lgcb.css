@@ -11,11 +11,6 @@ margin-left: 100px;
 margin-right: 100px;
 }
 
-a:link {color:#00FF00;}    /* unvisited link */
-a:visited {color:#00FF00;} /* visited link */
-a:hover {color:#888888;}   /* mouse over link */
-a:active {color:#0000FF;}  /* selected link */
-
 /*Remove the line under links*/
 a {text-decoration:none;}
 
