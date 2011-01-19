@@ -7,9 +7,15 @@ The first thing we need to learn to do (besides just typing) is how to
 navigate the file system on our Linux system. In this chapter we will
 introduce the following commands:
 
-- `pwd`    - Print name of current working directory
-- `cd`     - Change directory
-- `ls`     - List directory contents
+- __pwd__   
+  
+  Print name of current working directory
+- __cd__     
+  
+  Change directory
+- __ls__     
+  
+  List directory contents
                                  
 pretty easy commands.
 
@@ -29,9 +35,8 @@ the computer. Storage devices are attached (or more correctly, mounted) at
 various points on the tree according to the whims of the system administrator,
 the person (or persons) responsible for the maintenance of the system.  The
 Current Working Directory Most of us are probably familiar with a graphical
-file manager which represents the file system tree as in Figure 1. Notice that
-the tree is usually shown upended, that is, with the root at the top and the
-various branches descending below.
+file manager which represents the file system tree. Notice that the tree is
+usually with the root at the top and the various branches descending below.
 
 
 ![tree](./images/tree.png)
@@ -57,7 +62,7 @@ allowed to write file.
 # Listing The Contents Of A Directory
 
 To list the files and directories in the current working directory, we use the
-`ls` command.
+__ls__ command.
 
     peter@vostro:~/repo-farm/LGCB/book$ ls
     bash-intro.md  bash-navigation.md  bash-start.md  git.md  images  index.md
@@ -87,10 +92,10 @@ pathname) there is a directory called "usr" which contains a directory called
     /usr/bin
 
 
-Now we can see that we have changed the current working directory to /usr/bin
-and that it is full of files. Notice how the shell prompt has changed? As a
-convenience, it is usually set up to automatically display the name of the
-working directory.
+Now we can see that we have changed the current working directory to
+`/usr/bin` and that it is full of files. Notice how the shell prompt has
+changed? As a convenience, it is usually set up to automatically display the
+name of the working directory.
 
 ### Relative Pathnames
 
@@ -121,10 +126,9 @@ Or, with a relative pathname:
     /usr
 
 different methods with identical results. Which one should we use? The one
-that
-requires the least typing!
-Likewise, we can change the working directory from /usr to /usr/bin in two
-different ways. Either using an absolute pathname:
+that requires the least typing!  Likewise, we can change the working directory
+from /usr to /usr/bin in two different ways. Either using an absolute
+pathname:
 
     peter@vostro:/usr$ cd /usr/bin/
     peter@vostro:/usr/bin$ pwd
@@ -150,11 +154,11 @@ something, the working directory will be assumed.
 
 Shortcut  Result
 
-- `cd`       
+- __cd__       
   
   Changes the working directory to your home directory.
 
-- `cd -`     
+- __cd -__     
   
   Changes the working directory to the previous working directory.
 
@@ -168,7 +172,7 @@ Shortcut  Result
    your home directory as hidden files.
 
 2. Filenames and commands in Linux, like Unix, are case sensitive. The
-   filenames “File1” and “file1” refer to different files.
+   filenames "File1" and "file1" refer to different files.
 
 3. Linux has no concept of a “file extension” like some other operating
    systems.  You may name files any way you like. The contents and/or purpose

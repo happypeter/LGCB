@@ -9,3 +9,21 @@ layout: book
 - [vim](vim.html)
 - [git](git.html)
  
+
+Conventions:
+
+"Quoted text"
+
+__command__
+
+__program name__
+
+`filename`
+
+`dir name`
+
+`Menu->Choice`
+
+_important term_
+
+
