@@ -11,9 +11,9 @@ something like this:
 
 
 This is called a shell prompt and it will appear whenever the shell is ready
-to accept input.  it will usually include your username@machinename, followed
+to accept input.  it will usually include your "username@machinename", followed
 by the current working directory (more about that in a little bit) and a
-dollar sign. As above shows, `peter` is `username`, and `vostro` is the name
+dollar sign. As above shows, "peter" is "username", and "vostro" is the name
 of my machine.
 
 ## Your First Keystrokes

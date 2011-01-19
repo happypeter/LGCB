@@ -13,8 +13,8 @@ Most computer users today are only familiar with the graphical user interface
 difficult thing of the past. This is unfortunate, because a good command line
 interface is a very expressive way of communicating with a computer in much
 the same way the written word is for human beings. It's been said that
-“graphical user interfaces make easy tasks easy, while command line interfaces
-make difficult tasks possible” and this is still very true today.
+"graphical user interfaces make easy tasks easy, while command line interfaces
+make difficult tasks possible" and this is still very true today.
 
 ## What Is The Shell?  
 When we speak of the command line, we are really referring to the shell. The
