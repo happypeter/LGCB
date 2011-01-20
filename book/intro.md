@@ -27,7 +27,7 @@ broken, sorry), giving a new tech term only when very necessary, and it will
 be explained the way that makes non-native English speakers feel comfortable. 
 
 ### the book is for absolute beginners
-If you are already have several year experience, this book might be too easy
+If you are already have several years experience, this book might be too easy
 for you. My goals doing this book are:
 
  - as easy as possible 
@@ -76,7 +76,7 @@ bring to you in this book. But this book is just the "basic vocabulary of all
 necessay fields".
 
 You can just start at the beginning of the book and follow it to the end. It
-isn’t written as a reference work, it's really more like a story with a
+isn't written as a reference work, it's really more like a story with a
 beginning, middle, and an end.
 
 
