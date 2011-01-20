@@ -50,13 +50,14 @@ These special characters are called wildcards. Using wildcards (which is also
 known as globbing) allow you to select filenames based on patterns of
 characters. The table below lists the wildcards and what they select:
 
-- __*__
+- Matches any characters, use:
 
-  Matches any characters
+    *
 
-- __?__
 
-  Matches any single character
+- Matches any single character
+
+    ?
 
 check this 
 <http://www.linfo.org/wildcard.html>
