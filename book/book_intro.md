@@ -34,10 +34,10 @@ for you. My goals doing this book are:
  - as interesting as possible
 
 I will try to concnentrate only on things that are important for beginners,
-keep it simple and stupid, while at the same time avoid making this book
+keep it simple and stupid. While at the same time avoid making this book
 loaded with nothing but quick and dirty tricks. Attention is paid to show the
 readers the whole picture, and teach them to do things the right way, so that
-the they can feel natural in their next step learning.
+they can feel natural in their next step learning.
 
 ## what's in this book
 It is really all about how to survive in the new world of Linux. It is not
@@ -53,10 +53,10 @@ vim as a editor, git to do version control and a lot more...), and of course
 when I am busy, you can study in this library(lots of wonderful links to good
 books, with my comments go along).
 
-Note that this book is very ubuntu-centric. There are lots of Linux distros,
-ubuntu is now the most popular one among individual developers. Playing with
-only one distro can effectively avoid talking about dark corners, add the
-possibility to do things right and build confidence.
+Note that this book is very ubuntu-centric. There are kinds of Linux (distros
+to be precise), ubuntu is now the most popular one . Playing with only one
+distro can effectively avoid talking about dark corners, add the possibility
+to do things right and build confidence.
 
 ## How to read this book
 I think the right way to learn Linux is pretty much like learning a foreign
