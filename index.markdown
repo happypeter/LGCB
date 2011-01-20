@@ -11,13 +11,14 @@ a clear way. Learning Linux is not easy for beginners, to learn in English is
 very difficult for Chinese people. I hope this book can be helpful.
 
 
+<p><br /><b>Contact Information:</b></p>
 
 <blockquote>
 <p>
-Bug me at 
-<br>
-<code>happypeter1983 at gmail.com</code>
+happypeter1983 at gmail.com
 </p>
 </blockquote>
+
+
 
 
