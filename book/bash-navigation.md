@@ -46,7 +46,7 @@ able to stand in the middle of it. At any given time, we are inside a single
 directory and we can see the files contained in the directory and the pathway
 to the directory above us (called the parent directory) and any subdirectories
 below us. The directory we are standing in is called the current working
-directory. To display the current working directory, we use the pwd (print
+directory. To display the current working directory, we use the __pwd__ (print
 working directory) command.
 
 
