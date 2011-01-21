@@ -8,7 +8,8 @@ layout: default
 
 This [book](/LGCB/book) is in easy English talking about simple Linux stuff in
 a clear way. Learning Linux is not easy for beginners, to learn in English is
-very difficult for Chinese people. I hope this book can be helpful.
+very difficult for Chinese people. This book is really for people who start from
+ZERO.
 
 
 <p><br /><b>Contact Information:</b></p>
