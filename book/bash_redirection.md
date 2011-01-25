@@ -15,8 +15,8 @@ This output often consists of two types. First, we have the program's results;
 that is, the data the program is designed to produce, and second, we have
 status and error messages that tell us how the program is getting along. If we
 look at a command like ls, we can see that it displays its results and its
-error messages on the screen.  Keeping with the Unix theme of “everything is a
-file,” programs such as ls actually send their results to a special file
+error messages on the screen.  Keeping with the Unix theme of "everything is a
+file," programs such as ls actually send their results to a special file
 called standard output (often expressed as stdout) and their status messages
 to another file called standard error (stderr). By default, both standard
 output and standard error are linked to the screen and not saved into a disk
