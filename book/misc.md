@@ -83,3 +83,8 @@ http://www.beijinglug.org
 
 http://linuxcommand.org/tlcl.php
 
+## linfo
+
+linfo.org is special in that it is really sth for Linux newbies, focusing on
+only important concepts(like GCC, Linux, platform), and it limits the talk
+only with in the materials interesting to beginners. linfo Rocks!
