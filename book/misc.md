@@ -88,3 +88,6 @@ http://linuxcommand.org/tlcl.php
 linfo.org is special in that it is really sth for Linux newbies, focusing on
 only important concepts(like GCC, Linux, platform), and it limits the talk
 only with in the materials interesting to beginners. linfo Rocks!
+
+And its simplicity looks really sexy to me, and I am tempted to creat my own
+linfo. I want to add pics, I want a search bar.
