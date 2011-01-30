@@ -1,7 +1,7 @@
 ---
 layout: book
+title: bash
 ---
-# bash
 ## Why Use The Command Line?
 Have you ever noticed in the movies when the "super hacker" sits down at
 the computer, he never touches a mouse? It's because movie makers realize that
