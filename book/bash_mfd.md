@@ -1,8 +1,8 @@
 ---
 layout: book
+title: Manipulating Files And Directories
 ---
 
-#  Manipulating Files And Directories
 
 At this point, we are ready for some real work! This chapter will introduce
 the following commands:

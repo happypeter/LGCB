@@ -1,5 +1,6 @@
 ---
 layout: book
+title: Getting Started
 ---
 
 So let's get started. Launch the terminal emulator! Once it comes up, we

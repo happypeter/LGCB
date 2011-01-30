@@ -1,7 +1,7 @@
 ---
 layout: book
+title: What is Linux?
 ---
-## What is Linux?
 
 Linux is a Unix-like operating systerm, written in 1991 by Linus Torvalds. 
 

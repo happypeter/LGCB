@@ -1,8 +1,8 @@
 ---
 layout: book
+title: vim
 ---
 
-# vim
 
 how to save a file belong to root in vim as common user
 

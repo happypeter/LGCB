@@ -1,7 +1,7 @@
 ---
 layout: book
+title: git
 ---
-# git
 
 ## go back to certain version
 

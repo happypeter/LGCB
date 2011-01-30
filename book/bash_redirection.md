@@ -1,8 +1,8 @@
 ---
 layout: book
+title: Redirction
 ---
 
-# Redirction
 In this lesson we are going to check what may be the coolest feature of the
 command line. It's called _I/O redirection_. The “I/O” stands for input/output
 and with this you can redirect the input and output of commands to and from
