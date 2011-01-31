@@ -1,4 +1,6 @@
 codeschool.com
+http://www.youtube.com/user/briantwill
+
 ## gdb
 
     b 3
