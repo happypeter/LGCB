@@ -4,8 +4,7 @@ title: Getting Started
 ---
 
 So let's get started. Launch the terminal emulator! Once it comes up, we
-should see
-something like this:
+should see something like this:
 
     peter@vostro:~$ 
 
