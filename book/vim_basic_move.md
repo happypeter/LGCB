@@ -15,7 +15,32 @@ faster, and changing things much easier.
 
 ## Moving around 
 
-To move the cursor, press the h,j,k,l keys as indicated. 
+After you return to Normal mode, you can move around by using these keys:
+
+	h   left						*hjkl*
+	j   down
+	k   up
+	l   right
+
+At first, it may appear that these commands were chosen at random.  After all,
+who ever heard of using l for right?  But actually, there is a very good
+reason for these choices: Moving the cursor is the most common thing you do in
+an editor, and these keys are on the home row of your right hand.  In other
+words, these commands are placed where you can type them the fastest
+(especially when you type with ten fingers).
+
+	Note:
+	You can also move the cursor by using the arrow keys.  If you do,
+	however, you greatly slow down your editing because to press the arrow
+	keys, you must move your hand from the text keys to the arrow keys.
+	Considering that you might be doing it hundreds of times an hour, this
+	can take a significant amount of time.
+	   Also, there are keyboards which do not have arrow keys, or which
+	locate them in unusual places; therefore, knowing the use of the hjkl
+	keys helps in those situations.
+
+One way to remember these commands is that h is on the left, l is on the
+right and j points down.  In a picture: >
 
              ^
              k              Hint:  The h key is at the left and moves left.
