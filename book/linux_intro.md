@@ -7,6 +7,8 @@ Linux is a Unix-like operating systerm, written in 1991 by Linus Torvalds.
 
 Unix was born in 1969 in Bell Lab.
 
+Linux is a Unix-like os.
+
 <center><img src="./images/linus.jpg"></center>
 
 
