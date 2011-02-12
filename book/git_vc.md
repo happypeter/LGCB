@@ -12,10 +12,13 @@ with nearly any type of files.
 
 ## Further Reading
 
+ - __progit__
 
 <http://progit.org/book/ch1-1.html>
 
 This is not so useful 
+
+ - __wikipedia__
 
 <http://en.wikipedia.org/wiki/Revision_control>
 
