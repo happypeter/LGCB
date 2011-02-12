@@ -10,6 +10,9 @@ over time so that you can recall specific versions later. As a programmer, you
 usually want to control software source code,though in reality you can do this
 with nearly any type of files.
 
+<center><img src="./images/rev.png"></center>
+<center>revisions</center>
+
 ## Further Reading
 
  - __progit:__
