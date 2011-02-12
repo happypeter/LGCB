@@ -11,6 +11,6 @@ them, we soon see sth like this:
 so what is _permission_, and why "Permission denied"?
 
 
-<p><center><img src="./images/rwx.png"></center><br/> Local version control
-diagram.</p>
+<center><img src="./images/rwx.png"></center>
+
 
