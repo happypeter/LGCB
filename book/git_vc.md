@@ -12,15 +12,13 @@ with nearly any type of files.
 
 ## Further Reading
 
- - __progit__
+ - __progit:__
+  <http://progit.org/book/ch1-1.html>
 
-<http://progit.org/book/ch1-1.html>
+  This is not so useful 
 
-This is not so useful 
+ - __wikipedia:__
+   <http://en.wikipedia.org/wiki/Revision_control>
 
- - __wikipedia__
-
-<http://en.wikipedia.org/wiki/Revision_control>
-
-I won't suggest your reading this though it is actually useful. Have this, and
-read this later, if you find it is too difficult for you.
+   I won't suggest your reading this though it is actually useful. Have this,
+   and read this later, if you find it is too difficult for you.

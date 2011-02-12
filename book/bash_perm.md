@@ -16,7 +16,7 @@ so what is a _permission_, and why "Permission denied"?
 
 ## Further Reading
 
- - __TLCL__
+ - __TLCL:__
    <http://linuxcommand.org/tlcl.php>
 
    see "10-Permissions"
