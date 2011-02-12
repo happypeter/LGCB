@@ -34,7 +34,11 @@ __gnome-terminal__, though it's likely called simply __terminal__ on our menu.
 You can take terminal as nothing but a simple window, it by itself does
 nothing but give us access to the shell. 
 
-## ref 
+## Furture Reading 
+
+- __TLDP:__
 <http://tldp.org/LDP/Bash-Beginners-Guide/html/>
+
+nice book
 
 
