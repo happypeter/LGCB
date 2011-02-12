@@ -53,10 +53,10 @@ vim as a editor, git to do version control and a lot more...), and of course
 when I am busy, you can study in this library(lots of wonderful links to good
 books, with my comments go along).
 
-Note that this book is very ubuntu-centric. There are kinds of Linux (distros
-to be precise), ubuntu is now the most popular one . Playing with only one
-distro can effectively avoid talking about dark corners, add the possibility
-to do things right and build confidence.
+Note that this book is very ubuntu-centric. There are many kinds of Linux
+(distros to be precise), ubuntu is now the most popular one . Playing with
+only one distro can effectively avoid talking about dark corners, add the
+possibility to do things right and build confidence.
 
 ## How to read this book
 I think the right way to learn Linux is pretty much like learning a foreign
