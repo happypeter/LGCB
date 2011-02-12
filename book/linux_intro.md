@@ -3,7 +3,7 @@ layout: book
 title: What is Linux?
 ---
 
-Linux is written in 1991 by Linus Torvalds. 
+Linux was written in 1991 by Linus Torvalds. 
 
 Unix was born in 1969 in Bell Lab.
 
