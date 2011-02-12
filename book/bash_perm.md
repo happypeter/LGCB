@@ -14,3 +14,10 @@ so what is a _permission_, and why "Permission denied"?
 <center><img src="./images/rwx.png"></center>
 
 
+## Further Reading
+
+ - __TLCL__
+   <http://linuxcommand.org/tlcl.php>
+
+   see "10-Permissions"
+
