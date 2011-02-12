@@ -3,11 +3,11 @@ layout: book
 title: What is Linux?
 ---
 
-Linux is a Unix-like operating systerm, written in 1991 by Linus Torvalds. 
+Linux is written in 1991 by Linus Torvalds. 
 
 Unix was born in 1969 in Bell Lab.
 
-Linux is a Unix-like os.
+Linux is a Unix-like operating systerm.
 
 <center><img src="./images/linus.jpg"></center>
 
