@@ -4,7 +4,7 @@ title: General Command rule
 ---
 
 
-it is important to know what is _operator_ and _motions_ 
+It is important to know what are _operators_ and _motions_ 
 
 than the rule is:
 

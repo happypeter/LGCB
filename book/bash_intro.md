@@ -1,6 +1,6 @@
 ---
 layout: book
-title: bash
+title: Bash Introduction
 ---
 ## Why Use The Command Line?
 Have you ever noticed in the movies when the "super hacker" sits down at
