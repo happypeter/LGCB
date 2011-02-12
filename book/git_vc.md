@@ -13,9 +13,9 @@ with nearly any type of files.
 ## Further Reading
 
  - __progit:__
-  <http://progit.org/book/ch1-1.html>
+   <http://progit.org/book/ch1-1.html>
 
-  This is not so useful 
+   This is not so useful 
 
  - __wikipedia:__
    <http://en.wikipedia.org/wiki/Revision_control>
