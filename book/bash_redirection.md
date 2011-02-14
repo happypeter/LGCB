@@ -7,7 +7,25 @@ In this lesson we are going to check what may be the coolest feature of the
 command line. It's called _I/O redirection_. The "I/O" stands for input/output
 and with this you can redirect the input and output of commands to and from
 files, as well as connect multiple commands together into powerful command
-pipelines.
+_pipelines_.
+
+
+pipe is a form of redirection that is used in Linux and other Unix-like
+operating systems to send the output of one program to another program for
+further processing. 
+
+Redirection is the transferring of standard output to some other destination,
+such as another program, a file or a printer, instead of the display monitor
+(which is its default destination). Standard output, sometimes abbreviated
+stdout, is the destination of the output from command line (i.e., all-text
+mode) programs in Unix-like operating systems.
+
+Pipes are used to create what can be visualized as a pipeline of commands,
+which is a temporary direct connection between two or more simple programs.
+This connection makes possible the performance of some highly specialized task
+that none of the constituent programs could perform by themselves. A command
+is merely an instruction provided by a user telling a computer to do
+something, such as launch a program. 
 
 ## Standard Input, Output, And Error
 Many of the programs that we have used so far produce output of some kind.

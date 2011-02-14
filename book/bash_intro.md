@@ -2,6 +2,12 @@
 layout: book
 title: Bash Introduction
 ---
+
+## What is a Command?
+
+A command is merely an instruction provided by a user telling a computer to do
+something, such as launch a program. 
+
 ## Why Use The Command Line?
 Have you ever noticed in the movies when the "super hacker" sits down at
 the computer, he never touches a mouse? It's because movie makers realize that
