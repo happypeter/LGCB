@@ -17,11 +17,12 @@ the same way the written word is for human beings. It's been said that
 make difficult tasks possible" and this is still very true today.
 
 ## What Is The Shell?  
-When we speak of the command line, we are really referring to the shell. The
-shell is a program that takes keyboard commands and passes them to the
-operating system to carry out(funny are the names: _Shell_ on top of
-_Kernel_). Almost all Linux distributions supply a shell program from the GNU
-Project called bash, so does ubuntu. 
+When we speak of the command line, we are really referring to the shell.
+Shell is somethings called a "command interpreter". The shell is a program
+that takes keyboard commands and passes them to the operating system to carry
+out(funny are the names: _Shell_ on top of _Kernel_). Almost all Linux
+distributions supply a shell program from the GNU Project called bash, so does
+ubuntu. 
 
 The name __bash__ is short for "Bourne Again SHell" a program written by Steve
 Bourne.  
