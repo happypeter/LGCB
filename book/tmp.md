@@ -24,7 +24,8 @@ _important term_
 ---------------------------
 
 I just want lessons for LGCB, not chapters, and every lesson I add will be
-there forever, I can only better the page, but not removing it. 
+there forever(the url will be permanent, so that I can link to it from
+anywhere), I can only better the page, but not removing it. 
 
 I am free to change the index of the book.
 
