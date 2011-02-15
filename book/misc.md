@@ -1,4 +1,9 @@
-I will try to make each chapter cover a complete topic, but this shoould give
+I just want lessons for LGCB, not chapters, and every lesson I add will be
+there forever, I can only better the page, but not removing it. 
+
+I am free to change the index of the book.
+
+I will try to make each lesson cover a complete topic, but this should give
 way to keeping the story-telling style of this book, that is starting from
 ZERO, and then go step by step. Say, I want to talk about vim movement, which
 will be too much stuff to be wrapped into one single chapter, than I will
