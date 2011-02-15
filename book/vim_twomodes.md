@@ -1,6 +1,6 @@
 ---
 layout: book
-title: two modes
+title: Two most important modes
 ---
 vim is different from the editors you know largely in that it has something
 called _mode_.
