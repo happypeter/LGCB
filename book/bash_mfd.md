@@ -4,7 +4,7 @@ title: Manipulating Files And Directories
 ---
 
 
-At this point, we are ready for some real work! This chapter will introduce
+At this point, we are ready for some real work! This lesson will introduce
 the following commands:
         
 - __cp__ 

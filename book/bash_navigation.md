@@ -4,7 +4,7 @@ title: Navigation
 ---
 
 The first thing we need to learn to do (besides just typing) is how to
-navigate the file system on our Linux system. In this chapter we will
+navigate the file system on our Linux system. In this lesson we will
 introduce the following commands:
 
 - __pwd__   
