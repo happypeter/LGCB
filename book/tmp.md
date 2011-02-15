@@ -39,6 +39,12 @@ vim, I can add another chapter named "vim advanced movement".
 
 Conciseness over Preciseness.
 
+I don't teach bash first and vim later, so put chapter1 or 2 before them is
+ridiculous. I think I will teach this way:
+
+I will first finish one or two lessons of Bash, then I will move to git or vim
+and pick up one or two lessons as needed.
+
 codeschool.com
 http://www.youtube.com/user/briantwill
 
