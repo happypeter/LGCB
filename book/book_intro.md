@@ -7,13 +7,12 @@ title: Introduction to This Book
 
 Now I am getting a lot of requests from my students that they need a textbook,
 that's why I want to write this. I need a book that covers all that I want to
-share with my students, no more and no less. _the linux command line_ is nice,
+share with my students, no more and no less. _The Linux Command Line_ is nice,
 but it is too difficult for my students.
 
 I want to name this book _Linux Guide for Chinese Beginners_.
 
-## Who should read this book?
-### This book is for Chinese people
+## This book is for Chinese people
 As a Chinese, I know my fellow citizen generally do not speak English well, but
 I do believe that no matter what is your birth tongue, as long as you want to
 learn Linux, you should use English as your language for work. Otherwise you
@@ -26,7 +25,7 @@ serve as a guide to those guides, written in really easy English(slightly
 broken, sorry), giving a new tech term only when very necessary, and it will
 be explained the way that makes non-native English speakers feel comfortable. 
 
-### The book is for absolute beginners
+## The book is for absolute beginners
 If you are already have several years experience, this book might be too easy
 for you. My goals doing this book are:
 
