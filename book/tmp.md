@@ -35,8 +35,9 @@ ZERO, and then go step by step. Say, I want to talk about vim movement, which
 will be too much stuff to be wrapped into one single chapter, than I will
 choose to have a "3.2 vim basic movement" to fullfill the basic needs of the
 students, then may be in 3.10 or 3.20, when the students get more at home with
-vim, I can add another chapter named "vim advanced movement". Keep it simple
-and let it grow.
+vim, I can add another chapter named "vim advanced movement". 
+
+Conciseness over Preciseness.
 
 codeschool.com
 http://www.youtube.com/user/briantwill
