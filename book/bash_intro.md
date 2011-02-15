@@ -27,7 +27,7 @@ When we speak of the command line, we are really referring to the shell.
 Shell is somethings called a "command interpreter". The shell is a program
 that takes keyboard commands and passes them to the operating system to carry
 out(funny are the names: _Shell_ on top of _Kernel_). Almost all Linux
-distributions supply a shell program from the GNU Project called bash, so does
+distributions supply a shell program from the GNU Project called __bash__, so does
 ubuntu. 
 
 The name __bash__ is short for "Bourne Again SHell" a program written by Steve
