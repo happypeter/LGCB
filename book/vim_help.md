@@ -35,7 +35,7 @@ To identify other modes, use a mode prefix.  If you want the help for the
 insert-mode version of a command, use "i_".  For CTRL-H this gives you the
 following command: >
 
-	:help i_CTRL-H
+	:help i_CTRL-N
 
 
 know more by `:h 02.8`
