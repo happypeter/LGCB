@@ -1,3 +1,11 @@
+# get pdf
+
+use htmldoc
+
+and check
+
+http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/intro.html#OTHERFORMATS
+
 # Conventions
 ## when use yEd, 
 
