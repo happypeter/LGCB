@@ -2,8 +2,8 @@
 layout: book
 title: Getting Started
 ---
-the book text will serve as background knowledge of these screencasts, of
-course I am free to add any thing I think fits.
+The book text will serve as background knowledge of these screencasts, of
+course I am free to add anything that I think fits.
 
 So let's get started. Launch vim! 
 
@@ -11,7 +11,7 @@ So let's get started. Launch vim!
 
 ## quit vim
 
-now in _normal mode_, you type 
+Now in _normal mode_, you type 
 
  - `:q!` quit with out change
  - `:wq` save and quit
@@ -22,7 +22,7 @@ explain soon.
 
 ## vimtutor
 
-vimtutor is a nice way to practice vim basic operations, but it is
+__vimtutor__ is a nice way to practice vim basic operations, but it is
 definitely not for absolute beginners, too difficult.  Still want to try?
 invoke it this way:
 
