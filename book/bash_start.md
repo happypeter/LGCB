@@ -38,7 +38,7 @@ line?  This makes editing commands easy.
 
 ## Try Some Simple Commands
 Now that we have learned to type, let's try a few simple commands. The first
-one is date. This command displays the current time and date.
+one is __date__. This command displays the current time and date.
 
     peter@vostro:~$ date
     Tue Jan 18 21:46:56 CST 2011
