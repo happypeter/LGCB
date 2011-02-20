@@ -15,7 +15,7 @@ now in _normal mode_, you type
 
  - `:q!` quit with out change
  - `:wq` save and quit
- - __ZZ__ save and quit
+ - `ZZ`  save and quit
 
 Maybe you do not know what know what is _normal mode_, do not worry I will
 explain soon.
