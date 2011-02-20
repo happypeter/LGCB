@@ -26,7 +26,7 @@ broken, sorry), giving a new tech term only when very necessary, and it will
 be explained the way that makes non-native English speakers feel comfortable. 
 
 ## The book is for absolute beginners
-If you are already have several years experience, this book might be too easy
+If you already have several years of experience, this book might be too easy
 for you. My goals doing this book are:
 
  - as easy as possible 
