@@ -18,4 +18,7 @@ Screencasts can be a lot of help in learning vim, so I am building some in
 easy English, following the flow of vim `:h`, focusing on only basic stuff,
 and giving extra explain whenever I think is necessary.
 
+All the Screencasts are here:
+
+<http://happypeter.github.com/GitBeijing/happyvim-casts.html>
 
