@@ -59,7 +59,7 @@ our home directory. Each user account is given its own home directory and when
 operating as a regular user, the home directory is the only place the user is
 allowed to write file.
 
-# Listing The Contents Of A Directory
+## Listing The Contents Of A Directory
 
 To list the files and directories in the current working directory, we use the
 __ls__ command.
