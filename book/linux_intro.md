@@ -4,7 +4,7 @@ title: What is Linux?
 ---
 
 
-Unix was born in 1969 in Bell Lab, created by Thompson (left) with Dennis
+Unix was born in 1969 in Bell Lab, created by Ken Thompson (left) with Dennis
 Ritchie.
 
 <center><img src="./images/Ken_n_dennis.jpg"></center>
