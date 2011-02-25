@@ -78,4 +78,9 @@ You can just start at the beginning of the book and follow it to the end. It
 isn't written as a reference work, it's really more like a story with a
 beginning, middle, and an end.
 
+## Get the latest version
 
+If you are reading this book offline, you may not have the latest version, get
+it here:
+
+<http://happypeter.github.com/LGCB/index.html>
