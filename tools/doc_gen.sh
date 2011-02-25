@@ -31,3 +31,17 @@ done
 cp -rf  ../book/images/ .
 rm index.html
 
+#################################
+#
+#    h1->h2  h2->h3
+#    
+#################################
+# need to consider <h2 style=ccc>xxx</h2>, so we need this:
+cat $OUTPUT_FILE|sed 's/<h2/<h3/g'|sed 's/h2>/h3>/g'|sed 's/<h1/<h2/g'|sed 's/h1>/h2>/g' >ll.html
+
+
+# now mannully add ( we can also get these name of "part"s by processing index.html)
+#  <h1> Part 1: Getting started </h1>
+#  to ll.html
+#  then use  htmldoc to generate a pdf, it looks really nice
+
