@@ -77,7 +77,7 @@ tree to get to the directory we want. Pathnames can be specified in one of two
 different ways; as absolute pathnames or as relative pathnames. Let's deal
 with absolute pathnames first.
 
-### Absolute Pathnames
+## Absolute Pathnames
 
 An absolute pathname begins with the root directory(/) and follows the tree
 branch by branch until the path to the desired directory or file is completed.
@@ -97,7 +97,7 @@ Now we can see that we have changed the current working directory to
 changed? As a convenience, it is usually set up to automatically display the
 name of the working directory.
 
-### Relative Pathnames
+## Relative Pathnames
 
 Where an absolute pathname starts from the root directory and leads to its
 destination, a relative pathname starts from the working directory. To do
