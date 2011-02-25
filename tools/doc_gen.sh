@@ -19,6 +19,7 @@ echo """
     pre { margin-left: 3% }
 
 </style>
+<title>Linux Guide for Chines Beginners</title>
 """ >$OUTPUT_FILE
 for page_name in `cat index.html|grep -o [a-z1-9]*_.*.html`
 do
@@ -29,3 +30,4 @@ done
 
 cp -rf  ../book/images/ .
 rm index.html
+
