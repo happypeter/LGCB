@@ -14,7 +14,7 @@ are commands.  In Insert mode the characters are inserted as text.
 mode you type the "i" command (i for Insert).  Then you can enter
 the text.  It will be inserted into the file. 
 
-GETTING OUT OF TROUBLE
+## Getting out of trouble
 
 One of the problems for Vim novices is mode confusion, which is caused by
 forgetting which mode you are in or by accidentally typing a command that
