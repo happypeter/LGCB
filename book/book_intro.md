@@ -43,15 +43,6 @@ It is really all about how to survive in the new world of Linux. It is not
 about something hard, but rather about helping you out when you are lost in
 the vast ocean of Linux knowledge. 
 
-If you just migrant from other country (maybe some nasty place named
-MS-windows), and you want to live free in the kingdom of Linux.  And Hey I am
-Peter, your new friend here, I will show you with this book the most important
-languages you should speak(not only C, but something like python, xml...), new
-tools you can not leave without(bash as a new way to talk to your computer,
-vim as a editor, git to do version control and a lot more...), and of course
-when I am busy, you can study in this library(lots of wonderful links to good
-books, with my comments go along).
-
 Note that this book is very ubuntu-centric. There are many kinds of Linux
 (distros to be precise), ubuntu is now the most popular one . Playing with
 only one distro can effectively avoid talking about dark corners, add the

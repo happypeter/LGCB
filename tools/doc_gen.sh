@@ -1,16 +1,26 @@
 #!/bin/bash
+
+#################################
+#
+#    I use this script to download
+#    the LGCB book from web and generate
+#    a all-in-one big html file
+#    and then I can use htmldoc to
+#    get a nice pdf
+#    
+#################################
 book_url="http://happypeter.github.com/LGCB/book/"
 OUTPUT_FILE=lgcb.html
+
 
 for file in `ls ../book|grep .md|grep -v tmp`
 do
     short_name=`echo $file|awk -F"." '{print $1}'`
-    echo $short_name
     page_url=$book_url$short_name".html"
     wget $page_url >/dev/null
 done
 
-## now parse index to know how to who comes first
+## now parse index to know who comes first
 wget $book_url/index.html >/dev/null
 echo """
 <style media="screen" >
@@ -20,7 +30,7 @@ echo """
 </style>
 <title>Linux Guide for Chinese Beginners</title>
 """ >$OUTPUT_FILE
-partno=0    
+partno=0   ## no of parts 
 while read line
 do
     echo $line |grep h2 &>/dev/null
@@ -30,7 +40,7 @@ do
         part_name=$line
         tag_name=Part$(( ++partno ))
         echo $part_name|sed 's/<\/h2>//g'|sed "s/<h2>/$tag_name:/g" >>$OUTPUT_FILE
-        # <h2> topic </h2>  into Part1:topic
+        # "<h2> partname </h2>" ->  "Part1:partname"
     fi
     echo $line |grep \<li\> &>/dev/null
     if [ "$?" = "0" ] 
@@ -54,14 +64,14 @@ rm index.html
 #    "<Part 1>" -> "<h1> Part 1:"
 #    
 #################################
-# need to consider <h2 style=ccc>xxx</h2>, so we need this:
-sed -i 's/<h2/<h3/g' lgcb.html
-sed -i 's/h2>/h3>/g' lgcb.html
-sed -i 's/<h1/<h2/g' lgcb.html
-sed -i 's/h1>/h2>/g' lgcb.html
+# need to consider <h2 style=ccc>xxx</h2>, so we need:
+sed -i 's/<h2/<h3/g' $OUTPUT_FILE
+sed -i 's/h2>/h3>/g' $OUTPUT_FILE
+sed -i 's/<h1/<h2/g' $OUTPUT_FILE
+sed -i 's/h1>/h2>/g' $OUTPUT_FILE
 
-# now "Part 1:topic"->"<h1>Part1:topic</h1>"
-sed -i "s/Part[1-9]*:.*/<h1>&<h1>/g" lgcb.html 
+# now "Part1:topic" -> "<h1>Part1:topic</h1>"
+sed -i "s/Part[1-9]*:.*/<h1>&<h1>/g" $OUTPUT_FILE 
 
 # use  htmldoc to generate a pdf, it looks really nice
 
