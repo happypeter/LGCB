@@ -21,7 +21,7 @@ do
 done
 
 ## now parse index to know who comes first
-wget $book_url/index.html >/dev/null
+cp ../book/index.html .
 echo """
 <style media="screen" >
     /*this is very important for me*/
