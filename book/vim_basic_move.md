@@ -29,15 +29,14 @@ an editor, and these keys are on the home row of your right hand.  In other
 words, these commands are placed where you can type them the fastest
 (especially when you type with ten fingers).
 
-	Note:
-	You can also move the cursor by using the arrow keys.  If you do,
-	however, you greatly slow down your editing because to press the arrow
-	keys, you must move your hand from the text keys to the arrow keys.
-	Considering that you might be doing it hundreds of times an hour, this
-	can take a significant amount of time.
-	   Also, there are keyboards which do not have arrow keys, or which
-	locate them in unusual places; therefore, knowing the use of the hjkl
-	keys helps in those situations.
+You can also move the cursor by using the arrow keys.  If you do,
+however, you greatly slow down your editing because to press the arrow
+keys, you must move your hand from the text keys to the arrow keys.
+Considering that you might be doing it hundreds of times an hour, this
+can take a significant amount of time.
+   Also, there are keyboards which do not have arrow keys, or which
+locate them in unusual places; therefore, knowing the use of the hjkl
+keys helps in those situations.
 
 One way to remember these commands is that h is on the left, l is on the
 right and j points down.  In a picture: >

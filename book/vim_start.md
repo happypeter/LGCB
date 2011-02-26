@@ -28,7 +28,7 @@ invoke it this way:
 
     peter@vostro:~$ vimtutor
 
-## screencasts
+check
 
 1_start_vim.mov
 
