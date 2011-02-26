@@ -11,7 +11,6 @@ do
 done
 
 ## now parse index to know how to who comes first
-
 wget $book_url/index.html >/dev/null
 echo """
 <style media="screen" >
@@ -21,12 +20,30 @@ echo """
 </style>
 <title>Linux Guide for Chines Beginners</title>
 """ >$OUTPUT_FILE
-for page_name in `cat index.html|grep -o [a-z1-9]*_.*.html`
+partno=0    
+while read line
 do
-        cat $page_name |sed '1,11d'|sed 'N;$!P;$!D;$d' >>$OUTPUT_FILE 
-        rm $page_name
+    echo $line |grep h2 &>/dev/null
+    if [ "$?" = "0" ] 
+    then
+        
+        part_name=$line
+        tag_name=Part$(( ++partno ))
+        echo $part_name|sed 's/<\/h2>//g'|sed "s/<h2>/$tag_name:/g" >>$OUTPUT_FILE
+        # <h2> topic </h2>  into Part1:topic
+    fi
+    echo $line |grep \<li\> &>/dev/null
+    if [ "$?" = "0" ] 
+    then
+        page_name=`echo $line|grep -o [a-z1-9]*_.*.html`
+        echo $page_name
+        cat $page_name |sed '1,11d'|sed 'N;$!P;$!D;$d' >>$OUTPUT_FILE
         # delete the first 11 & last 2 lines of a file
-done
+        rm $page_name
+    fi
+
+done < index.html
+
 
 cp -rf  ../book/images/ .
 rm index.html
@@ -34,14 +51,17 @@ rm index.html
 #################################
 #
 #    h1->h2  h2->h3
+#    "<Part 1>" -> "<h1> Part 1:"
 #    
 #################################
 # need to consider <h2 style=ccc>xxx</h2>, so we need this:
-cat $OUTPUT_FILE|sed 's/<h2/<h3/g'|sed 's/h2>/h3>/g'|sed 's/<h1/<h2/g'|sed 's/h1>/h2>/g' >ll.html
+sed -i 's/<h2/<h3/g' lgcb.html
+sed -i 's/h2>/h3>/g' lgcb.html
+sed -i 's/<h1/<h2/g' lgcb.html
+sed -i 's/h1>/h2>/g' lgcb.html
 
+# now "Part 1:topic"->"<h1>Part1:topic</h1>"
+sed -i "s/Part[1-9]*:.*/<h1>&<h1>/g" lgcb.html 
 
-# now mannully add ( we can also get these name of "part"s by processing index.html)
-#  <h1> Part 1: Getting started </h1>
-#  to ll.html
-#  then use  htmldoc to generate a pdf, it looks really nice
+# use  htmldoc to generate a pdf, it looks really nice
 
