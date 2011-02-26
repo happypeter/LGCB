@@ -18,7 +18,7 @@ echo """
     pre { margin-left: 3% }
 
 </style>
-<title>Linux Guide for Chines Beginners</title>
+<title>Linux Guide for Chinese Beginners</title>
 """ >$OUTPUT_FILE
 partno=0    
 while read line
