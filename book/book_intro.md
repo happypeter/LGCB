@@ -75,3 +75,9 @@ If you are reading this book offline, you may not have the latest version, get
 it here:
 
 <http://happypeter.github.com/LGCB/index.html>
+
+And check recent updates by:
+
+    git clone git://github.com/happypeter/LGCB.git
+
+If you do not know what __git__ is, check the Git tutorial in this book.
