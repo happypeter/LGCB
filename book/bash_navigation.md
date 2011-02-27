@@ -152,7 +152,6 @@ something, the working directory will be assumed.
 
 ## Some Helpful Shortcuts
 
-Shortcut  Result
 
 - __cd__       
   
