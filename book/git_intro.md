@@ -5,7 +5,7 @@ title: Git Introduction
 
 When we write code, it's very nice to be able to keep track of all of our
 changes such that we can always go back to an earlier version when we mess
-something up. It’s also really important to coordinate our changes with others
+something up. It's also really important to coordinate our changes with others
 working on the same code. For these reasons, programmers use programs called
 _version control systems_ to manage their code. Git is a VCS.
 
