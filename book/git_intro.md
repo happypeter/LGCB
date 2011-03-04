@@ -14,5 +14,5 @@ Git is the stupid content tracker, which means it tracks your data easily.
 
 ## NOTE:
 
-<www.progit.org> already there, and it even has a Chinese version, so I hope I
+<http://progit.org> already there, and it even has a Chinese version, so I hope I
 won't repeat what others already did.
