@@ -99,20 +99,6 @@ Author: Linus
 <http://kernel.org/>
 
 
-## dir
-
-this is my code:
-
-        cd dirname
-
-# How to use markdown
-
-        vim myfile.md
-        markdown mymfile.md > myfile.html
-        firefox myfile.html&
-
-website: <http://daringfireball.net/projects/markdown/>
-
 # Basics
 ## firefox
 
