@@ -21,6 +21,10 @@ title: Git Tips
 Sometimes, it took one minite for the key to take effect, but it can also be
 one day, so be patient.
 
+Good news: now github have a really nice doc page on setup:
+
+<http://help.github.com/linux-set-up-git/>
+
 
 ## tig
 
