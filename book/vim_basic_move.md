@@ -5,7 +5,7 @@ title: Basic Movement
 
 ## why normal mode first?
 
-when you already understand why vim has different modes, you may still wonder,
+When you already understand why vim has different modes, you may still wonder,
 why vim first takes us to _normal mode_(also called _command mode_) rather
 than _insert mode_
 
@@ -47,6 +47,6 @@ right and j points down.  In a picture: >
              j                     The j key looks like a down arrow.
              v
 
-check
+Check
 
     4_basic_move.mov

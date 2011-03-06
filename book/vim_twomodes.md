@@ -1,8 +1,8 @@
 ---
 layout: book
-title: Two most important modes
+title: Two Most Important Modes
 ---
-vim is different from the editors you know largely in that it has something
+Vim is different from the editors you know largely in that it has something
 called _mode_.
 
 The Vim editor is a modal editor.  That means that the editor behaves
@@ -22,7 +22,7 @@ switches modes.  To get back to Normal mode, no matter what mode you are in,
 press the __Esc__ key.  Sometimes you have to press it twice.  If Vim beeps back
 at you, you already are in Normal mode.
 
-check 
+Check 
 
 
     2_two_modes.mov
