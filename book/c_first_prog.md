@@ -39,7 +39,7 @@ In our first program, we followed the format, so even though it does nothing
 for us, it has its formats, and the format shows everything within this file
 is a empty _function_.
 
-## so what is a function in C?
+## What is a function in C?
 
 Again, we need to say computers are machines, which can only do one simple
 thing in one single step. The the result is a very small task is devided into
@@ -49,14 +49,14 @@ A function provides a convenient way to wrap some many-step computation up,
 now you can do all the steps as one. This make sense, because you always have
 steps to repeat.
 
-so this is what a function does, and now what it looks:
+This is what a function does, and now what it looks:
 
     function_name()
     {
         things to do
     }
 
-this is a legal (though simplified) function format.
+A legal (though simplified) function format.
 
 so now we see in our first program, we have a fuction named "main", and it
 does nothing for us, because there is nothing between "{" and "}". OK, so if
