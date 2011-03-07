@@ -30,7 +30,7 @@ echo """
 </style>
 <title>Linux Guide for Chinese Beginners</title>
 """ >$OUTPUT_FILE
-partno=0   ## no of parts 
+partno=0   ## NO. of parts 
 while read line
 do
     echo $line |grep h2 &>/dev/null
@@ -47,8 +47,8 @@ do
     then
         page_name=`echo $line|grep -o [a-z1-9]*_.*.html`
         echo $page_name
-        cat $page_name |sed '1,11d'|sed 'N;$!P;$!D;$d' >>$OUTPUT_FILE
-        # delete the first 11 & last 2 lines of a file
+        cat $page_name |sed '1,12d'|sed 'N;$!P;$!D;$d' >>$OUTPUT_FILE
+        # delete the first 12 & last 2 lines of a file
         rm $page_name
     fi
 
