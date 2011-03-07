@@ -1,3 +1,7 @@
+---
+layout: book
+title: The First Program
+---
 ## why we need to learn C?
 so the question is why we need to learn C or any other so called programing
 Language?
