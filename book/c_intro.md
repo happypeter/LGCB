@@ -9,7 +9,8 @@ I hated it. That is:
     - C was hard to learn
     - I did not know how it could be of any dame use!
 
-So, ok, now is the year of 2011, I am trying to teach other people to use C,
+So, OK, now is the year of 2011, I am trying to teach other people to use C,
+God bless!
 
 I want to go LGCB story-telling style and try to make this lanaguage easy
 to learn, and make people understand C is useful.
