@@ -36,7 +36,7 @@ make it understand what you are saying is by talking in a very Strictly
 formatted way, so that every thing is simple and clear.
 
 In our first program, we followed the format, so even though it does nothing
-for us, it has its formats, and the format shows everything within this file
+for us, it has its format, and the format shows everything within this file
 is a empty _function_.
 
 ## What is a function in C?
