@@ -3,12 +3,12 @@ layout: book
 title: The First Program
 ---
 ## why we need to learn C?
-so the question is why we need to learn C or any other so called programing
-Language?
+So the question is why we need to learn C or any other so called programing
+language?
 
 To write programs, of course. And a computer program will run on our computer
 and help us do something, say, do some mathematical calculation, or download
-music for us from the internet.
+music for us from the Internet.
 
 So the real answer is we want to TALK to our computer and get things done. 
 
