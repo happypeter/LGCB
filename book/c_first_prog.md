@@ -24,9 +24,9 @@ and now have the following in it:
     {
     }
 
-save and quit now we have a file named _file.c_, which is our first program.
+Save and quit now we have a file named _file.c_, which is our first program.
 
-so first we need to say, a programming Language is different from our natural
+So first we need to say, a programming Language is different from our natural
 languages in that 
 
 ## It has stick format
