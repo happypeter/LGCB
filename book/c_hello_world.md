@@ -69,8 +69,8 @@ bash script)
 
 ## But C goes one step further
 
-Because C designer loves funciton so much, so he finally decided, no code show
-run outside a fuction, so The C Structure: 
+Because C designer loves funciton so much, that he finally decided, no code show
+run outside a fuction, so The C Structure of a program looks: 
 
     task_name()
     {
@@ -89,4 +89,76 @@ run outside a fuction, so The C Structure:
         task_name()
     }
 
+
 And all C programs start at main()
+
+## The standard library
+
+It is really dull since _a.out_ showed us nothing, so the first thing we may
+want our program to do is to print some on the screen. I know you now have
+this in your mind:   
+
+
+    print_something()
+    {
+        Step 1 to do printing
+        Step 2 to do printing
+        Step 3 to do printing
+        ...
+    }
+    main()
+    {
+        print_something()
+    }
+
+As a matter of fact, you are on the right track, but there is just one single practical
+diffculty: You do not know the Steps "to do printing". And Truth is that they
+are quit complex. Wow...now what to do?
+
+Lucily, there is the thing called "standard library", which provide a function
+that is similar to our `print_something()`,(actully the standard library
+provides many such useful fuctions).  
+
+## The hello world program
+
+Now let's modify our code in _file.c_, and have these lines:
+
+    #include<stdio.h>
+    main()
+    {
+        printf("hello world");
+    }
+
+So in order to use functions porvided by standard library, you need a format
+like this:
+
+    #inlcue<file_name.h>
+    main()
+    {
+        the_function();
+    }
+
+standard library provide quit a few of these `file_name`s, to determin which
+is the one to be "#include"d is acutlly simple, that is you need to choose
+the one in which `the_function()` is decleared. So anything else, the compiler
+will take care for us.
+
+## Now run it
+
+Compile it again:
+
+    peter@vostro:~$ gcc file.c 
+
+now run:
+
+    peter@vostro:~$ ./a.out 
+    hello world
+
+Good, now we see something happens.
+
+## Further Reading
+
+ - __Std lib:__
+ <http://www.utas.edu.au/infosys/info/documentation/C/CStdLib.html>
+
+ you get info about std lib here
