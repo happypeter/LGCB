@@ -71,7 +71,7 @@ bash script)
 ## But C goes one step further
 
 Because C designer loves funciton so much, that he finally decided, no code show
-run outside a fuction, so The C Structure of a program looks: 
+run outside a fuction, so The  Structure C of a program looks: 
 
     task_name()
     {
