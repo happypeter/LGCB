@@ -23,10 +23,10 @@ AS a new, one may expected a source file looks like this:
 the above stucture makes perfect logical sense, but
 
 ## why C designer loves fuction so much?
-If he is not insane, every C feathers brought in for a practical reason.
+If he is not insane, every C feather was brought in for a practical reason.
 
 The real world is that computers are really good at does something quickly,
-but again, it can only something really simple one step, hence even a very
+but again, it can only does something really simple one step, hence even a very
 simple and common tasks must be divided into several steps, so we end up have a
 program looks like this(Structure A):
 
@@ -44,8 +44,9 @@ program looks like this(Structure A):
     ...
 
 
-This is stupid, and this is the point when _fuction_ come and help.
-so now the program looks like this(Structure B)
+In practice, we always have some code blocks that repeats again and again, so
+the code now looks unnecessarily long, stupid. This is the point when
+_fuction_ come and help.  so now the program looks like this(Structure B)
 
     task_name()
     {
@@ -90,7 +91,8 @@ run outside a fuction, so The C Structure of a program looks:
     }
 
 
-And all C programs start at main()
+And all C programs start at main(), and you are not allowed to change `main`
+into any other name.
 
 ## The standard library
 
@@ -120,15 +122,6 @@ that is similar to our `print_something()`,(actully the standard library
 provides many such useful fuctions).  
 
 ## The hello world program
-
-Now let's modify our code in _file.c_, and have these lines:
-
-    #include<stdio.h>
-    main()
-    {
-        printf("hello world");
-    }
-
 So in order to use functions porvided by standard library, you need a format
 like this:
 
@@ -139,9 +132,18 @@ like this:
     }
 
 standard library provide quit a few of these `file_name`s, to determin which
-is the one to be "#include"d is acutlly simple, that is you need to choose
+is the one to be `#include`d is acutlly simple, that is you need to choose
 the one in which `the_function()` is decleared. So anything else, the compiler
 will take care for us.
+
+Now let's modify our code in _file.c_, and have these lines:
+
+    #include<stdio.h>
+    main()
+    {
+        printf("hello world");
+    }
+
 
 ## Now run it
 
