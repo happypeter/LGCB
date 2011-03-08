@@ -1,8 +1,8 @@
 ---
 layout: book
-title: Fuctions 
+title: Functions 
 ---
-now let's see what's in our_file.c_:
+now let's see what's in our _file.c_:
 
 
     #include<stdio.h>
@@ -18,30 +18,30 @@ First check this line:
 
     printf("hello world");
 
-and now we know we need to updated our function stucure
+Now we know we need to updated our understanding of function structure
 
     function_name( parameters )
     {
         things to do with parameters
     }
 
-and you may also notice the trailing `;`, it is acutally a very important
+You may also notice the trailing "`;`", it is actually a very important
 format thing in C, that is:
 
     statement = what_we_do;
 
-so a C statement is actully not only what_we_do, if you forget to add the `;`,
+so a C statement is actually not only `what_we_do`, if you forget to add the "`;`",
 you will have trouble.
 
 ## Function declaration 
 
-All fuctions in C need to be declared before they are used. For functions the
+All functions in C need to be declared before they are used. For functions the
 declaration needs to be before the first call of the function. 
 
-Now we know `printf` is declered in `stdio.h`, but what the hell is
+Now we know `printf` is declared in `stdio.h`, but what the hell is
 declaration?
 
-If you still remember our Strcucture C:
+If you still remember our Structure C:
 
     task_name()
     {
@@ -83,7 +83,7 @@ have a C code structured this way:
 
 ## real world example
 
-now let's modify _file.c_ a bit more:
+Let's modify _file.c_ a bit more:
 
     #include <stdio.h>
 
@@ -100,7 +100,7 @@ now let's modify _file.c_ a bit more:
         printf("hello");
     }
 
-Quess what is the declaration? it is just this line:
+Now what is the declaration? it is just this line:
 
     say_hello_twice();
 
