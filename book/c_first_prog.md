@@ -2,8 +2,8 @@
 layout: book
 title: The First Program
 ---
-## why we need to learn C?
-So the question is why we need to learn C or any other so called programing
+## Why learn C?
+So the question is why we learn C or any other so called programing
 language?
 
 To write programs, of course. And a computer program will run on our computer
@@ -12,7 +12,7 @@ music for us from the Internet.
 
 So the real answer is we want to TALK to our computer and get things done. 
 
-## the first program
+## The first program
 
 Let's first create a file
 
@@ -87,7 +87,7 @@ On ubuntu system, now we run this:
 Note __gcc__ is the compiler.
 
 If you don't messed up anything, you should get a complied file named _a.out_
-in your current dir.   
+in your current directory.   
 
     peter@vostro:~$ ./a.out 
 
