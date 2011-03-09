@@ -55,8 +55,8 @@ It is really all about how to survive in the new world of Linux. It is not
 about something hard, but rather about helping you out when you are lost in
 the vast ocean of Linux knowledge. 
 
-Note that this book is very ubuntu-centric. There are many kinds of Linux
-(distros to be precise), ubuntu is now the most popular one . Playing with
+Note that this book is very __ubuntu__-centric. There are many kinds of Linux
+(distros to be precise), __ubuntu__ is now the most popular one . Playing with
 only one distro can effectively avoid talking about dark corners, add the
 possibility to do things right and build confidence.
 

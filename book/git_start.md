@@ -10,7 +10,7 @@ control systems, it is actually a advantage.
 
 ## Installing git
 
-On Ubuntu, it is:
+On __ubuntu__, it is:
 
     sudo apt-get install git-core
 

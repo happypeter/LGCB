@@ -28,7 +28,7 @@ Shell is somethings called a "command interpreter". The shell is a program
 that takes keyboard commands and passes them to the operating system to carry
 out(funny are the names: _Shell_ on top of _Kernel_). Almost all Linux
 distributions supply a shell program from the GNU Project called __bash__, so does
-ubuntu. 
+__ubuntu__. 
 
 The name __bash__ is short for "Bourne Again SHell" a program written by Steve
 Bourne.  
@@ -36,7 +36,7 @@ Bourne.
 ## Terminal Emulators
 When using a graphical user interface, we need another program called a
 __terminal emulator__ to interact with the shell. If we look through our
-desktop menus, we will probably find one. Ubuntu by defualt uses
+desktop menus, we will probably find one. __ubuntu__ by defualt uses
 __gnome-terminal__, though it's likely called simply __terminal__ on our menu.
 You can take terminal as nothing but a simple window, it by itself does
 nothing but give us access to the shell. 

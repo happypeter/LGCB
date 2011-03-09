@@ -80,7 +80,7 @@ understanding 0 and 1 as you may know. So we need somebody who can translate
 the "source code" into "0 and 1"s. And here steps in the translator, another
 computer program named _compiler_ .
 
-On ubuntu system, now we run this:
+On __ubuntu__ system, now we run this:
 
     peter@vostro:~$ gcc file.c 
 

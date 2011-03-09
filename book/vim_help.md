@@ -25,7 +25,7 @@ CTRL-A), you need to spell it with the prefix "CTRL-". >
 
 	:help CTRL-A
 
-The Vim editor has many different modes.  By default, the help system displays
+The _vim_ editor has many different modes.  By default, the help system displays
 the normal-mode commands.  For example, the following command displays help
 for the normal-mode CTRL-H command: >
 

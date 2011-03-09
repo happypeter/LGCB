@@ -22,11 +22,11 @@ __markdown__ is:
 
 ## How to Use?
 
-First try to install it on ubuntu:
+First try to install it on __ubuntu__:
 
     sudo apt-get install markdown
 
-it should work on any version of ubuntu (though, I only tested this on 9.10 and later).
+it should work on any version of __ubuntu__ (though, I only tested this on 9.10 and later).
 
 Now open a file with your favorite editor, have these:
 

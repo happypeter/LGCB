@@ -2,7 +2,7 @@
 layout: book
 title: Two Most Important Modes
 ---
-Vim is different from the editors you know largely in that it has something
+_vim_ is different from the editors you know largely in that it has something
 called _mode_.
 
 The Vim editor is a modal editor.  That means that the editor behaves
