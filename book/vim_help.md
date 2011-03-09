@@ -16,7 +16,7 @@ To find out how to delete text, use this command: >
 
 	:help deleting
 
-To get a complete index of all Vim commands, use the following command: >
+To get a complete index of all __vim__ commands, use the following command: >
 
 	:help index
 

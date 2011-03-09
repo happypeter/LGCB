@@ -41,18 +41,19 @@ I am free to change the index of the book.
 
 I will try to make each lesson cover a complete topic, but this should give
 way to keeping the story-telling style of this book, that is starting from
-ZERO, and then go step by step. Say, I want to talk about vim movement, which
+ZERO, and then go step by step. Say, I want to talk about __vim__ movement, which
 will be too much stuff to be wrapped into one single chapter, than I will
 choose to have a "3.2 vim basic movement" to fullfill the basic needs of the
 students, then may be in 3.10 or 3.20, when the students get more at home with
-vim, I can add another chapter named "vim advanced movement". 
+__vim__, I can add another chapter named "vim advanced movement". 
 
 Conciseness over Preciseness.
 
-I don't teach bash first and vim later, so put chapter1 or 2 before them is
+I don't teach bash first and __vim__ later, so put chapter1 or 2 before them is
 ridiculous. I think I will teach this way:
 
-I will first finish one or two lessons of Bash, then I will move to git or vim
+I will first finish one or two lessons of Bash, then I will move to git or
+__vim__
 and pick up one or two lessons as needed.
 
 codeschool.com

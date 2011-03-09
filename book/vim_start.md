@@ -5,7 +5,7 @@ title: Getting Started
 The book text will serve as background knowledge of these screencasts, of
 course I am free to add anything that I think fits.
 
-So let's get started. Launch vim! 
+So let's get started. Launch __vim__! 
 
     peter@vostro:~$vim filename 
 

@@ -5,8 +5,8 @@ title: Basic Movement
 
 ## why normal mode first?
 
-When you already understand why vim has different modes, you may still wonder,
-why vim first takes us to _normal mode_(also called _command mode_) rather
+When you already understand why __vim__ has different modes, you may still wonder,
+why __vim__ first takes us to _normal mode_(also called _command mode_) rather
 than _insert mode_?
 
 It is because in a programmer's daily editing, most time are spent to modify

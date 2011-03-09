@@ -2,7 +2,6 @@
 layout: book
 title: Bash Introduction
 ---
-
 ## What is a Command?
 
 A command is merely an instruction provided by a user telling a computer to do
