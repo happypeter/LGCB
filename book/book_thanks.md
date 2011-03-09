@@ -4,9 +4,11 @@ title: Contributors
 ---
 ## Come and Join
 
-I want the students (and anybody) to come to fix bugs, add contents, give
-requests to this book. You are reading it, you are doing it, you are part of
-the game, what a big fun!
+Anyone is welcomed to come and fix bugs, add contents, give
+requests. 
+
+Just drop me a Email at <happypeter1983@gmail.com>, you will have write access
+to the [LGCB source at Github](https://github.com/happypeter/LGCB).
 
 ## Who is Who?
 
