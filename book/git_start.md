@@ -29,10 +29,10 @@ you have files and subdirs in a _common directory_, you have files and subdirs
 in a _git directory_. What's the difference? It is in a _git directory_, you
 can:
 
-    - have revision history of all files 
-    - so that if you make a mistake modifying these files, you are free to go
-      back
-    - so it is a time machine
+- have revision history of all files 
+- so that if you make a mistake modifying these files, you are free to go
+  back
+- so it is a time machine
 
 OK, "time machine" sounds cool, but what to do to get a _git directory_?
 
@@ -83,20 +83,20 @@ so to everything other than the `README`, git will turn a blind eye.
       create mode 100644 README
       peter@vostro:~/mydir$ 
 
-now you have the _r1_ in the following graph:
+now you have the _r0_ in the following graph:
 
 <center><img src="./images/rev.png"></center>
 <center>revisions</center>
 
-Surely, if you have only _r1_, that's not the point to do verison control, so
-you need to make a delta, and get the r2, like this: 
+Surely, if you have only _r0_, that's not the point to do verison control, so
+you need to make a delta, and get the _r1_, like this: 
 
     peter@vostro:~/mydir$ vim README 
     peter@vostro:~/mydir$ cat README 
     hello world
     hello again
 
-Now make _r2_, like this:
+Now make _r1_, like this:
 
     peter@vostro:~/mydir$ git commit -a -m "my second verion"
     [master 3ccdf5e] my second verion
@@ -128,9 +128,9 @@ are save there(in `.git`? Right!).
 
 Good quetions now are:
 
-    - how I can check the differnce between different revisions?
-    - how can I go back to certain point of the history and get the revison I
-      want?
+- how I can check the differnce between different revisions?
+- how can I go back to certain point of the history and get the revison I
+  want?
 
 My answer now is you can do these things, really easy, because git was made to
 do such jobs efficiently. 
