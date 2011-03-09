@@ -9,22 +9,6 @@ title: Git Tips
 
 
 
-## github
-
-    rm -rf .ssh/
-    ssh-keygen -t dsa
-    sudo apt-get install xclip
-    cat /home/jiesse/.ssh/id_dsa.pub| xclip -sel clip
-    ssh git@github.com
-    ssh -v git@github.com
-
-Sometimes, it took one minite for the key to take effect, but it can also be
-one day, so be patient.
-
-Good news: now github have a really nice doc page on setup:
-
-<http://help.github.com/linux-set-up-git/>
-
 
 ## tig
 
