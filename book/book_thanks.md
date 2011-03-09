@@ -12,6 +12,8 @@ to the [LGCB source at Github](https://github.com/happypeter/LGCB).
 
 ## Who is Who?
 
-    Author: Peter Wang <happypeter1983@gmail.com>
+    Author: Peter Wang <happypeter1983@gmail.com>       196 patches
+    Author: Billie Zhang <billiecoder@gmail.com>        3 patches
 
+    Updated on 09/03/11 20:55:39
 
