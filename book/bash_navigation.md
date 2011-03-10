@@ -41,15 +41,14 @@ usually with the root at the top and the various branches descending below.
 
                                 /
                                 |
-               +--------+-------+-------+-------+-----
-               |        |       |       |       |
-             /home    /bin    /boot    /tmp    /etc ...
-               |                                |
-         +-----+---+                        +---+--+---
-         |         |                        |      |
-       peter    billie                   corntab  ...
-
-<center><img src="./images/tree.png"></center>
+               +--------+-------+-------+--------+
+               |        |       |       |        |
+             /home    /bin     ...     /tmp    /etc
+               |                                 |
+         +-----+----+                      +-----+-----+
+         |          |                      |     |     |
+       peter     billie                 corntab ...   wgetrc
+                                                      
 
 Imagine that the file system is shaped like an upside-down tree and we are
 able to stand in the middle of it. At any given time, we are inside a single
