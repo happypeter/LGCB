@@ -31,3 +31,5 @@ Because, you must move your hand from the text keys to the arrow keys.
 Check
 
     4_basic_move.mov
+
+[basic_move-zh](http://v.youku.com/v_show/id_XMjQ5NzMxMzYw.html) 
