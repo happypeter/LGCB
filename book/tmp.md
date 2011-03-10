@@ -1,3 +1,8 @@
+## C book
+
+    http://www.lix.polytechnique.fr/~liberti/public/computing/prog/c/C/SYNTAX/preprocessors.html
+    http://opencbp.sourceforge.net/en_US.ISO8859-1/books/opencbook/index.html
+
 # learn more from 
 LinuxCommand.org
 # get pdf
