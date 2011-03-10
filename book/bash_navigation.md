@@ -91,7 +91,7 @@ with absolute pathnames first.
 An absolute pathname begins with the root directory(/) and follows the tree
 branch by branch until the path to the desired directory or file is completed.
 For example, there is a directory on your system in which most of your
-system's programs are installed. The pathname of the directory is /usr/bin.
+system's programs are installed. The pathname of the directory is `/usr/bin`.
 This means from the root directory (represented by the leading slash in the
 pathname) there is a directory called "usr" which contains a directory called
 "bin".
@@ -114,14 +114,14 @@ this, it uses a couple of special symbols to represent relative positions in
 the file system tree. These special symbols are "." (dot) and ".." (dot dot).
 The "." symbol refers to the working directory and the ".." symbol refers to
 the working directory's parent directory. Here is how it works. Let's change
-the working directory to /usr/bin again:
+the working directory to `/usr/bin` again:
 
     peter@vostro:~/repo-farm/LGCB/book$ cd /usr/bin
     peter@vostro:/usr/bin$ pwd
     /usr/bin
 
 Okay, now let's say that we wanted to change the working directory to the
-parent of /usr/bin which is /usr. We could do that two different ways. Either
+parent of `/usr/bin` which is `/usr`. We could do that two different ways. Either
 with an absolute pathname:
 
     peter@vostro:/usr/bin$ cd /usr/
@@ -136,7 +136,7 @@ Or, with a relative pathname:
 
 different methods with identical results. Which one should we use? The one
 that requires the least typing!  Likewise, we can change the working directory
-from /usr to /usr/bin in two different ways. Either using an absolute
+from `/usr` to `/usr/bin` in two different ways. Either using an absolute
 pathname:
 
     peter@vostro:/usr$ cd /usr/bin/
