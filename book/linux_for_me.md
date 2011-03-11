@@ -37,7 +37,8 @@ And In Microsoft world(and thus many of they fucking traditional big
 companies), it is not, I do not like the way they work.
 
 Check this:
-<http://www.catb.org/~esr/faqs/hacker-howto.html>
+_[How To Became A Hacker]_(http://www.catb.org/~esr/faqs/hacker-howto.html),
+by _Eric Steven Raymond_.
 
 And if you love the ideas, I think Linux is for you.
 
