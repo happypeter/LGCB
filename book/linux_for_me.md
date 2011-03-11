@@ -3,8 +3,8 @@ layout: book
 title: Is Linux For Me?
 ---
 
-The question is actually that nowadays in China, many young people do not know
-what to do to make a living, and also others actually making enough money do not
+The question is that nowadays in China, many young people do not know
+what to do to make a living, and some other people actually making enough money do not
 love their job and want to do a switch, so that their talents won't be wasted.  
 
 So they ask me: Is Linux for me?
@@ -37,6 +37,8 @@ Without freedom, whoever can be happy and creative?
 
 In Microsoft world(and thus many of the fucking traditional big
 companies), it is not, I do not like the way they work.
+
+## The Tech side
 
 Check  
 [How To Became A Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html),
