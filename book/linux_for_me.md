@@ -9,7 +9,7 @@ love their job and want to do a switch, so that their talents won't be wasted.
 
 So they ask me: Is Linux for me?
 
-Well I don't know, Linux a big world, something to big too comment on, but I
+Well I don't know, Linux a big world, something too big to comment on, but I
 can tell you the story of how Linux changed my life.
 
 ## I wanted to be useful to the world 
@@ -30,10 +30,12 @@ smiles... You will have a more balanced life in the world of Linux.
 
 ## Linux vs Windows
 
-It is cool to become a Linux programmer, cause you have freedom.  
-Without freedom, whoever can be happy?  
+As Linux programmer, you get more chance to work in a
+[Theory Y](http://en.wikipedia.org/wiki/Theory_X_and_theory_Y) environment. It is important for me.
+cause then I have freedom.  
+Without freedom, whoever can be happy and creative?  
 
-And In Microsoft world(and thus many of the fucking traditional big
+In Microsoft world(and thus many of the fucking traditional big
 companies), it is not, I do not like the way they work.
 
 Check  
