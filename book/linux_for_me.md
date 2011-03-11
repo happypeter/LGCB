@@ -23,22 +23,22 @@ creativeness, and willing to share.
 
 ## I love arts, writing... and I love people
 I was not born to love programming. Like many people, I love beautiful things,
-love write something occasionally to share ideas with people. By doing Linux,
+love to write something occasionally to share ideas with people. By doing Linux,
 I should say I am quite satisfied on this point, I get a lot of chance to
 design some beautiful web pages, give speeches to help people and see their
 smiles... You will have a more balanced life in the world of Linux.
 
-## Linux vs Windows?
+## Linux vs Windows
 
 It is cool to become a Linux programmer, cause you have freedom.  
 Without freedom, whoever can be happy?  
 
-And In Microsoft world(and thus many of they fucking traditional big
+And In Microsoft world(and thus many of the fucking traditional big
 companies), it is not, I do not like the way they work.
 
-Check this:
+Check  
 [How To Became A Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html),
 by _Eric Steven Raymond_.
 
-And if you love the ideas, I think Linux is for you.
+And if you love the ideas in it, I think Linux is for you.
 
