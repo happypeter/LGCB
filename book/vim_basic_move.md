@@ -48,10 +48,10 @@ __A:__
 I do not use $ very often.
 
 usually when we go to the end of line, we actually want to append sth to the
-line, so it's best that, we have a shortcut that takes us to the end of line
-and switch to insert mode at the same time. luckily vim has that and it is
+line, so it's best to have a shortcut that takes us to the end of line
+and switch to _insert mode_ at the same time. luckily __vim__ has that and it is
 
-   A
+    A
 
 try it :)
 
