@@ -37,15 +37,11 @@ Check
 
 ## FAQ
 
-__Q:__ 
-
-How u move to the end of the line, i know one way : $, but this need to
+__Q:__ How u move to the end of the line, i know one way : $, but this need to
 press shift button, i feel u do it fast , so i wonder whether you have better
 way ?
 
-__A:__
-
-I do not use $ very often.
+__A:__ I do not use $ very often.
 
 usually when we go to the end of line, we actually want to append sth to the
 line, so it's best to have a shortcut that takes us to the end of line
