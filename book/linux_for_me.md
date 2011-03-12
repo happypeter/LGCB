@@ -32,11 +32,10 @@ smiles... You will have a more balanced life in the world of Linux.
 
 As Linux programmer, you get more chance to work in a
 [Theory Y](http://en.wikipedia.org/wiki/Theory_X_and_theory_Y) environment. It is important for me.
-cause then I have freedom.  
-Without freedom, whoever can be happy and creative?  
+cause then I have freedom. Without freedom, whoever can be happy and creative?  
 
-In Microsoft world(and thus many of the fucking traditional big
-companies), it is not, I do not like the way they work.
+In Microsoft world(and many of the fucking traditional big companies), it is
+not, I do not like the way they work.
 
 ## The Tech side
 
