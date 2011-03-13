@@ -60,6 +60,8 @@ Note that this book is very __ubuntu__-centric. There are many kinds of Linux
 only one distro can effectively avoid talking about dark corners, add the
 possibility to do things right and build confidence.
 
+Download Page and a nice installation guide go here: <http://www.ubuntu.com/desktop/get-ubuntu/download>
+
 ## How to read this book
 I think the right way to learn Linux is pretty much like learning a foreign
 language. You do not learn one thing in full detail, and then move to
