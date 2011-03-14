@@ -41,7 +41,7 @@ to another program for further processing.
 
     command1|command2
 
-for example:
+For example:
 
     peter@vostro:~$ ls /bin/ |grep zip
     bunzip2

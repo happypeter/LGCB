@@ -184,7 +184,7 @@ something, the working directory will be assumed.
 
 3. Linux has no concept of a “file extension” like some other operating
    systems.  You may name files any way you like. The contents and/or purpose
-   of a file is ned by other means. Although Unix-like operating system don’t
+   of a file is needed by other means. Although Unix-like operating system don’t
    use file extensions to determine the contents/purpose of files, some
    application programs do.
 

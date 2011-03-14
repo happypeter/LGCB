@@ -47,7 +47,7 @@ Before we begin using our commands, we need to talk about a shell feature that
 makes these commands so powerful. Since the shell uses filenames so much, it
 provides special characters to help you rapidly specify groups of filenames.
 These special characters are called wildcards. Using wildcards (which is also
-known as globbing) allow you to select filenames based on patterns of
+known as globing) allow you to select filenames based on patterns of
 characters. The table below lists the wildcards and what they select:
 
 - Matches any characters, use:
@@ -117,7 +117,7 @@ Using a wildcard, all the files in `sou` are copied into `des`. `des` must
 already exist.
 
 
-copy a directory and everything in it to somewhere:
+Copy a directory and everything in it to somewhere:
 
 
     peter@vostro:~/xxx$ tree
@@ -142,7 +142,7 @@ copy a directory and everything in it to somewhere:
     3 directories, 4 files
     peter@vostro:~/xxx$ 
 
-see the difference, ah?
+See the difference, ah?
 
 ## __mv__ : Move And Rename Files
 The mv command performs both file moving and file renaming, depending on how
@@ -153,11 +153,11 @@ in much the same way as cp:
 
     mv item1 item2
 
-to move or rename file or directory "item1" to "item2" or:
+To move or rename file or directory "item1" to "item2" or:
 
     mv item... directory
 
-to move one or more items from one directory to another.
+To move one or more items from one directory to another.
 
 ## __rm__ : Remove Files And Directories
 
@@ -167,7 +167,7 @@ The rm command is used to remove (delete) files and directories:
 
 where "item" is one or more files or directories.
 
-example:
+Example:
 
     peter@vostro:~/xxx$ ls
     des  sou

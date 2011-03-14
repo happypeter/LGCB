@@ -35,12 +35,12 @@ Bourne.
 ## Terminal Emulators
 When using a graphical user interface, we need another program called a
 __terminal emulator__ to interact with the shell. If we look through our
-desktop menus, we will probably find one. __ubuntu__ by defualt uses
+desktop menus, we will probably find one. __ubuntu__ by default uses
 __gnome-terminal__, though it's likely called simply __terminal__ on our menu.
 You can take terminal as nothing but a simple window, it by itself does
 nothing but give us access to the shell. 
 
-## Furture Reading 
+## Future Reading 
 
 - __TLDP:__
   <http://tldp.org/LDP/Bash-Beginners-Guide/html/>
