@@ -18,14 +18,19 @@ If you do not know what __git__ is, check the Git tutorial in this book.
 ## Why this book?    
 
 Now I am getting a lot of requests from my students that they need a textbook,
-that's why I want to write this. I need a book that covers all that I want to
-share with my students, no more and no less. _The Linux Command Line_ is nice,
-but it is too difficult for my students.
+that's why I want to write this one. I need a book that covers all that I want to
+share with my students, no more and no less.
 
-I want to name this book _Linux Guide for Chinese Beginners_.
+_The Linux Command Line_ is really nice, but it is too difficult for my
+students. Truth is that I copied a lot of stuff from this book, and removed
+all its difficult vocabularies.  
+
+Still if you want a extended reading, _The Linux Command Line_ is the first
+one I'll recommend. You can get it by a simple googling.
+
 
 ## This book is for Chinese people
-As a Chinese, I know my fellow citizen generally do not speak English well, but
+As a Chinese, I know my fellow citizens generally do not speak English well, but
 I do believe that no matter what is your birth tongue, as long as you want to
 learn Linux, you should use English as your language for work. Otherwise you
 are on the wrong track. Learning materials in Chinese are so hard to find, and

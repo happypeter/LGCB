@@ -10,7 +10,7 @@ convert it to structurally valid XHTML (or HTML).
 
 <http://daringfireball.net/projects/markdown/>
 
-## Why Peter love Markdown?
+## Why Peter loves Markdown?
 
 I love Markdown, and am using it to do almost all my notes and documents. If
 you don't have any format for your contents, it can be quit confusing, so

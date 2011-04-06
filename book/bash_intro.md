@@ -23,11 +23,11 @@ make difficult tasks possible" and this is still very true today.
 
 ## What Is The Shell?  
 When we speak of the command line, we are really referring to the shell.
-Shell is somethings called a "command interpreter". The shell is a program
-that takes keyboard commands and passes them to the operating system to carry
-out(funny are the names: _Shell_ on top of _Kernel_). Almost all Linux
-distributions supply a shell program from the GNU Project called __bash__, so does
-__ubuntu__. 
+Shell is something called a "command interpreter". The shell is a program that
+takes keyboard commands and passes them to the operating system to carry
+out(Funny are the names: _Shell_ on top of _Kernel_). Almost all Linux
+distributions supply a shell program from the GNU Project called __bash__, so
+does __ubuntu__. 
 
 The name __bash__ is short for "Bourne Again SHell" a program written by Steve
 Bourne.  
@@ -45,6 +45,6 @@ nothing but give us access to the shell.
 - __TLDP:__
   <http://tldp.org/LDP/Bash-Beginners-Guide/html/>
 
-  nice book
+  Nice book, worth reading.
 
 
