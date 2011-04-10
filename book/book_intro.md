@@ -7,7 +7,8 @@ title: Introduction to This Book
 If you are reading this book offline, you may not have the latest version, get
 it here:
 
-<http://happypeter.github.com/LGCB/index.html>
+ - html: <http://happypeter.github.com/LGCB/index.html>
+ - pdf: <http://happypeter.org/Dropbox/Public/lgcb.pdf>
 
 And check recent updates by:
 
