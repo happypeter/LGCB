@@ -21,7 +21,7 @@ In most C books, you get a whole chapter on one single topic, say _data type_.
 Now you get whole lot of details about this. I won't say this is wrong, since
 this might be the only way to do a serious book. But I want to say, beginners
 ususally can't tell what is the most important part. So they learn it
-"systematically", and now long later forget every thing "systematically". 
+"systematically", and now long later forget everything "systematically". 
 
 For me it is better only to show the students _int_ and _char_, so that they
 they can 
