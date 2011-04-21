@@ -32,7 +32,16 @@ I/O redirection allows us to change where output goes and where input comes
 from.  Normally, output goes to the screen and input comes from the keyboard,
 but with I/O redirection, we can change that.
 
-<center><img src="./images/three_io.png"></center>
+
+           +------------+              +------------+   
+           |  keyboard  |              |   screen   |   
+           +-----+------+              +------------+   
+                 |                          ^  ^
+                 |                          |  |
+                 v                 +--------+  +--------+       
+           +-----+-----+     +-----+------+      +------+-----+
+           |   stdin   |     |   stdout   |      |   stderr   |
+           +-----------+     +------------+      +------------+
 
 ## Pipes
 
