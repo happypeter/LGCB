@@ -65,7 +65,7 @@ So the difference, between a common dir and a git dir is simply this little
 because all the history of whatever in your `mydir` is stored there.
 
 
-My people will say now: OK, `mydir` is a time machine, I am save and allowed
+My people will say now: OK, `mydir` is a time machine, I am safe and allowed
 to make mistakes now, because the history is saved. Actully not yet. It is
 easy for git to automatically save whatever in `mydir` and save a new revision
 everytime you change your stuff. Git can, but git won't. Because that is not
