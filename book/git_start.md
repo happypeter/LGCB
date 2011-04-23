@@ -102,10 +102,10 @@ Now make _r1_, like this:
     [master 3ccdf5e] my second verion
      1 files changed, 1 insertions(+), 0 deletions(-)
 
-Oho, so much work has done, but we don't see anything interesting happens,
+Oho, so much work has been done, but we have not seen anything interesting happen,
 where is my history:
 
-Now there is the thing called `git log`, will is one of the many ways, to get
+Now there is the thing called `git log`, which is one of the many ways to get
 a look at the histroy:
 
     peter@vostro:~/mydir$ git log
@@ -124,13 +124,13 @@ a look at the histroy:
 
 Never mind if you don't quit get what all these output means, now at least you
 know you have `README`, not only the latest verion, but also all its revisons
-are save there(in `.git`? Right!).
+are saved there(in `.git`? Right!).
 
 Good quetions now are:
 
-- how I can check the differnce between different revisions?
+- how can I check the differnce between different revisions?
 - how can I go back to certain point of the history and get the revison I
   want?
 
-My answer now is you can do these things, really easy, because git was made to
+My answer now is you can do these things, really easily, because git was made to
 do such jobs efficiently. 
