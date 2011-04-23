@@ -68,10 +68,10 @@ because all the history of whatever in your `mydir` is stored there.
 My people will say now: OK, `mydir` is a time machine, I am safe and allowed
 to make mistakes now, because the history is saved. Actually not yet. It is
 easy for git to automatically save whatever in `mydir` and save a new revision
-everytime you change your stuff. Git can, but git won't. Because that is not
-what the users want. So you need to it mannually.
+every time you change your stuff. Git can, but git won't. Because that is not
+what the users want. So you need to it manually.
 
-Fisrt, tell git which file you want to track, by
+First, tell git which file you want to track, by
 
     peter@vostro:~/mydir$ git add README
 
@@ -88,7 +88,7 @@ now you have the _r0_ in the following graph:
 <center><img src="./images/rev.png"></center>
 <center>revisions</center>
 
-Surely, if you have only _r0_, that's not the point to do verison control, so
+Surely, if you have only _r0_, that's not the point to do version control, so
 you need to make a delta, and get the _r1_, like this: 
 
     peter@vostro:~/mydir$ vim README 
@@ -106,7 +106,7 @@ Oho, so much work has been done, but we have not seen anything interesting happe
 where is my history:
 
 Now there is the thing called `git log`, which is one of the many ways to get
-a look at the histroy:
+a look at the history:
 
     peter@vostro:~/mydir$ git log
     
@@ -123,13 +123,13 @@ a look at the histroy:
         my first version
 
 Never mind if you don't quit get what all these output means, now at least you
-know you have `README`, not only the latest verion, but also all its revisons
+know you have `README`, not only the latest version, but also all its revisions
 are saved there(in `.git`? Right!).
 
-Good quetions now are:
+Good questions now are:
 
-- how can I check the differnce between different revisions?
-- how can I go back to certain point of the history and get the revison I
+- how can I check the difference between different revisions?
+- how can I go back to certain point of the history and get the revision I
   want?
 
 My answer now is you can do these things, really easily, because git was made to
