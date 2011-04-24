@@ -36,8 +36,8 @@ him on the ass.
 
 ## Usefulness Brings Interests
 
-If somebody wants me to learn what is a "C function", he first need to show me
-why function is cool, and make what I want to do a lot easier(rather than make
+If somebody wants me to learn what a "C function" is, he first needs to show me
+why function is cool, and makes what I want to do a lot easier(rather than make
 it more painful:). Because I started the easy way, and now already done some
 lines of code, so just show me with my OWN code!! 
 
