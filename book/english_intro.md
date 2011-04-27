@@ -15,7 +15,7 @@ __manual__ is usually not a good idea.
 
 Say, you want to learn a nice debugger named __gdb__, and its official manual
 is very easy to find (at www.gnu.org), but if you are new to gdb, then reading
-this manual would only make you live in hell, since a manual neet to be formal
+this manual would only make you live in hell, since a manual need to be formal
 and need to cover all the details of __gdb__, so a newbie might easliy feel
 lost reading it. Then what is the right approach? Try to google "gdb
 tutorial", and see what you will get.
