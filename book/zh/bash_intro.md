@@ -46,8 +46,8 @@ distributions supply a shell program from the GNU Project called __bash__, so
 does __ubuntu__. 
 
 其实人们所谓的命令行指的就是Shell。Shell
-又叫做“命令解释器”，它会读取我们敲的命令，并把这些命令交给操作系统去执行（细想想，这个名字起得挺有意思：_壳_
-套在 _内核_ 上）。几乎所有的Linux发行版都带一个来自GNU项目的Shell，名叫__Bash__， __ubuntu__ 也不例外。
+又叫做“命令解释器”，它会读取我们敲的命令，并把这些命令交给操作系统去执行（细想想，这个名字起得挺有意思："壳"
+套在 "内核" 上）。几乎所有的Linux发行版都带一个来自GNU项目的Shell，名叫 __Bash__， __ubuntu__ 也不例外。
 
 The name __bash__ is short for "Bourne Again SHell" a program written by Steve
 Bourne.  
@@ -66,9 +66,9 @@ You can take terminal as nothing but a simple window, it by itself does
 nothing but give us access to the shell. 
 
 当我们使用用户图形界面时，我们需要一个叫做 __terminal emulator__
-的程序来和shell 进行交互。在桌面菜单找一下，就可以找到。__ubuntu__
-默认使用的是__gnome-terminal__ (__terminal emulator__
-的一种），不过通常在桌面菜单上就简称叫__terminal__。基本上终端就可以看作一扇窗户，它本身什么也不做，只是把shell送入我们的视野。
+的程序来和 __shell__ 进行交互。在桌面菜单找一下，就可以找到。 __ubuntu__ 
+默认使用的是 __gnome-terminal__  ( __terminal emulator__ 
+的一种），不过通常在桌面菜单上就简称叫 __terminal__ 。基本上终端就可以看作一扇窗户，它本身什么也不做，只是把 __shell__ 送入我们的视野。
 
 ## Future Reading 
 ## 拓展阅读 
@@ -77,6 +77,7 @@ nothing but give us access to the shell.
   <http://tldp.org/LDP/Bash-Beginners-Guide/html/>
 
   Nice book, worth reading.
+
   不错，值得一读。
 
 
