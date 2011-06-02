@@ -32,9 +32,9 @@ These days when I see some words I do not know, I often turn to
 
 But IT vocabulary is not so easy to learn, it is that sometimes you still have
 no idea what a word is talking about even its Chinese translation is there.
-Than you need  
+Then you need  
 
-### wikipedia
+### Wikipedia
 
 Say I want to know what is __vim__, all I need to do is to google "vim wiki".
 
