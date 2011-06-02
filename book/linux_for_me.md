@@ -19,7 +19,7 @@ with people I love.
 
 Linux is the way for me to make clean money. I want to be respected by other
 people, not because I have a lot of money or some position, but that I have my
-creativeness, and willing to share. 
+creativeness, and willingness to share. 
 
 ## I love arts, writing... and I love people
 I was not born to love programming. Like many people, I love beautiful things,
