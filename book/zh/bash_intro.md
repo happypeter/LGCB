@@ -65,10 +65,7 @@ __gnome-terminal__, though it's likely called simply __terminal__ on our menu.
 You can take terminal as nothing but a simple window, it by itself does
 nothing but give us access to the shell. 
 
-当我们使用用户图形界面时，我们需要一个叫做 __终端仿真器__
-的程序来和 __shell__ 进行交互。在桌面菜单找一下，就可以找到。 __ubuntu__ 
-默认使用的是 __gnome-terminal__  ( __终端仿真器__  
-的一种），不过通常在桌面菜单上就简称叫 __终端__ 。基本上终端就可以看作一扇窗户，它本身什么也不做，只是把 __shell__ 送入我们的视野。
+当我们使用用户图形界面时，我们需要一个叫做 __终端仿真器__ 的程序来和 __shell__ 进行交互。在桌面菜单找一下，就可以找到。 __ubuntu__ 默认使用的是 __gnome-terminal__  ( __终端仿真器__ 的一种），不过通常在桌面菜单上就简称叫 __终端__ 。基本上终端就可以看作一扇窗户，它本身什么也不做，只是把 __shell__ 送入我们的视野。 
 
 ## Future Reading 
 ## 拓展阅读 
