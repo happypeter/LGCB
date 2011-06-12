@@ -38,7 +38,7 @@ But hey writing can be fun, let's try to write something every day. [Blogging is
 And diving into some programming forums can also help, posting a question,
 trying to answer people's questions with small number of words, but do give
 them in a CCC way, this is much easier than a 1000 words blog entry. And
-[Hacker News][2] is a great place to go.
+[Hacker News][2] is a great place to go in this sense.
 
 You see writing is not so hard, like what I am doing here now. But I won't
 hide I am stealing ideas from [this nice post on writing][3]. 
