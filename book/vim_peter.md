@@ -2,10 +2,13 @@
 layout: book
 title: Have Peter's Conf
 ---
-## get my vim plugins
 
-    git clone git://github.com/happypeter/peter-vim.git
+If you want to have my vim configuration, do these:
 
-then follow this:
-<http://happypeter.github.com/GitBeijing/vim-conf-share.html>
+	cd  #goto your $HOME
+	git clone git://github.com/happypeter/peter-vim.git
+	rm -rf .vim # rm the old .vim
+	mv peter-vim .vim #have the right name
+	cd .vim/
+	vim README # check the readme to know more
 
