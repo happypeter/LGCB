@@ -125,13 +125,13 @@ provides many such useful fuctions).
 So in order to use functions porvided by standard library, you need a format
 like this:
 
-```c
-#include<file_name.h>
-main()
-{
-    the_function();
-}
-```
+
+    #include<file_name.h>
+    main()
+    {
+        the_function();
+    }
+
 
 standard library provide quit a few of these `file_name`s, to determin which
 is the one to be `#include`d is acutlly simple, that is you need to choose
