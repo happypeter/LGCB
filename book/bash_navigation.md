@@ -33,8 +33,10 @@ storage device, Unix-like systems such as Linux always have a single file
 system tree, regardless of how many drives or storage devices are attached to
 the computer. Storage devices are attached (or more correctly, mounted) at
 various points on the tree according to the whims of the system administrator,
-the person (or persons) responsible for the maintenance of the system.  The
-Current Working Directory Most of us are probably familiar with a graphical
+the person (or persons) responsible for the maintenance of the system.  
+
+## The Current Working Directory 
+Most of us are probably familiar with a graphical
 file manager which represents the file system tree. Notice that the tree is
 usually with the root at the top and the various branches descending below.
 
