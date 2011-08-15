@@ -8,7 +8,7 @@ If you are reading this book offline, you may not have the latest version, get
 it here:
 
  - html: <http://happypeter.github.com/LGCB/index.html>
- - pdf: <http://happypeter.org/Dropbox/Public/lgcb.pdf>
+ - pdf: <http://media.happypeter.org/Dropbox/Public/lgcb.pdf>
 
 And check recent updates by:
 
