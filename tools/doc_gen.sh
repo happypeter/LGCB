@@ -64,14 +64,15 @@ rm index.html
 #    "<Part 1>" -> "<h1> Part 1:"
 #    
 #################################
+
 # need to consider <h2 style=ccc>xxx</h2>, so we need:
-sed -i 's/<h2/<h3/g' $OUTPUT_FILE
-sed -i 's/h2>/h3>/g' $OUTPUT_FILE
-sed -i 's/<h1/<h2/g' $OUTPUT_FILE
-sed -i 's/h1>/h2>/g' $OUTPUT_FILE
+sed -i "" -e 's/<h2/<h3/g' $OUTPUT_FILE
+sed -i "" -e 's/h2>/h3>/g' $OUTPUT_FILE
+sed -i "" -e 's/<h1/<h2/g' $OUTPUT_FILE
+sed -i "" -e 's/h1>/h2>/g' $OUTPUT_FILE
 
 # now "Part1:topic" -> "<h1>Part1:topic</h1>"
-sed -i "s/Part[1-9]*:.*/<h1>&<h1>/g" $OUTPUT_FILE 
+sed -i "" -e "s/Part[1-9]*:.*/<h1>&<h1>/g" $OUTPUT_FILE 
 
 # use  htmldoc to generate a pdf, it looks really nice
 
