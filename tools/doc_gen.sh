@@ -55,7 +55,7 @@ do
 done < index.html
 
 
-cp -rf  ../book/images/ .
+cp -rf  ../book/images . # do not use `/` after the images, the dir will be ignored on Mac
 rm index.html
 
 #################################
