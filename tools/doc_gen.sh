@@ -75,3 +75,6 @@ sed -i "s/Part[1-9]*:.*/<h1>&<h1>/g" $OUTPUT_FILE
 
 # use  htmldoc to generate a pdf, it looks really nice
 
+## on Mac, after brew install htmldoc, the command is:
+#
+#   htmldoc lgcb.html -t pdf >lgcb.pdf
