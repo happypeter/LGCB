@@ -68,6 +68,10 @@ rm index.html
 # need to consider <h2 style=ccc>xxx</h2>, so we need:
 sed -i "" -e 's/<h2/<h3/g' $OUTPUT_FILE
 sed -i "" -e 's/h2>/h3>/g' $OUTPUT_FILE
+# on mac, the sed is old so we have to use 
+#   sed -i "" -e ...
+# while on ubuntu, the sed is more uptodate, the command is simply:
+#   sed -i 's/<h2/<h3/g' filename
 sed -i "" -e 's/<h1/<h2/g' $OUTPUT_FILE
 sed -i "" -e 's/h1>/h2>/g' $OUTPUT_FILE
 
