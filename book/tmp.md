@@ -37,14 +37,18 @@ Italic
         _dirname_
         _program name_
 
-"Quoted text"
+    Note:
+        new terms is just _important term_, so it is basicly html `<em>` tag
 
-__command__
+Constant width
+    Indicates commands, options, output from commands. 
+
+    e.g
+        `command`, `inline code snip`
 
 
 
 
-_important term_
 
 ---------------------------
 
