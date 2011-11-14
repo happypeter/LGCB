@@ -46,6 +46,12 @@ Constant width
     e.g
         `command`, `inline code snip`
 
+    Note:
+        say, here you run a comand, and comand has a long output, like
+        "permission denied", now it is better to use quoted text rather than
+        using constant width string. (see _version control with git_ page25
+        "Remove a poem")
+
 
 
 
