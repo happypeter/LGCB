@@ -27,15 +27,21 @@ Plain text
 
     e.g 
         Menu->Choice
+
+Italic
+    Indicates new terms, URLs, email addresses, filenames, file extensions,
+    pathnames, directories, and Unix utilities.
+
+    e.g
+        _filename_
+        _dirname_
+        _program name_
+
 "Quoted text"
 
 __command__
 
-__program name__
 
-`filename`
-
-`dir name`
 
 
 _important term_
