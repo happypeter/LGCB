@@ -53,6 +53,10 @@ Constant width
         "Remove a poem")
 
 
+Code blocks
+    The O'Reilly way to show code block is really nice, showing command and
+    its output in differnt format. But mine is easir, and loyal to the real
+    thing(a real prompt), so I won't change this right now
 
 
 
