@@ -20,8 +20,13 @@ use round angle square, set its size to 30x60
 
 set `scaling factor to 1.5` exporting.
 
-Conventions:
+## Conventions used in this book(O'Reilly):
+Plain text
+    Indicates menu titles, menu options, menu buttons, and keyboard
+    accelerators(such as Alt and Ctrl)
 
+    e.g 
+        Menu->Choice
 "Quoted text"
 
 __command__
@@ -32,7 +37,6 @@ __program name__
 
 `dir name`
 
-`Menu->Choice`
 
 _important term_
 
