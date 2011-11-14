@@ -73,7 +73,7 @@ allowed to write file.
 ## Listing The Contents Of A Directory
 
 To list the files and directories in the current working directory, we use the
-__ls__ command.
+`ls` command.
 
     peter@vostro:~/repo-farm/LGCB/book$ ls
     bash-intro.md  bash-navigation.md  bash-start.md  git.md  images  index.md
@@ -104,7 +104,7 @@ pathname) there is a directory called "usr" which contains a directory called
 
 
 Now we can see that we have changed the current working directory to
-`/usr/bin` and that it is full of files. Notice how the shell prompt has
+_/usr/bin_ and that it is full of files. Notice how the shell prompt has
 changed? As a convenience, it is usually set up to automatically display the
 name of the working directory.
 
@@ -174,21 +174,16 @@ something, the working directory will be assumed.
 
 ## Important Facts About Filenames
 1. Filenames that begin with a period character are hidden. This only means
-   that ls will not list them unless you say ls -a. When your account was
-   created, several hidden files were placed in your home directory to
-   configure things for your account. Later on we will take a closer look at
-   some of these files to see how you can customize your environment. In
-   addition, some applications place their configuration and settings files in
-   your home directory as hidden files.
+   that ls will not list them unless you say `ls -a`.
 
 2. Filenames and commands in Linux, like Unix, are case sensitive. The
-   filenames "File1" and "file1" refer to different files.
+   filenames _File1_ and _file1_ refer to different files.
 
-3. Linux has no concept of a “file extension” like some other operating
+3. Linux has no concept of a "file extension" like some other operating
    systems.  You may name files any way you like. The contents and/or purpose
-   of a file is needed by other means. Although Unix-like operating system don’t
+   of a file is needed by other means. Although Unix-like operating system don't
    use file extensions to determine the contents/purpose of files, some
-   application programs do.
+   application programs do(e.g. vim.).
 
 4. Though Linux supports long filenames which may contain embedded spaces, do
    NOT embed spaces in filenames. If you want to represent spaces between
