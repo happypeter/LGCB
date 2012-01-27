@@ -3,6 +3,7 @@ each PART has 5 or 10 lessons
 All lessons shall have the same length and format
 each lession has 10mins video and 20mins reading
 the readings are just the printable LGCB book, shall be able to live without the video.
+the book will be the ASCIIcasts of the videos???
 
 # difference from happycasts
 
@@ -13,3 +14,6 @@ LGCB will focus on sth big, complex. I put the lessons together, because I
 have to, they are related, and they are parts of one big monster. If I want to
 show people how to setup wuftp, or use ubuntu software center, I will do it in
 a happycast.
+
+LGCB will focus on making people understand. NOT "get the job done". we will
+still "show do not tell" though.
