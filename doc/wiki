@@ -6,5 +6,10 @@ the readings are just the printable LGCB book, shall be able to live without the
 
 # difference from happycasts
 
-Of course all the parts are independent.
-but all lessons in same part are dependent on eariler ones, so it is a step-by-step tutorial.
+Of course all the parts are independent.  but all lessons in same part are
+dependent on eariler ones, so it is a step-by-step tutorial.
+
+LGCB will focus on sth big, complex. I put the lessons together, because I
+have to, they are related, and they are parts of one big monster. If I want to
+show people how to setup wuftp, or use ubuntu software center, I will do it in
+a happycast.
