@@ -2,15 +2,6 @@
 layout: book
 title: Permissions
 ---
-After we know how to manipulate files, that is how to copy move and delete
-them, we soon see sth like this:
-
-    peter@vostro:~$ rm /bin/ggg
-    rm: cannot remove `/bin/ggg': Permission denied
-
-So what is a _permission_, and why "Permission denied"?
-
-
 
 Operating systems in the Unix tradition differ from those in the MS-DOS tradition in
 that they are not only multitasking systems, but also multi-user systems, as well.
@@ -35,21 +26,21 @@ could one user interfere with the files belonging to another user.
 In this chapter we are going to look at this essential part of system security and introduce
 the following commands:
 
-* id – Display user identity &nbsp; 显示用户身份号
+* id – Display user identity 
 
-* chmod – Change a file's mode &nbsp; 更改文件模式
+* chmod – Change a file's mode
 
-* umask – Set the default file permissions &nbsp; 设置默认的文件权限
+* umask – Set the default file permissions
 
-* su – Run a shell as another user &nbsp; 以另一个用户的身份来运行shell
+* su – Run a shell as another user 
 
-* sudo – Execute a command as another user &nbsp; 以另一个用户的身份来执行命令
+* sudo – Execute a command as another user
 
-* chown – Change a file's owner &nbsp; 更改文件所有者
+* chown – Change a file's owner
 
-* chgrp – Change a file's group ownership &nbsp; 更改文件组所有权
+* chgrp – Change a file's group ownership 
 
-* passwd – Change a user's password &nbsp; 更改用户密码
+* passwd – Change a user's password 
 
 ### Owners, Group Members, And Everybody Else
 
@@ -73,12 +64,6 @@ owners. In addition to granting access to a group, an owner may also grant some 
 access rights to everybody, which in Unix terms is referred to as the world. To find out
 information about your identity, use the id command:
 
-在Unix安全模型中，一个用户可能拥有文件和目录。当一个用户拥有一个文件或目录时，
-用户对这个文件或目录的访问权限拥有控制权。用户，反过来，又属于一个由一个或多个
-用户组成的用户组，用户组成员由文件和目录的所有者授予对文件和目录的访问权限。除了
-对一个用户组授予权限之外，文件所有者可能会给每个人一些权限，在Unix术语中，每个人
-是指整个世界。可以用id命令，来找到关于你自己身份的信息：
-
 <div class="code"><pre>
 <tt>[me@linuxbox ~]$ id
 uid=500(me) gid=500(me) groups=500(me)</tt>
@@ -90,12 +75,6 @@ The user is assigned a primary group ID or gid and may belong to additional grou
 above example is from a Fedora system. On other systems, such as Ubuntu, the output
 may look a little different:
 
-让我们看一下输出结果。当用户创建帐户之后，系统会给用户分配一个号码，叫做用户ID
-或者uid，然后，为了符合人类的习惯，这个ID映射到一个用户名。系统又会给这个用户
-分配一个原始的组ID或者是gid，这个gid可能属于另外的组。上面的例子来自于Fedora系统，
-比方说Ubuntu的输出结果可能看起来有点儿不同：
-
-<div class="code"><pre>
 <tt>[me@linuxbox ~]$ id
 uid=1000(me) gid=1000(me)
 groups=4(adm),20(dialout),24(cdrom),25(floppy),29(audio),30(dip),44(v
@@ -142,14 +121,9 @@ the user. This makes certain types of permission assignment easier.
 
 ### Reading, Writing, And Executing
 
-### 读取，写入，和执行
-
 Access rights to files and directories are defined in terms of read access, write access, and
 execution access. If we look at the output of the ls command, we can get some clue as
 to how this is implemented:
-
-对于文件和目录的访问权力是根据读访问，写访问，和执行访问来定义的。如果我们看一下ls
-命令的输出结果，我们能得到一些线索，这是怎样实现的：
 
 <div class="code"><pre>
 <tt>[me@linuxbox ~]$ > foo.txt
@@ -160,9 +134,6 @@ to how this is implemented:
 The first ten characters of the listing are the file attributes. The first of these characters is
 the file type. Here are the file types you are most likely to see (there are other, less
 common types too):
-
-列表的前十个字符是文件的属性。这十个字符的第一个字符表明文件类型。下表是你可能经常看到
-的文件类型（还有其它的，不常见类型）：
 
 <p>
 <table class="multi" cellpadding="10" border="1" width="%100">
@@ -184,15 +155,12 @@ common types too):
 <td valign="top">A symbolic link. Notice that with symbolic links, the
 remainning file attributes are always “rwxrwxrwx” and are dummy values. The
 real file attributes are those of the file the symbolic link points to. &nbsp;
-一个符号链接。注意对于符号链接文件，剩余的文件属性总是"rwxrwxrwx"，而且都是
-虚拟值。真正的文件属性是指符号链接所指向的文件的属性。</td>
+</td>
 </tr>
 <tr>
 <td valign="top">c</td>
 <td valign="top">A character special file. This file type refers to a device that
 handles data as a stream of bytes, such as a terminal or modem. &nbsp;
-一个字符设备文件。这种文件类型是指按照字节流，来处理数据的设备。
-比如说终端机，或者调制解调器。
 </td>
 </tr>
 <tr>
@@ -218,102 +186,11 @@ directories:
 
 ### chmod – Change file mode
 
-### chmod － 更改文件模式
-
 To change the mode (permissions) of a file or directory, the chmod command is used.
 Be aware that only the file’s owner or the superuser can change the mode of a file or
 directory. chmod supports two distinct ways of specifying mode changes: octal number
 representation, or symbolic representation. We will cover octal number representation
 first.
-
-更改文件或目录的模式（权限），可以利用chmod命令。注意只有文件的所有者或者超级用户才
-能更改文件或目录的模式。chmod命令支持两种不同的方法来改变文件模式：八进制数字表示法，或
-符号表示法。首先我们讨论一下八进制数字表示法。
-
-<table class="single" cellpadding="10" width="%100">
-<tr>
-<td>
-
-<h3>What The Heck Is Octal?</h3>
-
-<h3>究竟什么是八进制？</h3>
-
-<p>Octal (base 8), and its cousin, hexadecimal (base 16) are number systems often
-used to express numbers on computers. We humans, owing to the fact that we (or
-at least most of us) were born with ten fingers, count using a base 10 number
-system. Computers, on the other hand, were born with only one finger
-and thus do all their counting in binary (base 2). Their number system only
-has two numerals, zero and one. So in binary, counting looks like this:
-</p>
-<p>八进制（以8为基数），和她的亲戚，十六进制（以16为基数）都是数字系统，通常
-被用来表示计算机中的数字。我们人类，因为这个事实（或者至少大多数人）天生具有
-十个手指，利用以10为基数的数字系统来计数。计算机，从另一方面讲，生来只有一个
-手指，因此它以二进制（以2为基数）来计数。它们的数字系统只有两个数值，0和1。
-因此在二进制中，计数看起来像这样：</p>
-
-<p>0, 1, 10, 11, 100, 101, 110, 111, 1000, 1001, 1010, 1011...</p>
-
-<p>In octal, counting is done with the numerals zero through seven, like
-so:</p>
-
-<p>在八进制中，逢八进一，用数字0到7来计数，像这样：</p>
-
-<p>0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 20, 21...</p>
-
-<p>Hexadecimal counting uses the numerals zero through nine plus the letters “A”
-through “F”:</p>
-<p>十六进制中，使用数字0到9，加上大写字母"A"到"F"来计数，逢16进一：</p>
-
-<p>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, 10, 11, 12, 13...</p>
-
-<p>While we can see the sense in binary (since computers only have one finger),
-what are octal and hexadecimal good for? The answer has to do with human
-convenience. Many times, small portions of data are represented on computers as
-bit patterns. Take for example an RGB color. On most computer displays, each
-pixel is composed of three color components: eight bits of red, eight bits of green,
-and eight bits of blue. A lovely medium blue would be a twenty-four digit
-number:</p>
-<p>虽然我们能知道二进制的意义（因为计算机只有一个手指），但是八进制和十六进制有什么
-用处呢？ 答案是为了人类的便利。许多时候，在计算机中，一小部分数据以二进制的形式表示。
-以RGB颜色为例来说明。大多数的计算机显示器，每个像素由三种颜色组成：8位红色，8位绿色，
-8位蓝色。这样，一种可爱的中蓝色就由24位数字来表示：</p>
-
-<p>010000110110111111001101</p>
-
-<p>How would you like to read and write those kinds of numbers all day? I didn't
-think so. Here's where another number system would help. Each digit in a
-hexadecimal number represents four digits in binary. In octal, each digit
-represents three binary digits. So our twenty-four digit medium blue could be
-condensed down to a six digit hexadecimal number:</p>
-<p>我不认为你每天都喜欢读写这类数字。另一种数字系统对我们更有帮助。每个十六进制
-数字代表四个二进制。在八进制中，每个数字代表三个二进制数字。那么代表中蓝色的24位
-二进制能够压缩成6位十六进制数：</p>
-
-<p>436FCD</p>
-
-<p>Since the digits in the hexadecimal number “line up” with the bits in the binary
-number we can see that the red component of our color is “43”, the green “6F”,
-and the blue “CD”.</p>
-
-<p>因为十六进制中的两个数字对应二进制的8位数字，我们可以看到”43“代表红色，“6F”
-代表绿色，“CD”代表蓝色。</p>
-
-<p>These days, hexadecimal notation (often spoken as “hex”) is more common than
-octal, but as we shall soon see, octal's ability to express three bits of binary will
-be very useful...</p>
-<p>现在，十六进制表示法（经常叫做“hex”）比八进制更普遍，但是我们很快会看到，用八进制
-来表示3个二进制数非常有用处...</p>
-</td>
-</tr>
-</table>
-
-With octal notation we use octal numbers to set the pattern of desired permissions. Since
-each digit in an octal number represents three binary digits, this maps nicely to the
-scheme used to store the file mode. This table shows what we mean:
-
-通过八进制表示法，我们使用八进制数字来设置所期望的权限模式。因为每个八进制数字代表了
-3个二进制数字，这种对应关系，正好映射到用来存储文件模式所使用的方案上。下表展示了
-我们所要表达的意思：
 
 <center>
 <table class="multi" cellpadding="10" border="1" width="%60">
@@ -368,7 +245,6 @@ scheme used to store the file mode. This table shows what we mean:
 By using three octal digits, we can set the file mode for the owner, group owner, and
 world:
 
-通过使用3个八进制数字，我们能够设置文件所有者，用户组，和其他人的权限：
 
 <div class="code"><pre>
 <tt>[me@linuxbox ~]$ > foo.txt
@@ -383,10 +259,6 @@ By passing the argument “600”, we were able to set the permissions of the ow
 and write while removing all permissions from the group owner and world. Though
 remembering the octal to binary mapping may seem inconvenient, you will usually only
 have to use a few common ones: 7 (rwx), 6 (rw-), 5 (r-x), 4 (r--), and 0 (---).
-
-通过传递参数“600”，我们能够设置文件所有者的权限为读写权限，而删除用户组和其他人的所有
-权限。虽然八进制到二进制的映射看起来不方便，但通常只会用到一些常见的映射关系：
-7 (rwx)， 6 (rw-)，5 (r-x)， 4 (r--)， and 0 (---)。
 
 chmod also supports a symbolic notation for specifying file modes. Symbolic notation is
 divided into three parts: who the change will affect, which operation will be performed,
@@ -733,16 +605,10 @@ Here are some examples. First, a program that is setuid:</p>
 
 ### Changing Identities
 
-### 更改身份
-
 At various times, we may find it necessary to take on the identity of another user. Often
 we want to gain superuser privileges to carry out some administrative task, but it is also
 possible to “become” another regular user for such things as testing an account. There
 are three ways to take on an alternate identity:
-
-在不同的时候，我们会发现很有必要具有另一个用户的身份。经常地，我们想要得到超级
-用户特权，来执行一些管理任务，但是也有可能"变为"另一个普通用户，比如说测试一个帐号。
-有三种方式，可以拥有多重身份：
 
 1. Log out and log back in as the alternate user. &nbsp; 注销系统并以其他用户身份重新登录系统。
 
@@ -907,12 +773,6 @@ by the user to have the same abilities. This is desirable in most cases, but it 
 permits malware (malicious software) such as viruses to have free reign of the
 computer.</p>
 
-<p>普通用户经常会遇到这样的问题，怎样完成某些需要超级用户权限的任务。这些任务
-包括安装和更新软件，编辑系统配置文件，和访问设备。在Windows世界里，这些任务是
-通过授予用户管理员权限来完成的。这允许用户执行这些任务。然而，这也会导致用户所
-执行的程序拥有同样的能力。在大多数情况下，这是我们所期望的，但是它也允许malware
-（恶意软件），比方说电脑病毒，自由地支配计算机。</p>
-
 <p>In the Unix world, there has always been a larger division between regular users
 and administrators, owing to the multi-user heritage of Unix. The approach taken
 in Unix is to grant superuser privileges only when needed. To do this, the su and
@@ -941,10 +801,6 @@ Ubuntu disables logins to the root account (by failing to set a password for the
 account), and instead uses sudo to grant superuser privileges. The initial user
 account is granted full access to superuser privileges via sudo and may grant
 similar powers to subsequent user accounts.</p>
-
-<p>当引进Ubuntu的时候，它的创作者们采取了不同的策略。默认情况下，Ubuntu不允许用户登录
-到root帐号（因为不能为root帐号设置密码），而是使用sudo命令授予普通用户超级用户权限。
-通过sudo命令，最初的用户可以拥有超级用户权限，也可以授予随后的用户帐号相似的权力。</p>
 
 </td>
 </tr>
@@ -1027,10 +883,6 @@ tony. Next, janet changes the ownership of the file from root (a result of using
 sudo) to tony. Using the trailing colon in the first argument, janet also changed the
 group ownership of the file to the login group of tony, which happens to be group
 tony.
-
-这里，我们看到用户janet把文件从她的目录复制到tony的主目录。下一步，janet把文件所有者
-从root（使用sudo命令的原因）改到tony。通过在第一个参数中使用末尾的":"字符，janet同时把
-文件用户组改为tony登录系统时，所属的用户组，碰巧是用户组tony。
 
 Notice that after the first use of sudo, janet was not prompted for her password? This
 is because sudo, in most configurations, “trusts” you for several minutes until its timer
