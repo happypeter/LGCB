@@ -2,60 +2,19 @@
 layout: book
 title: Permissions
 ---
+Linux is a _multiuser_ system, this means more than one user can use one Linux
+machine at the same time.
 
-Operating systems in the Unix tradition differ from those in the MS-DOS tradition in
-that they are not only multitasking systems, but also multi-user systems, as well.
-What exactly does this mean? It means that more than one person can be using the
-computer at the same time. While a typical computer will likely have only one keyboard
-and monitor, it can still be used by more than one user. For example, if a computer is
-attached to a network or the Internet, remote users can log in via ssh (secure shell) and
-operate the computer. 
-
-The multi-user capability of Linux is not a recent "innovation," but rather a feature that is
-deeply embedded into the design of the operating system. Considering the environment
-in which Unix was created, this makes perfect sense. Years ago, before computers were
-"personal," they were large, expensive, and centralized. A typical university computer
-system, for example, consisted of a large central computer located in one building and
-terminals which were located throughout the campus, each connected to the large central
-computer. The computer would support many users at the same time.
-
-In order to make this practical, a method had to be devised to protect the users from each
-other. After all, the actions of one user could not be allowed to crash the computer, nor
-could one user interfere with the files belonging to another user.
-
-In this chapter we are going to look at this essential part of system security and introduce
-the following commands:
-
-* id – Display user identity 
-
-* chmod – Change a file's mode
-
-* umask – Set the default file permissions
-
-* su – Run a shell as another user 
-
-* sudo – Execute a command as another user
-
-* chown – Change a file's owner
-
-* chgrp – Change a file's group ownership 
-
-* passwd – Change a user's password 
+Linux是一个多用户的操作系统，这意味者多个用户可以同时使用同一台Linux机器。
+所以针对特定文件的操作权限，Linux系统会把所有的用户分为三类：
+1. 文件所有者(owner), 一般默认是文件的创建者，可以修改
+2.
+还有一个组（group）的概念，一个group由一个或多个用户组成，其中可能包括owner,
+也可能不包括，每一个Linux上的文件都会对应一个group，group成员对文件的权限统一规定。  
+3. 这两类之外的其他所有用户也同归为一类，习惯上叫world
 
 ### Owners, Group Members, And Everybody Else
 
-When we are exploring the system, we may encounter a
-problem when trying to examine a file such as /etc/shadow:
-
-<div class="code"><pre>
-<tt>[me@linuxbox ~]$ file /etc/shadow
-/etc/shadow:  regular file, no read permission
-[me@linuxbox ~]$ less /etc/shadow
-/etc/shadow:  Permission denied</tt>
-</pre></div>
-
-The reason for this error message is that, as regular users, we do not have permission to
-read this file.
 
 In the Unix security model, a user may own files and directories. When a user owns a file
 or directory, the user has control over its access. Users can, in turn, belong to a group
