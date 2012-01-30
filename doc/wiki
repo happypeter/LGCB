@@ -1,3 +1,14 @@
+# similarity and differneces
+1. LGCB is differnt from happycasts in that it foucs on basic knowledge,
+trying to make readers understand the structure and concepts.
+2. LGCB is differnet from a common textbook in that it "shows not tells", give users the screen, type in the commands you are talking about. But again, the purpose is "understanding" not "getting the job done", so show people the things that are structurally important. However useful a command or a option is in daily life, if it does not help with the understanding of the strucure, is considered noise.
+
+3. Every LGCB lesson shall like a stroy, simple clear and fun to read. If a lesson has 17 parts, that tend to be boring, make it 3 or 4, make it fit the natural flow of our mind.
+
+4. "cutting noise" does not means show people as few things as I can. e.g. If I am talking about `chmod`, actually it helps to add `ls -l`, it is not noise but signal. While never try to show people all the options of `chmod`, even though these things are clearly on topic, but do not add more than necessary of these. Too many details, no good!
+
+# structure
+
 LGCB will have several PARTS: vim, git, bash ...
 each PART has 5 or 10 lessons
 All lessons shall have the same length and format
