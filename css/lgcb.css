@@ -9,9 +9,13 @@ body
 margin-left: 100px;
 margin-right: 100px;
 }
-img {
-    display: block
+div.slide {
+    text-align: center;
 }
+img {
+    border: 10px solid #abc;
+}
+
 code {
     border: solid 1px #CCC;
     background-color: #EEE;
