@@ -6,14 +6,16 @@
 */
 body
 {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 div.slide {
     text-align: center;
 }
-img {
+div.slide img {
     border: 10px solid #abc;
+    width: 480;
+    height: 360;
 }
 
 code {
