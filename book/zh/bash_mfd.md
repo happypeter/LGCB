@@ -1,6 +1,6 @@
 ---
-layout: book
-title: Manipulating Files And Directories
+layout: book-zh
+title: 操作文件和目录
 ---
 
 
