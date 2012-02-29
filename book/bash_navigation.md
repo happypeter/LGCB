@@ -41,19 +41,15 @@ file manager which represents the file system tree. Notice that the tree is
 usually with the root at the top and the various branches descending below.
 <div class="code"><pre>
 <tt> 
-
-
-                                /
-                                |
-               +--------+-------+-------+--------+
-               |        |       |       |        |
-             /home    /bin     ...     /tmp    /etc
-               |                                 |
-         +-----+----+                      +-----+-----+
-         |          |                      |     |     |
-       peter     billie                 corntab ...   wgetrc
-                                                      
-
+                       /
+                       |
+      +--------+-------+-------+--------+
+      |        |       |       |        |
+    /home    /bin     ...     /tmp    /etc
+      |                                 |
++-----+----+                      +-----+-----+
+|          |                      |     |     |
+peter     billie                 corntab ...   wgetrc
 </tt>
 </pre></div>
 
