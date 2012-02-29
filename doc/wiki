@@ -2,6 +2,8 @@
 LGCB will base on the code of progit.org, I will use even lighter color for graphs to make the book printer-friendly
 progit have two repos, one for content, one for layouts, that's really good.
 Since LGCB will have too many graphs, I will have a LGCB-assets for the pngs, much easier to maintain this way.
+
+Gimp->image->scale img, set the width to 500, 500 is the size used by progit
 # gittalk
 scott use big font words to show important things, really nice
 scott does not use mouse to point things, instead he use a redbox with trasparent inner part and a thick border, really nice.
