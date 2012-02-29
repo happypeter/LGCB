@@ -16,7 +16,7 @@ title: Permissions
 三种权限，当然Linux系统还规定了其他一些权限，不常用。
 
 <div class="slide">
-  <img src="images/bash_perm/1.png" />
+  <img class="slide_img" src="images/bash_perm/1.png" />
 </div>
 
 我们先从常识的角度进行讨论。

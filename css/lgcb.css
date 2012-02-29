@@ -12,6 +12,10 @@ body
 div.slide {
     text-align: center;
 }
+img.slide_img {
+    width: 420;
+    height: 315;
+}
 div.slide img {
     border: 10px solid #abc;
     width: 420;
