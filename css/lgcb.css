@@ -19,6 +19,7 @@ div.slide {
  * but if you use <img width="xxx" hight="xxx" ...>
  * it will work
  */
+/*
 img.slide_img {
     width: 420;
     height: 315;
@@ -28,7 +29,7 @@ div.slide img {
     width: 420;
     height: 315;
 }
-
+*/
 h1
 {
     font-size: 150%; 
