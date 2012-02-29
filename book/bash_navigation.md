@@ -77,8 +77,10 @@ allowed to write file.
 To list the files and directories in the current working directory, we use the
 `ls` command.
 
+{% highlight console %}
     peter@vostro:~/repo-farm/LGCB/book$ ls
     bash-intro.md  bash-navigation.md  bash-start.md  git.md  images  index.md
+{% endhighlight %}
 
 
 ## Changing The Current Working Directory
