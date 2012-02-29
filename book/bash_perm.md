@@ -4,12 +4,9 @@ title: Permissions
 ---
 
 这节课要讨论的是Linux下的权限问题。比如我们试图删除一个文件
-<div class="code"><pre>
-<tt>
+
     peter@cat:~$ rm /bin/sh
     rm: cannot remove `/bin/sh': Permission denied
-</tt>
-</pre></div>
 
 
 但是操作失败了，原因是“权限”(Permission)不够，那么
@@ -41,7 +38,7 @@ Linux对同一文件的权限控制，是分了三类人进行讨论的。权限
 如果我们执行`ls -l a.txt`,
 得到的输出中，我们先看一下前10个字符，第一个`-`是关于“文件类型”的，我们不关心。那剩下的9位就是“文件模式”。可以分位三组。第一组（前3位）规定的是owner对该文件的权限，`-`表示没有该权限。那就是owner对该文件只有“读"和“写”的权限。那同组和其他用户都只有读权限。
 <div class="slide">
-  <img src="images/bash_perm/4.png" />
+  <img width="500" src="images/bash_perm/4.png" />
 </div>
 
 ## 修改文件模式(chmod)
