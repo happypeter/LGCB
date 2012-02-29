@@ -61,9 +61,10 @@ below us. The directory we are standing in is called the current working
 directory. To display the current working directory, we use the __pwd__ (print
 working directory) command.
 
-
+{% highlight terminal %}
     peter@vostro:~/repo-farm/LGCB/book$ pwd
     /home/peter/repo-farm/LGCB/book
+{% endhighlight %}
 
 
 When we first log in to our system our current working directory is set to
