@@ -18,18 +18,6 @@ div.slide img {
     height: 315;
 }
 
-code {
-    border: solid 1px #CCC;
-    background-color: #E0E0E0;
-    font-family: 'Menlo', 'Courier New', 'Terminal', monospace;
-    padding: 0 3px;
-}
-code.console {
-    border: none;
-    background-color: #E0E0E0;
-    font-family: 'Menlo', 'Courier New', 'Terminal', monospace;
-    padding: 0 3px;
-}
 h1
 {
     font-size: 150%; 
