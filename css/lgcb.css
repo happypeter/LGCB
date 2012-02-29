@@ -42,7 +42,19 @@ h2{
 a {text-decoration:none;}
 
 /*this is very important for me*/
-pre { margin-left: 2% }
+pre {
+  background: #f8f8f8;
+  border: 1px solid #E7E5DC;
+  border-width: 1px 0 4px 6px;
+  padding: 1em;
+  overflow: auto;
+  color: black;
+  line-height: 120%;
+  font-family: "Consolas","Courier New",Courier,mono;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
 
 p.figure{
 font-style:italic;
