@@ -97,3 +97,9 @@ div.code
     padding: 0.1em;
     font-size: 150%;
 }
+pre code
+{
+    background-color: #E0E0E0;
+    padding: 0.1em;
+    font-size: 150%;
+}
