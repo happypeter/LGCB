@@ -4,9 +4,13 @@ title: Permissions
 ---
 
 这节课要讨论的是Linux下的权限问题。比如我们试图删除一个文件
-
+<div class="code"><pre>
+<tt>
     peter@cat:~$ rm /bin/sh
     rm: cannot remove `/bin/sh': Permission denied
+</tt>
+</pre></div>
+
 
 但是操作失败了，原因是“权限”(Permission)不够，那么
 
