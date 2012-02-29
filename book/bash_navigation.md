@@ -39,19 +39,16 @@ the person (or persons) responsible for the maintenance of the system.
 Most of us are probably familiar with a graphical
 file manager which represents the file system tree. Notice that the tree is
 usually with the root at the top and the various branches descending below.
-<div class="code"><pre>
-<tt> 
-                       /
-                       |
-      +--------+-------+-------+--------+
-      |        |       |       |        |
-    /home    /bin     ...     /tmp    /etc
-      |                                 |
-+-----+----+                      +-----+-----+
-|          |                      |     |     |
-peter     billie                 corntab ...   wgetrc
-</tt>
-</pre></div>
+
+                           /
+                           |
+          +--------+-------+-------+--------+
+          |        |       |       |        |
+        /home    /bin     ...     /tmp    /etc
+          |                                 |
+    +-----+----+                      +-----+-----+
+    |          |                      |     |     |
+    peter     billie                 corntab ...   wgetrc
 
 Imagine that the file system is shaped like an upside-down tree and we are
 able to stand in the middle of it. At any given time, we are inside a single
@@ -61,10 +58,8 @@ below us. The directory we are standing in is called the current working
 directory. To display the current working directory, we use the __pwd__ (print
 working directory) command.
 
-{% highlight console %}
     peter@vostro:~/repo-farm/LGCB/book$ pwd
     /home/peter/repo-farm/LGCB/book
-{% endhighlight %}
 
 
 When we first log in to our system our current working directory is set to
@@ -77,10 +72,8 @@ allowed to write file.
 To list the files and directories in the current working directory, we use the
 `ls` command.
 
-{% highlight console %}
     peter@vostro:~/repo-farm/LGCB/book$ ls
     bash-intro.md  bash-navigation.md  bash-start.md  git.md  images  index.md
-{% endhighlight %}
 
 
 ## Changing The Current Working Directory
