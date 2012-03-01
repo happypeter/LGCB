@@ -28,6 +28,6 @@ he might decide to give relatively more permissions. Finally for others, he
 might be mean, and gives less permissions.
 
 <div class="slide">
-  <img src="images/bash_perm/2.png" />
+  <img src="/LGCB-assets/bash/perm_2.png" />
 </div>
 Back to the Unix theroy.
