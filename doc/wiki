@@ -20,6 +20,8 @@ trying to make readers understand the structure and concepts.
 
 5. it will be nice to show people what is actully happening when you `cp ../hello.txt .` with graphs.
 
+6. lgcb will be in layman's term, like "hey, you know what?...", don't talk like a teacher, be a friend.
+
 # structure
 
 LGCB will have several PARTS: vim, git, bash ...
