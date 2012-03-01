@@ -17,7 +17,7 @@ Usually, users can have _read_, _write_, _execute_ permissions to files,(there a
 also other permissions, not so often used though).
 
 <div class="slide">
-  <img src="images/bash_perm/1.png" />
+  <img src="/LGCB-assets/bash/perm_1.png" />
 </div>
 
 Let's start with some common sense.
