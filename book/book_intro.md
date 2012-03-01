@@ -2,7 +2,7 @@
 layout:  book
 title: Introduction to This Book
 ---
-## Get the latest version
+### Get the latest version
 
 If you are reading this book offline, you may not have the latest version, get
 it here: <http://happypeter.github.com/LGCB>
@@ -13,7 +13,7 @@ And check recent updates by:
 
 If you do not know what __git__ is, check the Git tutorial in this book.
 
-## Why this book?    
+### Why this book?    
 
 Now I am getting a lot of requests from my students that they need a textbook,
 that's why I want to write this one. I need a book that covers all that I want to
@@ -27,7 +27,7 @@ Still if you want a extended reading, _The Linux Command Line_ is the first
 one I'll recommend. You can get it by a simple googling.
 
 
-## This book is for Chinese people
+### This book is for Chinese people
 As a Chinese, I know my fellow citizens generally do not speak English well, but
 I do believe that no matter what is your birth tongue, as long as you want to
 learn Linux, you should use English as your language for work. Otherwise you
@@ -40,7 +40,7 @@ serve as a guide to those guides, written in really easy English(slightly
 broken, sorry), giving a new tech term only when very necessary, and it will
 be explained the way that makes non-native English speakers feel comfortable. 
 
-## The book is for absolute beginners
+### The book is for absolute beginners
 If you already have several years of experience, this book might be too easy
 for you. My goals doing this book are:
 
@@ -53,7 +53,7 @@ loaded with nothing but quick and dirty tricks. Attention is paid to show the
 readers the whole picture, and teach them to do things the right way, so that
 they can feel natural in their next step learning.
 
-## What's in this book
+### What's in this book
 It is really all about how to survive in the new world of Linux. It is not
 about something hard, but rather about helping you out when you are lost in
 the vast ocean of Linux knowledge. 
@@ -65,7 +65,7 @@ possibility to do things right and build confidence.
 
 Download Page and a nice installation guide go here: <http://www.ubuntu.com/desktop/get-ubuntu/download>
 
-## How to read this book
+### How to read this book
 I think the right way to learn Linux is pretty much like learning a foreign
 language. You do not learn one thing in full detail, and then move to
 another.(that's why usually it is not wise to learn chapter by chapter), but
