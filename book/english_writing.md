@@ -3,7 +3,7 @@ layout: book
 title: Writing, Not just code!
 ---
 
-## Why writing?
+### Why?
 
 Nearly all great people from almost all cultures are great writers. It's
 also important to be a good speaker, but writing has its special
@@ -14,7 +14,7 @@ necessarily native English speakers, take Linus of Linux for example, but they
 can speak, and more importantly write English in a CCC way(clearly,
 convincingly, and comfortably).
 
-## Writing is hard!
+### Writing is hard!
 
 Most my friends do not write much, some even do not write at all. Here in
 Beijing, I do not see a lot of people writing down their ideas in English,
