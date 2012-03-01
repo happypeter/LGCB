@@ -1,13 +1,38 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
-<html xmlns= "http://www.w3.org/1999/xhtml">
-<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<link rel="stylesheet" type="text/css" href="css/lgcb.css" />
-<link rel="icon" type="image/png" href="./images/lgcb.png" />
-<title>LGCB</title>
-</head>
-<body>
-
-{{ content }}
-</body>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../stylesheets/master.css" type="text/css" media="screen" charset="utf-8"/>
+    <link rel="icon" type="image/png" href="../images/lgcb.png" />
+  </head>
+  <body>
+    <div id='wrapper'>
+      <div id='header'>
+        <h1>LGCB</h1>
+        <h2>Linux Guide for Chinese Beginners</h2>
+      </div>
+      <div id='menu'>
+        <ul>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='book'>Book</a></li>
+          <li><a href='about.html'>About</a></li>
+        </ul>
+      </div>
+      <div id='content'>
+        {{ content }}
+        <div class='clearfix'></div>
+      </div>
+    </div>
+    <div id='footer'>
+      Book translated into 
+        <a href="book/zh">Chinese</a>, 
+        .<br/>
+      All content under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution Non Commercial Share Alike 3.0 license</a>.
+      <br/> Hosted by <a href='http://github.com' target='_blank'>GitHub</a> and powered by <a href='http://github.com/mojombo/jekyll'>Jekyll</a>.
+    </div>
+  </body>
 </html>
+
