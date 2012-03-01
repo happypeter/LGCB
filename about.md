@@ -9,4 +9,4 @@ Wang(happypeter)</a> from all the effort from the Linux community.
 
 ### Thanks
 
-Thanks to <a href="http://akaedu.org">akaedu</a> as a sponsor.
+Thanks to <a href="http://www.akaedu.org">akaedu</a> for sponsoring.
