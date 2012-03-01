@@ -5,8 +5,7 @@ title: Introduction to This Book
 ## Get the latest version
 
 If you are reading this book offline, you may not have the latest version, get
-it here:
-- <http://happypeter.github.com/LGCB>
+it here: <http://happypeter.github.com/LGCB>
 
 And check recent updates by:
 
