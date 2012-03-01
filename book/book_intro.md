@@ -11,7 +11,7 @@ And check recent updates by:
 
     git clone git://github.com/happypeter/LGCB.git
 
-If you do not know what __git__ is, check the Git tutorial in this book.
+If you do not know what `git` is, check the Git tutorial in this book.
 
 ### Why this book?    
 
