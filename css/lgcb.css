@@ -4,11 +4,14 @@
 	http://www.nodethirtythree.com
         
 */
-body
-{
-    margin-left: 15%;
-    margin-right: 15%;
+body {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #dda;
+  color: #222;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
 div.slide {
     text-align: center;
 }
