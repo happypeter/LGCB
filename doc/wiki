@@ -18,6 +18,8 @@ trying to make readers understand the structure and concepts.
 
 4. "cutting noise" does not means show people as few things as I can. e.g. If I am talking about `chmod`, actually it helps to add `ls -l`, it is not noise but signal. While never try to show people all the options of `chmod`, even though these things are clearly on topic, but do not add more than necessary of these. Too many details, no good!
 
+5. it will be nice to show people what is actully happening when you `cp ../hello.txt .` with graphs.
+
 # structure
 
 LGCB will have several PARTS: vim, git, bash ...
