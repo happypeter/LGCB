@@ -2,7 +2,7 @@
 layout: book
 title: Is Linux For Me?
 ---
-
+<h2>hello {{ page.title }}</h2>
 The question is that nowadays in China, many young people do not know
 what to do to make a living, and some other people actually making enough money do not
 love their job and want to do a switch, so that their talents won't be wasted.  
