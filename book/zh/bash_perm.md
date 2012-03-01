@@ -1,6 +1,6 @@
 ---
 layout: book-zh
-title: Permissions
+title: 权限
 ---
 
 这节课要讨论的是Linux下的权限问题。比如我们试图删除一个文件
