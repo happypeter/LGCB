@@ -1,3 +1,8 @@
+---
+layout: master
+title: tmp
+---
+
 ## C book
 
     http://www.lix.polytechnique.fr/~liberti/public/computing/prog/c/C/SYNTAX/preprocessors.html
