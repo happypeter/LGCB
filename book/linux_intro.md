@@ -13,7 +13,7 @@ Linux is a Unix-like operating system, written in 1991 by Linus Torvalds.
 <center><img src="./images/linus.jpg"></center>
 
 
-## Further Reading
+### Further Reading
 
 - __wikipedia__
 <http://en.wikipedia.org/wiki/Linux>
