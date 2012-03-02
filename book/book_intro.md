@@ -19,7 +19,8 @@ Now I am getting a lot of requests from my students that they need a textbook,
 that's why I want to write this one. I need a book that covers all that I want to
 share with my students, no more and no less.
 
-There is a book named _The Linux Command Line_, which is really nice, but it
+There is a book named [The Linux Command
+Line](http://linuxcommand.org/tlcl.php), which is really nice, but it
 is too difficult for my students. Truth is that I copied a lot of stuff from
 this book to LGCB, and removed all its difficult vocabularies.  
 
