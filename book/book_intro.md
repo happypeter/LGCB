@@ -21,12 +21,8 @@ share with my students, no more and no less.
 
 There is a book named [The Linux Command
 Line](http://linuxcommand.org/tlcl.php), which is really nice, but it
-is too difficult for my students. Truth is that I copied a lot of stuff from
+is a bit difficult for my students. Truth was that I copied a lot of stuff from
 this book to LGCB, and removed all its difficult vocabularies.  
-
-Still if you want a extended reading, _The Linux Command Line_ is the first
-one I'll recommend. You can get it by a simple googling.
-
 
 ### This book is for Chinese people
 As a Chinese, I know my fellow citizens generally do not speak English well, but
