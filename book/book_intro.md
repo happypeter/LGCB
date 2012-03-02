@@ -29,7 +29,7 @@ one I'll recommend. You can get it by a simple googling.
 
 ### This book is for Chinese people
 As a Chinese, I know my fellow citizens generally do not speak English well, but
-I do believe that no matter what is your birth tongue, as long as you want to
+I do believe that no matter what your birth tongue is, as long as you want to
 learn Linux, you should use English as your language for work. Otherwise you
 are on the wrong track. Learning materials in Chinese are so hard to find, and
 the translations are usually very bad.
@@ -59,7 +59,7 @@ about something hard, but rather about helping you out when you are lost in
 the vast ocean of Linux knowledge. 
 
 Note that this book is very __ubuntu__-centric. There are many kinds of Linux
-(distros to be precise), __ubuntu__ is now the most popular one . Playing with
+(_distros_ to be precise), __ubuntu__ is now the most popular one . Playing with
 only one distro can effectively avoid talking about dark corners, add the
 possibility to do things right and build confidence.
 
@@ -76,7 +76,7 @@ your textbooks to learn things that look interesting to you.(and again, you
 may still leave more complicated thing along). Anyway, you know what I mean,
 learning by doing, keep it simple and let it grow.
 
-But as to this book, I will try to keep things really easy, and let it be
+But as to this book, I will try to keep things really easy, and make it 
 possible to finish each part in one go without frustrations.  And the above
 rules may still fit for the more advanced books that I will bring to you in
 this book. But this book is just the "basic vocabulary of all necessary
