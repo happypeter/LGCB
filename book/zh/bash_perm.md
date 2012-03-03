@@ -4,28 +4,22 @@ title: 权限
 ---
 
 ### 什么是“权限”？
-用户对文件通常具有“读”，“写”，“执行”
-三种权限，当然Linux系统还规定了其他一些权限，不常用。
-
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_1.png" />
 </div>
-
+用户对文件通常具有“读”，“写”，“执行”
+三种权限，当然Linux系统还规定了其他一些权限，不常用。
+<div class="slide">
+  <img src="/LGCB-assets/bash/perm_2.png" />
+</div>
 Linux是一个多用户的操作系统，也就是很多用户可能同时使用一台计算机.
 对于一个特定文件，系统会为他指定一个特定的用户(user)作为它的所有者(owner)。  同时也一定会指定一个由一个或多个人组成的group，作为这个文件的所有者组(owner group), 严格的术语就叫组(group). 这两类之外的其他用户呢，就是所谓的第三类人了，叫world.这三类人各自的权限多少是可以任意指定的, 不一定谁多谁少，当然一般来讲owner的权限会多一些。
 强调一下，就是在Linux系统中owner
 是否属于这个group呢？可能属于，也可能不属于。
-
-<div class="slide">
-  <img src="/LGCB-assets/bash/perm_2.png" />
-</div>
-
-Linux对同一文件的权限控制，也是分了这三类人进行讨论的。权限问题基本上就是要讨论，所有者(owner) 对文件的是否具有“读”，“写”，“执行”的权限。同样，如果对组(group 或者叫owner group)，和其他人(world)的相应讨论也完成了，那权限就明晰了。
-
-
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_3.png" />
 </div>
+Linux对同一文件的权限控制，也是分了这三类人进行讨论的。权限问题基本上就是要讨论，所有者(owner) 对文件的是否具有“读”，“写”，“执行”的权限。同样，如果对组(group 或者叫owner group)，和其他人(world)的相应讨论也完成了，那权限就明晰了。
 
 ### 文件模式（file mode）
 那么我们回到实际的理论。对于文件权限的规定是通过filemode来规定的。
