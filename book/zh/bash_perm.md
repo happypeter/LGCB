@@ -4,7 +4,7 @@ title: 权限
 ---
 开头结构介绍（不如书的正文)
 大家好，这节课分三部分，第一部分5分钟，介绍一下什么是权限(what is
-permission),第二部分介绍如何用umask来控制文件的默认权限以及如何用chmod来修改文件权限(umask&chmod),最后3min介绍一下改变用户身份，超级用户和sudo命令的使用(chown, chgrp, su,sudo)
+permission),第二部分介绍如何用umask来控制文件的默认权限以及如何用chmod来修改文件权限(umask&chmod)
 
 这节课要讨论的是Linux下的权限问题。比如我们试图删除一个文件
 
