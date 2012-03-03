@@ -22,6 +22,9 @@ Linux是一个多用户的操作系统，也就是很多用户可能同时使用
 Linux对同一文件的权限控制，也是分了这三类人进行讨论的。权限问题基本上就是要讨论，所有者(owner) 对文件的是否具有“读”，“写”，“执行”的权限。同样，如果对组(group 或者叫owner group)，和其他人(world)的相应讨论也完成了，那权限就明晰了。
 
 ### 文件模式（file mode）
+<div class="slide">
+  <img src="/LGCB-assets/bash/perm_4.png" />
+</div>
 那么我们回到实际的理论。对于文件权限的规定是通过filemode来规定的。
 
 如果我们执行`ls -l a.txt`,
@@ -31,10 +34,10 @@ Linux对同一文件的权限控制，也是分了这三类人进行讨论的。
 
 那剩下的9位就是“文件模式”。可以分位三组。第一组（前3位）规定的是owner对该文件的权限，第一位表示owner对该文件是否有读权限,r 表示有，-表示没有，第二位表示owner对该文件是否具有写权限，w代表有，- 代表没有，第三位表示owner对该文件是否具有执行的权限，x代表有，- 代表没有。中间三位代表group的情况，最后三位是对其他人（world）。这里，owner对该文件只有“读"和“写”的权限。那组和其他用户都只有读权限。
 
-<div class="slide">
-  <img src="/LGCB-assets/bash/perm_4.png" />
-</div>
 
+<div class="slide">
+  <img src="/LGCB-assets/bash/perm_5.png" />
+</div>
 如果我们要对目录(directroy)查看权限的话
 
     ls -ld mydir
@@ -53,9 +56,8 @@ Linux对同一文件的权限控制，也是分了这三类人进行讨论的。
 
 可以正确执行。
 <div class="slide">
-  <img src="/LGCB-assets/bash/perm_5.png" />
+  <img src="/LGCB-assets/bash/perm_6.png" />
 </div>
-
 写权限对文件而言很好理解，就是我们可以修改里面的内容。那是不是也意味者我们可以对文件进行重命名，或删除操作呢？
 答案是，这要看包含该文件的目录的权限。这就谈到了一个目录的写权限的意义，我们对于一个目录有写权限，意味着我们可以对其中包含的文件或子目录进行重命名或删除。
 
@@ -76,7 +78,7 @@ Linux对同一文件的权限控制，也是分了这三类人进行讨论的。
     r-xr-xr-x
 
 <div class="slide">
-  <img src="/LGCB-assets/bash/perm_6.png" />
+  <img src="/LGCB-assets/bash/perm_7.png" />
 </div>
 最后要谈的是执行权限(x),
 我们对于一个二进制文件(例如程序的编译输出),或者是一些脚本文件，例如shell脚本，python脚本执行权限才有意义。例如
@@ -93,14 +95,11 @@ Linux对同一文件的权限控制，也是分了这三类人进行讨论的。
     permission denied 
 
 原来对于没有执行权限的目录，我们是不能跳转进去的。
-<div class="slide">
-  <img src="/LGCB-assets/bash/perm_7.png" />
-</div>
 
-
-Part2: chmod
 ### 修改文件模式(chmod)
-
+<div class="slide">
+  <img src="/LGCB-assets/bash/perm_8.png" />
+</div>
 我们可以通过chmod这个命令来更改文件模式，也就是更改各类用户的具体权限。如果我们想对“组”用户和“其他”用户，在`a.txt`都加上写的权限，那么可以凭空想象出这样一个命令
 
     chmod rw-rw-rw- a.txt
@@ -115,11 +114,6 @@ Part2: chmod
     chmod 666 a.txt 
 
 是一个正确的系统命令，最后实现了我们的目的。
-
-<div class="slide">
-  <img src="/LGCB-assets/bash/perm_8.png" />
-</div>
-
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_9.png" />
 </div>
