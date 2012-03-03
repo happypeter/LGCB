@@ -126,4 +126,7 @@ Part2: chmod
   <img src="/LGCB-assets/bash/perm_8.png" />
 </div>
 
+<div class="slide">
+  <img src="/LGCB-assets/bash/perm_9.png" />
+</div>
 
