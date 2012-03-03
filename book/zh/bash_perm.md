@@ -58,6 +58,9 @@ Linux对同一文件的权限控制，也是分了这三类人进行讨论的。
     ls mydir
 
 可以正确执行。
+<div class="slide">
+  <img src="/LGCB-assets/bash/perm_5.png" />
+</div>
 
 写权限对文件而言很好理解，就是我们可以修改里面的内容。那是不是也意味者我们可以对文件进行重命名，或删除操作呢？
 答案是，这要看包含该文件的目录的权限。这就谈到了一个目录的写权限的意义，我们对于一个目录有写权限，意味着我们可以对其中包含的文件或子目录进行重命名或删除。
@@ -78,6 +81,9 @@ Linux对同一文件的权限控制，也是分了这三类人进行讨论的。
     ls -ld mydir
     r-xr-xr-x
 
+<div class="slide">
+  <img src="/LGCB-assets/bash/perm_6.png" />
+</div>
 最后要谈的是执行权限(x),
 我们对于一个二进制文件(例如程序的编译输出),或者是一些脚本文件，例如shell脚本，python脚本执行权限才有意义。例如
 
@@ -93,6 +99,9 @@ Linux对同一文件的权限控制，也是分了这三类人进行讨论的。
     permission denied 
 
 原来对于没有执行权限的目录，我们是不能跳转进去的。
+<div class="slide">
+  <img src="/LGCB-assets/bash/perm_7.png" />
+</div>
 
 
 Part2: chmod
@@ -114,7 +123,7 @@ Part2: chmod
 是一个正确的系统命令，最后实现了我们的目的。
 
 <div class="slide">
-  <img src="/LGCB-assets/bash/perm_5.png" />
+  <img src="/LGCB-assets/bash/perm_8.png" />
 </div>
 
 
