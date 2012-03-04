@@ -7,7 +7,7 @@ title: Permissions
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_1.png" />
 </div>
-A user usually have _read_, _write_ and _execute_ permissions to a file, other
+A user can possiably have _read_, _write_ and _execute_ permissions to a file, other
 permissions exist, less commonly seen.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_2.png" />
@@ -33,16 +33,16 @@ we are done.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_4.png" />
 </div>
-In reality of Linux, this was done by defining _file mode_ of a file.
+In reality of Linux, this is accomplished  by defining the so-called _file mode_.
 If we do 
 
     ls -l a.txt
 
 Looking at the output, the first `-` is about _file type_, common candidates are `l` for "symbolic link", `d` for "directory" meaning the file is a directory, and if we see `-` here, this represents that the file is a common file.
 
-We will not first leave the following 9 characters along, can what follows is
+We will now first leave the following 9 characters alone, and what follows is
 a `1` which is the number of _hard links_ `a.txt` has. Now the first `peter`
-is _owner_ name, the second is _group_ name. `0` is the size in byte, and this
+is _owner_ name, the second is _group_ name. `0` is the size in bytes, and this
 is a empty file obviously. Then last modification time followed by the file
 name.
 
@@ -70,18 +70,18 @@ And permissions can mean a bit different to files and dirs.
 
 If a user has read permission to a file, he can check the content within the
 file, this is simple. If to a dir, then he can also check the content in the
-dir and see all the file names in it( some may say there also is subdirs in,
+dir and see all the file names in it( some may say there are also subdirs in,
 well, dirs are also files, just a sepical kind of.)
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_6.png" />
 </div>
 If write permission granted to a user, the user has the right to modify the
-content, simple enough. But the question is that does this also means the file name can be modified or deleted? The answer is no. 
+content, simple enough. But the question is that does this also mean the file name can be modified or deleted? The answer is no. 
 
-Because it is the write permission of the parent dir of this file that is in
+Because it is the write permission to the parent dir of this file that is in
 charge of whether the file can be renamed/deleted, or a new file can be
 created. One prereuest before you can fully enjoy the write permission to your
-dir is that you still need the _execute_ permission of the dir. Lucily dirs
+dir is that you still need the _execute_ permission to the dir. Lucily dirs
 generally has `x` for every user on the system, so this rarely becomes a
 issue.
 <div class="slide">
@@ -90,7 +90,7 @@ issue.
 This brings us to the last permission the _execute_ (x).
 Literally, it means we can execute a file as a program. This is still a guess,
 but makes a lot of sense. So it is more than clear than if we have `x` to a
-file that can not be _execute_ed( say our note, or a c SOURCE code), that is meaningless. So we usually only give `x` permission to files can be run on the system( e.g a shell script, python code file, a binary output of C or C++). So usually when we create a file, it comes without a `x`. But if we `mkdir mydir`, `mydir` will be created with a `x` by default, so why? 
+file that can not be _execute_ed( say our notes, or c SOURCE code), that is meaningless. So we usually only give `x` permission to files can be run on the system( e.g a shell scripts, code file with interpreted lanaguages like python or ruby, a binary output of C or C++). So usually when we create a file, it comes without a `x`. But if we `mkdir mydir`, `mydir` will be created with a `x` by default, so why? 
 
 To clarify this, let's first remove the `x` from the dir.
 
