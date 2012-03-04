@@ -87,31 +87,42 @@ issue.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_7.png" />
 </div>
-最后要谈的是执行权限(x),
-我们对于一个二进制文件(例如程序的编译输出),或者是一些脚本文件，例如shell脚本，python脚本执行权限才有意义。
-但是如果我们文件里存的是笔记或者是C程序的源代码，那执行权限是没有什么意义的。这就是为什么系统上的大部分普通文件，如果我们用`ls
--l`查看一下的话，都是没有执行权限的。但是正好相对的，我们用`ls
--ld`查看一下系统上的目录，发现基本上都是有执行权限的。
-对于没有执行权限的目录，我们是不能跳转进去的，所以有没有执行权限，意味者我们能不能成功的`cd`到该目录里。
+This brings us to the last permission the _execute_ (x).
+Literally, it means we can execute a file as a program. This is still a guess,
+but makes a lot of sense. So it is more than clear than if we have `x` to a
+file that can not be _execute_ed( say our note, or a c SOURCE code), that is meaningless. So we usually only give `x` permission to files can be run on the system( e.g a shell script, python code file, a binary output of C or C++). So usually when we create a file, it comes without a `x`. But if we `mkdir mydir`, `mydir` will be created with a `x` by default, so why? 
 
-### 修改文件模式(chmod)
+To clarify this, let's first remove the `x` from the dir.
+
+    chmod -x mydir
+
+now we try
+
+    $ cd mydir
+      permission denied.
+
+So for a dir, `x` determines whether we can `cd` into it or not.
+### chmod
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_8.png" />
 </div>
-我们可以通过chmod这个命令来更改文件模式，也就是更改各类用户的具体权限。如果我们想对“组”用户和“其他”用户，在`a.txt`都加上写的权限，那么可以凭空想象出这样一个命令
+`chmod` is a Linux command that is used to change _file mode_, and thus change the permissions for everybody. Say, we want to add `w` for both _group_ and _world_. Obviously want want this:
 
     chmod rw-rw-rw- a.txt
 
-但是实际这个命令系统是不认的。然后，我们用1代表“使能”，0代表“禁止”，可以得到
+It turned out that the system think it is shit, that forces us to go really
+digital, and we use `1` to say "enable", and `0` to "disable" so we get sth
+like this:
 
     chmod 110110110 a.txt
 
-那这个逻辑也是清晰的，但是很不幸`110110110`也不是chmod的合法参数。
-我们再把这个参数写的短一点，也就是把它们分三组分别八进制表示。最后得到的
+So the logic is right and clear, but unfortunately `110110110` is not the
+parameter that chmod recongnizes. So we divide the 9 bits into 3 subgroups can
+get a octal out of each subgroup. Now we try:
 
     chmod 666 a.txt 
 
-是一个正确的系统命令，最后实现了我们的目的。
+is accepted, and we get what we want finally.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_9.png" />
 </div>
