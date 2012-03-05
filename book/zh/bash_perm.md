@@ -2,7 +2,7 @@
 layout: book-zh
 title: 权限
 ---
-<a href="http://www.youku.com"><img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" />到优酷看视频</a>
+<a href="http://v.youku.com/v_show/id_XMzYwNzc1MTY4.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
 ### 什么是“权限”？
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_1.png" />
