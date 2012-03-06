@@ -24,7 +24,7 @@ _group_, and again, it is not always the case.
   <img src="/LGCB-assets/bash/perm_3.png" />
 </div>
 So when we talk about permissions, we actually need to deal with the three
-sorts of people. So we need first to determine wether the _owner_ has the
+types of people. So we need first to determine wether the _owner_ has the
 permission to read, write or execute the file or not, then people in
 _group_ and _world_. So it is actually simple, when we finishing the 3x3, then
 we are done.
