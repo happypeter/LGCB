@@ -7,7 +7,7 @@ title: Permissions
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_1.png" />
 </div>
-A user can possiably have _read_, _write_ and _execute_ permissions to a file, other
+A user could possiably have _read_, _write_ and _execute_ permissions to a file, other
 permissions exist, less commonly used though.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_2.png" />
@@ -25,7 +25,7 @@ _group_, and again, it is not always the case.
 </div>
 So when we talk about permissions, we actually need to deal with the three
 types of people. So we need first to determine wether the _owner_ has the
-permission to read, write or execute the file or not, then people in
+permission to read, write or execute the file, then people in
 _group_ and _world_. So it is actually simple, when we finishing the 3x3, then
 we are done.
 
