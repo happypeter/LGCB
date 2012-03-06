@@ -144,6 +144,16 @@ pre {
   letter-spacing: 0;
 }
 
+code {
+  background: #f8f8f8;
+  border: 1px solid #E7E5DC;
+  padding: 0.2em;
+}
+
+pre code {
+  border: none;
+}
+
 table.post-list {
   width: 100%;
   border-collapse: collapse;
