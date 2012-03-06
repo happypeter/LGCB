@@ -12,7 +12,7 @@ permissions exist, less commonly used though.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_2.png" />
 </div>
-Linux is a _multiuser_ operating system, meaning more than one users can use
+Linux is a _multi-user_ operating system, meaning more than one users can use
 the same machine at the same time. To a specific file, the system will assign
 one user as its _owner_, and one group of one or more users to behave as its
 "owner group", simply called _group_ in tech term. Then the rest of the users
