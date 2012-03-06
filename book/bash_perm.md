@@ -7,7 +7,7 @@ title: Permissions
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_1.png" />
 </div>
-A user can possiably have _read_, _write_ and _execute_ permissions to a file, other
+A user could possiably have _read_, _write_ and _execute_ permissions to a file, other
 permissions exist, less commonly used though.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_2.png" />
