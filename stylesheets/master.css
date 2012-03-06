@@ -147,7 +147,7 @@ pre {
 code {
   background: #f8f8f8;
   border: 1px solid #E7E5DC;
-  padding: 2px;
+  padding: 1px 3px 1px 3px;
 }
 
 pre code {
