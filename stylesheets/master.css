@@ -147,7 +147,10 @@ pre {
 code {
   background: #f8f8f8;
   border: 1px solid #E7E5DC;
-  border-width: 1px 0 4px 6px;
+}
+
+pre code {
+  border: none;
 }
 
 table.post-list {
