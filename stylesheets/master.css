@@ -144,6 +144,12 @@ pre {
   letter-spacing: 0;
 }
 
+code {
+  background: #f8f8f8;
+  border: 1px solid #E7E5DC;
+  border-width: 1px 0 4px 6px;
+}
+
 table.post-list {
   width: 100%;
   border-collapse: collapse;
