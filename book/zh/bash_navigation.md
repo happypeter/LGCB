@@ -7,54 +7,33 @@ The first thing we need to learn to do (besides just typing) is how to
 navigate the file system on our Linux system. In this lesson we will
 introduce the following commands:
 
-我们需要学习的第一件事（除了打字之外）是怎样在遍历Linux文件系统。这一章将会
+我们需要学习的第一件事（除了打字之外）是怎样在遍历Linux文件系统（在文件系统树中跳转）。这一章将会
 介绍以下命令：
 
 - __pwd__   
   
-  Print name of current working directory &nbsp; 打印出当前工作目录名
+  打印出当前工作目录名
 - __cd__     
   
-  Change directory &nbsp; 更改目录
+  更改目录
 - __ls__     
   
-  List directory contents &nbsp; 列出目录内容
+  列出目录内容
                                  
-pretty easy commands.
 
-相当简单的命令。
-
-### Understanding The File System Tree
-
-### 理解文件系统树
-Like Windows, a Unix-like operating system such as Linux organizes its files
-in what is called a _hierarchical directory structure_. This means that they are
-organized in a tree-like pattern of directories (sometimes called folders in
-other systems), which may contain files and other directories. The first
-directory in the file system is called the root directory. The root directory
-contains files and subdirectories, which contain more files and subdirectories
-and so on and so on.  
-
-正如Windows操作系统，一个类似于Unix的操作系统，比方说Linux，按照_层次目录结构_
+### 理解文件系统树的结构
+正如Windows操作系统，一个类似于Unix的操作系统，比方说Linux，按照_层次目录结构_（ _hierarchical directory structure_.)
 来组织文件的。这意味着文件以树型目录（在其它系统中，有时候叫做文件夹）模式组织起来,
 其中可能包含文件和其它的目录。文件系统中的第一个目录叫做根目录。这个根目录包含文件
 和子目录，子目录又包含更多的文件和子目录，依此类推。
 
-Note that unlike Windows, which has a separate file system tree for each
-storage device, Unix-like systems such as Linux always have a single file
-system tree, regardless of how many drives or storage devices are attached to
-the computer. Storage devices are attached (or more correctly, mounted) at
-various points on the tree according to the whims of the system administrator,
-the person (or persons) responsible for the maintenance of the system. 
-
 注意，不像Windows系统每个存储设备都有一个分离的文件系统，类似Unix的系统，
 比如说Linux，总是只有一个文件系统树，不管计算机连接着多少个硬盘或存储设备。
-按照系统管理员的兴致不同，存储设备连接（或更精确些，挂载到）到文件系统树
-的各个结点上。系统管理员（一个或多个）的负责是维护系统安全。
+存储设备连接（或更精确些，挂载到）到文件系统树的各个结点（挂载点）上。
 
-### The Current Working Directory 
+### 根目录（root directory）
+### 当前工作目录（The Current Working Directory )
 
-### 当前工作目录
 
 Most of us are probably familiar with a graphical file manager which represents 
 the file system tree. Notice that the tree is usually with the root at the top
