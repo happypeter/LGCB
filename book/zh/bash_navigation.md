@@ -19,16 +19,20 @@ title: 遍历文件系统
 
 ### 理解文件系统树的结构
 
-1.png
+<div class="slide">
+  <img src="/LGCB-assets/bash/nav_1.png" />
+</div>
 
 在Windows系统中，我们会把硬盘分为多个分区（C盘，D盘...）每个盘的最顶级都是多个文件夹（folder），每个文件夹下面有文件和子文件夹，子亦有孙，孙亦有子，形成一个树形结构。
 
 每个分区会有自己的一个树。而且树的最顶端是多个文件夹。
 
+<div class="slide">
+  <img src="/LGCB-assets/bash/nav_2.png" />
+</div>
 
 那么Linux系统下的情况类似，硬盘也会被分为多个分区（partition），但是名字不叫C盘D盘，而是叫sda1，sda2...。文件的组织也是一个树形结构。
 
-2.png
 
 区别是，Linux下把文件夹（folder）叫做目录（directory），而且整个系统不管有多少个分区，文件系统却只会有一个文件系统树。树的顶端是一个目录（名字叫/）。各个硬盘分区都对应自己的一个挂载点（mount point）。
 
@@ -38,11 +42,16 @@ title: 遍历文件系统
  
 ##### 根目录（root directory）
 
-3.png
+<div class="slide">
+  <img src="/LGCB-assets/bash/nav_3.png" />
+</div>
 
 根目录指的是文件系统树的最顶端的名为`/`的这个目录，之所以把它叫根目录，是因为文件系统是一个倒挂的树，`/`是整个树的根（root），所有其他的文件和目录都是由此衍生出的枝蔓。所以根目录也可叫做“老祖宗”目录。
 
 ##### 当前工作目录（The Current Working Directory )
+<div class="slide">
+  <img src="/LGCB-assets/bash/nav_4.png" />
+</div>
 文件系统是一棵倒置的大树，我们能够站立在树中间某个点上。
 也就是位于一个目录中，我们能够看到这个目录所包含的文件
 还有子目录。那么，我们所处的这个目录就叫做“当前工作目录”。
