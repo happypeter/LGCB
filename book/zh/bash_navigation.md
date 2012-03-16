@@ -36,72 +36,32 @@ title: 遍历文件系统
 
 但是，如果我们在此基础之上，把sda2挂载到`/home/`这个目录上，那以后所有`/home/`下的数据就都存在sda2这个分区之上了。
  
-### 根目录（root directory）
-### 当前工作目录（The Current Working Directory )
+##### 根目录（root directory）
+
+3.png
+
+根目录指的是文件系统树的最顶端的名为`/`的这个目录，之所以把它叫根目录，是因为文件系统是一个倒挂的树，`/`是整个树的根（root），所有其他的文件和目录都是由此衍生出的枝蔓。所以根目录也可叫做“老祖宗”目录。
+
+##### 当前工作目录（The Current Working Directory )
+文件系统是一棵倒置的大树，我们能够站立在树中间某个点上。
+也就是位于一个目录中，我们能够看到这个目录所包含的文件
+还有子目录。那么，我们所处的这个目录就叫做“当前工作目录”。
+我们使用`pwd`（Print Working Directory，打印工作目录）命令，来显示当前工作目录名。
+
+    $ pwd
+      /home/peter/
+
+也可以用`ls`这个命令来列出当前工作目录中的内容。
+
+    $ ls
+      a.txt docs
+
+### 绝对路径和相对路径
 
 
-Most of us are probably familiar with a graphical file manager which represents 
-the file system tree. Notice that the tree is usually with the root at the top
-and the various branches descending below.
 
-大多数用户熟悉图形文件管理器，由它表示文件系统树。注意，通常这是一棵倒置的树，
-树根在上面，而各个枝干在下面展开。
+### 更改当前工作目录（cd）
 
-
-                                /
-                                |
-               +--------+-------+-------+--------+
-               |        |       |       |        |
-             /home    /bin     ...     /tmp    /etc
-               |                                 |
-         +-----+----+                      +-----+-----+
-         |          |                      |     |     |
-       peter     billie                 corntab ...   wgetrc
-                                                      
-
-Imagine that the file system is shaped like an upside-down tree and we are
-able to stand in the middle of it. At any given time, we are inside a single
-directory and we can see the files contained in the directory and the pathway
-to the directory above us (called the parent directory) and any subdirectories
-below us. The directory we are standing in is called the current working
-directory. To display the current working directory, we use the __pwd__ (print
-working directory) command.
-
-想象一下，文件系统被塑造成一棵上下倒置的大树，这样我们就能够站立在树的中间。
-在任何时间，我们位于一个目录中，我们能够看到这个目录所包含的文件，以及通往上面
-目录的路径，还有位于我们之下的任意子目录。我们所处的目录叫做当前工作目录。
-我们使用__pwd__（打印工作目录）命令，来显示当前工作目录名。
-
-<div class="code"><pre>
-<tt>peter@vostro:~/repo-farm/LGCB/book$ pwd
-/home/peter/repo-farm/LGCB/book</tt>
-</pre></div>
-
-When we first log in to our system our current working directory is set to
-our home directory. Each user account is given its own home directory and when
-operating as a regular user, the home directory is the only place the user is
-allowed to write file.
-
-当我们第一次登录系统之后，我们的当前工作目录设置为我们的主目录。每个用户都有自己
-主目录，并且当以普通用户身份操作时，主目录是唯一允许用户写文件的地方。
-
-### Listing The Contents Of A Directory
-
-### 列出目录内容
-
-To list the files and directories in the current working directory, we use the
-__ls__ command.
-
-列出当前工作目录中的文件和目录，用__ls__命令。
-
-<div class="code"><pre>
-<tt>peter@vostro:~/repo-farm/LGCB/book$ ls
-bash-intro.md  bash-navigation.md  bash-start.md  git.md  images  index.md</tt>
-</pre></div>
-
-### Changing The Current Working Directory
-
-### 更改当前工作目录
 To change your working directory (where we are standing in our tree) we use
 the cd command. To do this, type cd followed by the pathname of the desired
 working directory. A pathname is the route we take along the branches of the
