@@ -3,10 +3,6 @@ layout: book-zh
 title: 遍历文件系统 
 ---
 
-The first thing we need to learn to do (besides just typing) is how to
-navigate the file system on our Linux system. In this lesson we will
-introduce the following commands:
-
 我们需要学习的第一件事（除了打字之外）是怎样在遍历Linux文件系统（在文件系统树中跳转）。这一章将会
 介绍以下命令：
 
@@ -22,15 +18,24 @@ introduce the following commands:
                                  
 
 ### 理解文件系统树的结构
-正如Windows操作系统，一个类似于Unix的操作系统，比方说Linux，按照_层次目录结构_（ _hierarchical directory structure_.)
-来组织文件的。这意味着文件以树型目录（在其它系统中，有时候叫做文件夹）模式组织起来,
-其中可能包含文件和其它的目录。文件系统中的第一个目录叫做根目录。这个根目录包含文件
-和子目录，子目录又包含更多的文件和子目录，依此类推。
 
-注意，不像Windows系统每个存储设备都有一个分离的文件系统，类似Unix的系统，
-比如说Linux，总是只有一个文件系统树，不管计算机连接着多少个硬盘或存储设备。
-存储设备连接（或更精确些，挂载到）到文件系统树的各个结点（挂载点）上。
+1.png
 
+在Windows系统中，我们会把硬盘分为多个分区（C盘，D盘...）每个盘的最顶级都是多个文件夹（folder），每个文件夹下面有文件和子文件夹，子亦有孙，孙亦有子，形成一个树形结构。
+
+每个分区会有自己的一个树。而且树的最顶端是多个文件夹。
+
+
+那么Linux系统下的情况类似，硬盘也会被分为多个分区（partition），但是名字不叫C盘D盘，而是叫sda1，sda2...。文件的组织也是一个树形结构。
+
+2.png
+
+区别是，Linux下把文件夹（folder）叫做目录（directory），而且整个系统不管有多少个分区，文件系统却只会有一个文件系统树。树的顶端是一个目录（名字叫/）。各个硬盘分区都对应自己的一个挂载点（mount point）。
+
+例如，如果我么把sda1挂载到名为`/`的这个目录上（目录其实就是文件系统树上的一个“点”，所以叫做挂载点）。那么由于系统上的所有文件和目录都包含于`/`这个目录之中，所以这样的话我们所有的数据都会存储到sda1这个分区上。
+
+但是，如果我们在此基础之上，把sda2挂载到`/home/`这个目录上，那以后所有`/home/`下的数据就都存在sda2这个分区之上了。
+ 
 ### 根目录（root directory）
 ### 当前工作目录（The Current Working Directory )
 
