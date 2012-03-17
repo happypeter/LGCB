@@ -4,19 +4,14 @@ title: 在文件系统中跳转
 ---
 <a href="http://v.youku.com/v_show/id_XMzY3MjEwOTk2.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
 
-我们需要学习的第一件事（除了打字之外）是怎样在文件系统树中跳转。这一章将会
-介绍以下命令：
+我们需要学习的第一件事（除了打字之外）是怎样在文件系统树中跳转。这一章将会介绍以下命令：
 
 - __pwd__   
-  
   打印出当前工作目录名
 - __cd__     
-  
   更改目录
 - __ls__     
-  
   列出目录内容
-                                 
 
 ### 理解文件系统树的结构
 
