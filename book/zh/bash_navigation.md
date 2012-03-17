@@ -1,10 +1,10 @@
 ---
 layout: book-zh
-title: 遍历文件系统 
+title: 在文件系统中跳转
 ---
 <a href="http://v.youku.com/v_show/id_XMzY3MjEwOTk2.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
 
-我们需要学习的第一件事（除了打字之外）是怎样在遍历Linux文件系统（在文件系统树中跳转）。这一章将会
+我们需要学习的第一件事（除了打字之外）是怎样在文件系统树中跳转。这一章将会
 介绍以下命令：
 
 - __pwd__   
