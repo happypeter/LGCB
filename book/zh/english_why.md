@@ -5,6 +5,9 @@ title: 为什么要学英语
 
 <a href=" http://v.youku.com/v_show/id_XMzcwNjUzMDQw.html ">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
 
+<div class="slide">
+  <img src="/LGCB-assets/english/why_1.png" />
+</div>
 ESR在他的一篇很著名的文章how to become a hacker 中曾经说过 "If you don't have
 functional English, learn it." 基本理由就是 "English has a richer technical
 vocabulary" 
@@ -18,5 +21,14 @@ Jeff Adwood
 宋劲衫, 《谈谈写程序与学英语》
 <http://happypeter.github.com/on-english-and-prog.html>
 
+<div class="slide">
+  <img src="/LGCB-assets/english/why_2.png" />
+</div>
 
 用英语学编程是不是会影响学习速度呢？当然在开始阶段肯定会很慢，不过这是磨刀不费砍柴功。
+<div class="slide">
+  <img src="/LGCB-assets/english/why_3.png" />
+</div>
+<div class="slide">
+  <img src="/LGCB-assets/english/why_4.png" />
+</div>
