@@ -3,13 +3,15 @@ layout: book-zh
 title: 为什么要学英语
 ---
 
-esr在他的一篇很著名的文章how to become a hacker 中曾经说过
+<a href=" http://v.youku.com/v_show/id_XMzcwNjUzMDQw.html ">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
 
-   4. If you don't have functional English, learn it.
+ESR在他的一篇很著名的文章how to become a hacker 中曾经说过
+
+   If you don't have functional English, learn it.
 
 基本理由就是
 
-English has a richer technical vocabulary 
+   English has a richer technical vocabulary 
 
 我的体会是不会说英语的人去编程，总觉的像一个不会古文的人去研究中国古代历史，不是很地道的感觉。
 文章中他提到一个人叫linus，Linus本人母语并非英语，但是没有流利的英语Linus就不可能领导全球的开发者，开发Linux。
