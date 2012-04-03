@@ -37,6 +37,8 @@ the book will be the ASCIIcasts of the videos???
 Of course all the parts are independent.  but all lessons in same part are
 dependent on eariler ones, so it is a step-by-step tutorial.
 
+Update: Yes, it is a step to step tutorial, first show people the filessystem tree and navagation and only after that, I will move to manipulating files, cp, mv, rm...But I do not think I can make LGCB a great BOOK( easier to more difficult, beautiful as a book, you take one simple chapter out, that won't make a lot of sense to strangers), because my brain is now quite the happycasts way( each time get a job done), so I think LGCB will be "get a term demystified", like "what is PORT, OOP, git-rebase, git-merge, vim-mode, file system tree. Like, today I am doing git-rebase, I can just read all the doc I can find about "rebase", so it is a similar workflow I use doing happycasts episodes. 
+
 LGCB will focus on sth big, complex. I put the lessons together, because I
 have to, they are related, and they are parts of one big monster. If I want to
 show people how to setup wuftp, or use ubuntu software center, I will do it in
