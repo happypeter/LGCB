@@ -14,11 +14,8 @@ nice, but still there are two things I want for my students:
 
 so here this is my guide to the __vim__ official help files, enjoy.
 
-Screencasts can be a lot of help in learning __vim__, so I am building some in
-easy English, following the flow of __vim__ `:h`, focusing on only basic stuff,
-and giving extra explain whenever I think is necessary.
-
-All the Screencasts are here:
+Screencasts can be a lot of help in learning vim, so I am building some
+here:
 
 <http://www.happycasts.net>
 
