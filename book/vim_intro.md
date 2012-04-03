@@ -20,5 +20,5 @@ and giving extra explain whenever I think is necessary.
 
 All the Screencasts are here:
 
-<http://happypeter.github.com/GitBeijing/happyvim-casts.html>
+<http://www.happycasts.net>
 
