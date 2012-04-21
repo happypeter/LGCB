@@ -13,6 +13,8 @@ with nearly any type of files.
 <center><img src="./images/rev.png"></center>
 <center>revisions</center>
 
+![rev](./images/rev.png)
+
 ## Further Reading
 
  - __progit:__
