@@ -7,7 +7,7 @@ title: Permissions
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_1.png" />
 </div>
-A user could possiably have _read_, _write_ and _execute_ permissions to a file, other
+A user could possibly have _read_, _write_ and _execute_ permissions to a file, other
 permissions exist, less commonly used though.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_2.png" />
@@ -17,14 +17,14 @@ the same machine at the same time. To a specific file, the system will assign
 one user as its _owner_, and one group of one or more users to behave as its
 "owner group", simply called _group_ in tech term. Then the rest of the users
 fall into the third category named _world_. It is tempting to think the
-_owner_ and _group_ will have more priviliages( more permissions) than _world_, it is not always the case.
+_owner_ and _group_ will have more privileges( more permissions) than _world_, it is not always the case.
 And another thing worth mentioning is that the _owner_ is usually a member of
 _group_, and again, it is not always the case.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_3.png" />
 </div>
 So when we talk about permissions, we actually need to deal with the three
-types of people. So we need first to determine wether the _owner_ has the
+types of people. So we need first to determine whether the _owner_ has the
 permission to read, write or execute the file, then people in
 _group_ and _world_. So it is actually simple, when we finishing the 3x3, then
 we are done.
@@ -71,7 +71,7 @@ And permissions can mean a bit different to files and dirs.
 If a user has read permission to a file, he can check the content within the
 file, this is simple. If to a dir, then he can also check the content in the
 dir and see all the file names in it( some may say there are also subdirs in,
-well, dirs are also files, just a sepical kind of.)
+well, dirs are also files, just a special kind of.)
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_6.png" />
 </div>
@@ -80,8 +80,8 @@ content, simple enough. But the question is that does this also mean the file na
 
 Because it is the write permission to the parent dir of this file that is in
 charge of whether the file can be renamed/deleted, or a new file can be
-created. One prereuest before you can fully enjoy the write permission to your
-dir is that you still need the _execute_ permission to the dir. Lucily dirs
+created. One pre-request before you can fully enjoy the write permission to your
+dir is that you still need the _execute_ permission to the dir. Luckily dirs
 generally has `x` for every user on the system, so this rarely becomes a
 issue.
 <div class="slide">
@@ -90,7 +90,7 @@ issue.
 This brings us to the last permission the _execute_ (x).
 Literally, it means we can execute a file as a program. This is still a guess,
 but makes a lot of sense. So it is more than clear than if we have `x` to a
-file that can not be _execute_ed( say our notes, or c SOURCE code), that is meaningless. So we usually only give `x` permission to files can be run on the system( e.g a shell scripts, code file with interpreted lanaguages like python or ruby, a binary output of C or C++). So usually when we create a file, it comes without a `x`. But if we `mkdir mydir`, `mydir` will be created with a `x` by default, so why? 
+file that can not be _execute_ed( say our notes, or c SOURCE code), that is meaningless. So we usually only give `x` permission to files can be run on the system( e.g a shell scripts, code file with interpreted languages like python or ruby, a binary output of C or C++). So usually when we create a file, it comes without a `x`. But if we `mkdir mydir`, `mydir` will be created with a `x` by default, so why? 
 
 To clarify this, let's first remove the `x` from the dir.
 
@@ -117,7 +117,7 @@ like this:
     chmod 110110110 a.txt
 
 So the logic is right and clear, but unfortunately `110110110` is not the
-parameter that chmod recongnizes. So we divide the 9 bits into 3 subgroups can
+parameter that chmod recognizes. So we divide the 9 bits into 3 subgroups can
 get a octal out of each subgroup. Now we try:
 
     chmod 666 a.txt 
@@ -127,10 +127,10 @@ is accepted, and we get what we want finally.
   <img src="/LGCB-assets/bash/perm_9.png" />
 </div>
 Beside using the three octals as the parameters of `chmod`, we can also use
-character notaions. Let's first give a short name to each of the three
+character notations. Let's first give a short name to each of the three
 categories. So we want to use `o` for _owner_, but Linux system does not
 agree, so finally `u`(short for user) is the decided name for _owner_, and `g`
-for _group_, `o`(short for others) is choosen for _world_. 
+for _group_, `o`(short for others) is chosen for _world_. 
 
 If we have a.txt whose initial `file mode` like this
 
