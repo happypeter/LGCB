@@ -41,7 +41,7 @@ why function is cool, and makes what I want to do a lot easier(rather than make
 it more painful:). Because I started the easy way, and now already done some
 lines of code, so just show me with my OWN code!! 
 
-So learning by doing, learn a new C feather when you feel the real need in
+So learning by doing, learn a new C feature when you feel the real need in
 your project. When enough interest are gathered, you are willing to learn
 more, becaue all what you learn bring elegance(not trouble) to your projects.
 you are alreay a good programmer, even though you still don't know float and

@@ -23,7 +23,7 @@ AS a new, one may expected a source file looks like this:
 the above stucture makes perfect logical sense, but
 
 ## why C designer loves fuction so much?
-If he is not insane, every C feather was brought in for a practical reason.
+If he is not insane, every C feature was brought in for a practical reason.
 
 The real world is that computers are really good at does something quickly,
 but again, it can only does something really simple one step, hence even a very

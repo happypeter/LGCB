@@ -62,7 +62,7 @@ also only has read permission.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_5.png" />
 </div>
-If we want to see the some "long" format output for a directory, we need to
+If we want to see the same "long" format output for a directory, we need to
 
     ls -ld mydir
 

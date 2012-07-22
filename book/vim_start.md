@@ -17,7 +17,7 @@ Now in _normal mode_, you type
  - `:wq` save and quit
  - `ZZ`  save and quit
 
-Maybe you do not know what know what is _normal mode_, do not worry I will
+Maybe you do not know what is _normal mode_, do not worry I will
 explain soon.
 
 ## vimtutor
