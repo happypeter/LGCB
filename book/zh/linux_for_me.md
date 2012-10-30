@@ -1,6 +1,6 @@
 ---
-translated by Ivan
-Linux适合我吗?
+layout: book-zh
+title: Linux适合我吗?
 ---
 
 问题是现在在中国，很多年轻人不知道以什么谋生，另外一些人能赚到足够的钱却不喜欢他们的工作而想要换一个以不至于浪费自己的才华。

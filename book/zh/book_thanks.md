@@ -1,6 +1,6 @@
 ---
 layout: book-zh
-title: 权感
+title: 感谢
 ---
 
 贡献者

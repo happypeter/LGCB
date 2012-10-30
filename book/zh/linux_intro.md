@@ -1,6 +1,6 @@
 ---
-translated by Ivan
-什么是Linux？
+layout: book-zh
+title: 什么是Linux？
 ---
 
 Unix于1969年诞生于贝尔实验室。作者是Ken Thompson（左）和Dennis Ritchie.

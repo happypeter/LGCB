@@ -1,6 +1,6 @@
 ---
-translated by Ivan
-本书简介
+layout: book-zh
+title: 本书简介
 ---
 
 ### 获得最新版本
