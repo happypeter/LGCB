@@ -1,6 +1,6 @@
 ---
-translated by Ivan
-感谢
+layout: book-zh
+title: 权感
 ---
 
 贡献者
