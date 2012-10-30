@@ -65,7 +65,7 @@ Download Page and a nice installation guide go here: <http://www.ubuntu.com/desk
 ### How to read this book
 I think the right way to learn Linux is pretty much like learning a foreign
 language. You do not learn one thing in full detail, and then move to
-another.(that's why usually it is not wise to learn chapter by chapter), but
+another.(That's why usually it is not wise to learn chapter by chapter) But
 that you learn basic vocabulary of all necessary fields(very basic things about
 bash, vim...) and then try to talk to sb(your computer). Of course, you will
 soon find out your knowledge is limited, then you will be happy to go back to
