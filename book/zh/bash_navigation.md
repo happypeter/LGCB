@@ -62,9 +62,11 @@ point）。
 
 指定绝对路径
 
-    $ cd /home/peter/docs
-    $ pwd
+绝对路径以根目录（在路径里用斜杠'/'表示）开始，接着是一个个树枝直到需要的文件或目录。例如有个放置Peter的文档的目录，路径是`/home/peter/docs`, 这意味着从跟目录开始，有一个叫做`home`的目录，它包括一个叫做`docs`的目录。
+    peter@vostro:/home/peter$ cd /home/peter/docs
+    peter@vostro:/home/peter/bin$ pwd
       /home/peter/docs
+这时候我们发现我们已经把当前的工作目录换成了_/home/peter/docs_。注意Shell提示符的变化——它通常自动展示当前工作目录。
 
 指定相对路径：
 
