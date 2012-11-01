@@ -107,7 +107,7 @@ name of the working directory.
 
 ## Relative Pathnames
 
-Where an absolute pathname starts from the root directory and leads to its
+While an absolute pathname starts from the root directory and leads to its
 destination, a relative pathname starts from the working directory. To do
 this, it uses a couple of special symbols to represent relative positions in
 the file system tree. These special symbols are "." (dot) and ".." (dot dot).
