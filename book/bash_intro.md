@@ -4,6 +4,8 @@ title: Bash Introduction
 ---
 ## What is a Command?
 
+This just is a test!
+
 A command is merely an instruction provided by a user telling a computer to do
 something, such as launch a program. 
 
