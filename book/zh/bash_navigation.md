@@ -2,11 +2,13 @@
 layout: book-zh
 title: 在文件系统中跳转
 ---
+
 <a href="http://v.youku.com/v_show/id_XMzY2MDY3NjYw.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
 
 我们需要学习的第一件事（除了打字之外）是怎样在文件系统树中跳转。
 
 ### 理解文件系统树的结构
+
 <div class="slide">
   <img src="/LGCB-assets/bash/nav_1.png" />
 </div>
