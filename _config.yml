@@ -1,9 +1,4 @@
----
-auto        : false
-lsi         : false
-pygments    : true
-permalink   : none
-markdown    : maruku
+markdown    :  Kramdown
 
 maruku:
     use_divs: true
