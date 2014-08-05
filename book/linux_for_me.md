@@ -31,5 +31,3 @@ Linux vs Windows
 怎样成为一名黑客（How To Became A Hacker），作者Eric Steven Raymond
 
 如果你认可里面说法，我觉得Linux适合你。
-
-
