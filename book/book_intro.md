@@ -1,5 +1,5 @@
 ---
-layout: book-zh
+layout: book
 title: 本书简介
 ---
 
