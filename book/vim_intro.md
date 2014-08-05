@@ -1,21 +1,19 @@
 ---
 layout: book
-title: Vim Introduction
+title: Vim 简介
 ---
 
+当我学习使用一个新的工具软件的时候，我最希望有一个像讲故事那样的教程带着我
+由浅入深地学习。从这个角度来说，__vim__ 官方帮助文件（可以通过在__vim__里
+输入“:h”来获得）是非常棒的，但我希望给我的学生们这些：
 
-When I learn a new software tool, I really want a tutorial that goes like
-story-telling, and I can learn things from easy to difficult. In this sense
-the __vim__ official help files(these you get by typing `:h` in __vim__) are 
-nice, but still there are two things I want for my students:
+    - 精简的内容，那样我们就可以集中精力学习最重要的东西
+    - 更易懂的语言，那样我的学生就可以轻松地读下去
 
-    - less stuff, so that we only focus on the most important
-    - easier English, so that my students can read with smiles
+因此，这是我的关于__vim__官方帮助文件的指南。
 
-so here this is my guide to the __vim__ official help files, enjoy.
-
-Screencasts can be a lot of help in learning vim, so I am building some
-here:
+学习 vim 的时候，视频解说很有用，所以我在这儿准备了一些：
 
 <http://www.happycasts.net>
+
 

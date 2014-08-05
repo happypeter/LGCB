@@ -1,173 +1,121 @@
 ---
-layout: book
-title: Permissions
+layout: book-zh
+title: 权限
 ---
-
-### What are permissions?
+<a href="http://v.youku.com/v_show/id_XMzYwNzc1MTY4.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
+### 什么是“权限”？
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_1.png" />
 </div>
-A user could possibly have _read_, _write_ and _execute_ permissions to a file, other
-permissions exist, less commonly used though.
+用户对文件通常会涉及“读”，“写”，“执行”
+三种权限，当然Linux系统还规定了其他一些权限，不常用。
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_2.png" />
 </div>
-Linux is a _multi-user_ operating system, meaning more than one users can use
-the same machine at the same time. To a specific file, the system will assign
-one user as its _owner_, and one group of one or more users to behave as its
-"owner group", simply called _group_ in tech term. Then the rest of the users
-fall into the third category named _world_. It is tempting to think the
-_owner_ and _group_ will have more privileges( more permissions) than _world_, it is not always the case.
-And another thing worth mentioning is that the _owner_ is usually a member of
-_group_, and again, it is not always the case.
+Linux是一个多用户的操作系统，也就是很多用户可能同时使用一台计算机.
+对于一个特定文件，系统会为他指定一个特定的用户(user)作为它的所有者(owner)。  同时也一定会指定一个由一个或多个人组成的group，作为这个文件的所有者组(owner group)， 严格的术语就叫组(group). 这两类之外的其他用户归为第三类人，叫world。这三类人各自的权限多少是可以任意指定的, 不一定谁多谁少，当然一般来讲owner的权限会多一些。
+强调一下，就是在Linux系统中owner
+是否属于这个group呢？可能属于，也可能不属于。
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_3.png" />
 </div>
-So when we talk about permissions, we actually need to deal with the three
-types of people. So we need first to determine whether the _owner_ has the
-permission to read, write or execute the file, then people in
-_group_ and _world_. So it is actually simple, when we finishing the 3x3, then
-we are done.
+Linux对同一文件的权限控制，也是分了这三类人进行讨论的。权限问题基本上就是要讨论，所有者(owner) 对文件的是否具有“读”，“写”，“执行”的权限。同样，如果对组(group 或者叫owner group)，和其他人(world)的相应讨论也完成了，那权限就明晰了。
 
-### file mode
+### 文件模式（file mode）
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_4.png" />
 </div>
-In reality of Linux, this is accomplished  by defining the so-called _file mode_.
-If we do 
+那么我们回到实际情况。对于文件权限的规定是通过文件模式（file mode）来控制的。
 
-    ls -l a.txt
+如果我们执行`ls -l a.txt`,
+得到的输出中，第一个`-`是关于“文件类型”的，这一位常见的情况有，`l` 表示符号链接，`d` 表示该文件是个目录，`-` 表示普通文件。
 
-Looking at the output, the first `-` is about _file type_, common candidates are `l` for "symbolic link", `d` for "directory" meaning the file is a directory, and if we see `-` here, this represents that the file is a common file.
+我们先跳过后面的9个字符，接下来的这个`1` 表示的是硬链接(hard link)的数目。前后两个`peter`分别代表拥有者(owner)名和组(group)名。`0`是文件大小，以字节为单位，这里明显是个空文件。接下来是“最后修改时间”。
 
-We will now first leave the following 9 characters alone, and what follows is
-a `1` which is the number of _hard links_ `a.txt` has. Now the first `peter`
-is _owner_ name, the second is _group_ name. `0` is the size in bytes, and this
-is a empty file obviously. Then last modification time followed by the file
-name.
+那剩下的9位就是“文件模式”。可以分位三组。第一组（前3位）规定的是所有者（owner）对该文件的权限，第一位表示owner对该文件是否有读权限,`r`
+表示有，`-`表示没有，第二位表示owner对该文件是否具有写权限，`w`代表有，`-`
+代表没有，第三位表示owner对该文件是否具有执行的权限，`x`代表有，`-`
+代表没有。中间三位代表组（group）的情况，最后三位是对其他人（world）。这里，所有者对该文件只有“读”和“写”的权限。那组和其他用户都只有读权限。
 
-Now back to the 9 bits we left out, so Linux use the first 3 to represent the
-permissions of _owner_, then the middle 3 for _group_, last 3 for _world_.
- the first bit determines whether the _owner_ has the read permission to the
-file, `r` means yes, `-` no. Then we see `w` in the second bit, which means
-the _owner_(namely peter) has write access to the file, and again, if `-`,
-he does not. Finally the 3rd bit `-` here means the _owner_ can not execute
-the file, if we want the _owner_ has such permission, we need to set this bit
-to `x`.
 
-So the situation here is clear. As to all the users on the system, peter ( the
-_owner_) has read and write permissions to the file a.txt. Everybody in the
-group named `peter` has read permission. Then everybody else( the _world_)
-also only has read permission.
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_5.png" />
 </div>
-If we want to see the same "long" format output for a directory, we need to
+如果我们要对目录(directroy)查看权限的话，要用
 
     ls -ld mydir
 
-And permissions can mean a bit different to files and dirs.
-
-If a user has read permission to a file, he can check the content within the
-file, this is simple. If to a dir, then he can also check the content in the
-dir and see all the file names in it( some may say there are also subdirs in,
-well, dirs are also files, just a special kind of.)
+同样是读写执行三种权限，对于普通文件和目录代表的意义是有差异的。
+用户对文件有读权限，意味着用户可以查看文件的具体内容。
+对目录来说，就是可以看目录中所包含的文件名（当然也可能包含子目录，不过目录也是一种特殊的文件）。
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_6.png" />
 </div>
-If write permission granted to a user, the user has the right to modify the
-content, simple enough. But the question is that does this also mean the file name can be modified or deleted? The answer is no. 
-
-Because it is the write permission to the parent dir of this file that is in
-charge of whether the file can be renamed/deleted, or a new file can be
-created. One pre-request before you can fully enjoy the write permission to your
-dir is that you still need the _execute_ permission to the dir. Luckily dirs
-generally has `x` for every user on the system, so this rarely becomes a
-issue.
+写权限对文件而言很好理解，就是我们可以修改里面的内容。那是不是也意味者我们可以对文件进行重命名或删除操作呢？
+答案为否。这要看包含该文件的目录的权限。这就谈到了一个目录的写权限的意义，我们对于一个目录有写权限，意味着我们可以对其中包含的文件或子目录进行创建，重命名或删除（操作成功的前提是我们也同时拥有对该目录的执行权限）。
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_7.png" />
 </div>
-This brings us to the last permission the _execute_ (x).
-Literally, it means we can execute a file as a program. This is still a guess,
-but makes a lot of sense. So it is more than clear than if we have `x` to a
-file that can not be _execute_ed( say our notes, or c SOURCE code), that is meaningless. So we usually only give `x` permission to files can be run on the system( e.g a shell scripts, code file with interpreted languages like python or ruby, a binary output of C or C++). So usually when we create a file, it comes without a `x`. But if we `mkdir mydir`, `mydir` will be created with a `x` by default, so why? 
+最后要谈的是执行权限(x),
+我们对于一个二进制文件(例如程序的编译输出),或者是一些脚本文件，例如shell脚本，python脚本执行权限才有意义。
+但是如果我们文件里存的是笔记或者是C程序的源代码，那执行权限是没有什么意义的。这就是为什么系统上的大部分普通文件，如果我们用`ls
+-l`查看一下的话，都是没有执行权限的。但是正好相对的，我们用`ls
+-ld`查看一下系统上的目录，发现基本上都是有执行权限的。
+对于没有执行权限的目录，我们是不能跳转进去的，所以有没有执行权限，意味者我们能不能成功的`cd`到该目录里。
 
-To clarify this, let's first remove the `x` from the dir.
-
-    chmod -x mydir
-
-now we try
-
-    $ cd mydir
-      permission denied.
-
-So for a dir, `x` determines whether we can `cd` into it or not.
-### chmod
+### 修改文件模式(chmod)
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_8.png" />
 </div>
-`chmod` is a Linux command that is used to change _file mode_, and thus change the permissions for everybody. Say, we want to add `w` for both _group_ and _world_. Obviously want want this:
+我们可以通过chmod这个命令来更改文件模式，也就是更改各类用户的具体权限。如果我们想对“组”用户和“其他”用户，在`a.txt`都加上写的权限，那么可以凭空想象出这样一个命令
 
     chmod rw-rw-rw- a.txt
 
-It turned out that the system think it is shit, that forces us to go really
-digital, and we use `1` to say "enable", and `0` to "disable" so we get sth
-like this:
+但是实际这个命令系统是不认的。然后，我们用1代表“使能”，0代表“禁止”，可以得到
 
     chmod 110110110 a.txt
 
-So the logic is right and clear, but unfortunately `110110110` is not the
-parameter that chmod recognizes. So we divide the 9 bits into 3 subgroups can
-get a octal out of each subgroup. Now we try:
+那这个逻辑也是清晰的，但是很不幸`110110110`也不是chmod的合法参数。
+我们再把这个参数写的短一点，也就是把它们分三组分别八进制表示。最后得到的
 
     chmod 666 a.txt 
 
-is accepted, and we get what we want finally.
+是一个正确的系统命令，最后实现了我们的目的。
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_9.png" />
 </div>
-Beside using the three octals as the parameters of `chmod`, we can also use
-character notations. Let's first give a short name to each of the three
-categories. So we want to use `o` for _owner_, but Linux system does not
-agree, so finally `u`(short for user) is the decided name for _owner_, and `g`
-for _group_, `o`(short for others) is chosen for _world_. 
-
-If we have a.txt whose initial `file mode` like this
+除了用三个8进制数来做chmod的参数之外，chmod也支持符号参数。不过我们首先要对三类人起一个简短的别名，那就是用`u`（User）来代表owner，`g`代表group，`o`（others）代表world。那么如果最初a.txt的权限情况是
 
     $ ls -l a.txt
       -rw-r--r--
 
-we run
+那么我么执行
 
     $ chmod a+x a.txt
 
-we get
+就会得到
 
     $ ls -l a.txt
       -rwxr-xr-x
 
-then
+再执行：
 
     $ chmod g+w a.txt
 
-now
+就变成
 
     $ ls -l a.txt
       -rwxrwxr-x    
 
-we can ripe of both the _read_ and _execute_ permissions of _group_ in one go by
+再把World中的人的读和执行权限一步都剥夺
 
     $ chmod o-rx a.txt
 
-that is
+就是
 
     $ ls -l a.txt
       -rwxrwx---
 
-Lastly, if we want to go back to the state we started with, that is
-`rw-r--r--`, so it seems we won't be able to accomplish this in one step using
-the notation way, so we go back to the octal way and
+最后如果想回`-rw-r--r--`的状态呢，可能用这种符号表示法，就不如数字表示方便了，所以我们用
 
     $ chmod 644 a.txt
-
-is our best friend now.

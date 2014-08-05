@@ -1,14 +1,14 @@
 ---
 layout: book
-title: Have Peter's Conf
+title: 看看Peter的配置文件
 ---
 
-If you want to have my vim configuration, do these:
+如果你想看看我的vim配置文件，照着下面做：
 
-	cd  #goto your $HOME
+	cd  # 到你的主目录
 	git clone git://github.com/happypeter/peter-vim.git
-	rm -rf .vim # rm the old .vim
-	mv peter-vim .vim #have the right name
+	rm -rf .vim # 删掉旧的.vim文件夹
+	mv peter-vim .vim # 新文件夹名别写错
 	cd .vim/
-	vim README # check the readme to know more
+	vim README # 在README里面有更多信息
 

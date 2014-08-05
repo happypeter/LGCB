@@ -1,41 +1,38 @@
 ---
 layout: book
-title: Help!!!
+title: 帮助
 ---
 
 
-To get help on a given subject, use the following command: >
+要得到关于某个主题的帮助，可以用以下命令: >
 
 	:help {subject}
 
-To get help on the "x" command, for example, enter the following: >
+举例来说，要得到关于命令“x”的帮助，可以使用以下命令: >
 
 	:help x
 
-To find out how to delete text, use this command: >
+想要知道怎样删除文本，用这个命令: >
 
 	:help deleting
 
-To get a complete index of all __vim__ commands, use the following command: >
+要得到完整的 __vim__ 的命令目录，用这个命令: >
 
 	:help index
 
-When you need to get help for a control character command (for example,
-CTRL-A), you need to spell it with the prefix "CTRL-". >
+当你需要一个CTRL组合键的命令的帮助时（例如，CTRL-A），你需要拼写前缀“CTRL-”. >
 
 	:help CTRL-A
 
-The _vim_ editor has many different modes.  By default, the help system displays
-the normal-mode commands.  For example, the following command displays help
-for the normal-mode CTRL-H command: >
+_vim_ 有很多不同的模式。默认情况下，帮助系统给出命令模式下的命令。举例来说，
+接下来的这个命令给出普通模式下命令CTRL-H的帮助: >
 
 	:help CTRL-H
 
-To identify other modes, use a mode prefix.  If you want the help for the
-insert-mode version of a command, use "i_".  For CTRL-H this gives you the
-following command: >
+要表明其他模式，要用一个模式前缀。如果你想要一个命令的插入模式的帮助，加上前缀
+“i_”: >
 
 	:help i_CTRL-N
 
 
-know more by `:h 02.8`
+想知道更多可以输入“:h 02.8”

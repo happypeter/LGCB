@@ -1,48 +1,24 @@
 ---
-layout: book
-title: Writing, Not just code!
+layout: book-zh
+title: 不要只写代码
 ---
 
-### Why?
+### 这是为什么呢？
 
-Nearly all great people from almost all cultures are great writers. It's
-also important to be a good speaker, but writing has its special
-position in people's careers. It is also very true for us as programmers.
+几乎所有来自世界各地不同文化的著名人士都是好的写手。当然口才好也很重要，但是在人们的职业生涯中，文采有着不可撼动的特殊地位。套用到我们程序员身上也是非常正确的。
 
-Most great hackers I know are also very powerful writers, who are not
-necessarily native English speakers, take Linus of Linux for example, but they
-can speak, and more importantly write English in a CCC way(clearly,
-convincingly, and comfortably).
+我知道的大多数黑客们（hackers）同时也是优秀的作家。他们并不一定是英语语种的人，就像Linux项目的Linus.但他们可以说，更重要的是他们可以以一个CCC（clearly，清楚的；convincingly，令人信服的；comfortably，读着舒服的）的方式来写作。
 
-### Writing is hard!
+### 写作是件苦差事！
 
-Most my friends do not write much, some even do not write at all. Here in
-Beijing, I do not see a lot of people writing down their ideas in English,
-because they think it is too hard.
+我的很多朋友不怎么写作，有些甚至根本不屑。在我这儿，北京，我没看到有多少人用英语写下他们的想法，因为他们认为那太难了。
 
-Come on, Let's face this. Writing is hard, even in our mother tongue. 
-But hey writing can be fun, let's try to write something every day. [Blogging is one way:][1]
+是面对它的时候了。写作是件苦差事，即使是用母语。但是写作也可以很有趣，让我们试试每天写点东西。写博客<http://codinghorror.com/blog/2006/02/fear-of-writing.html>是其中的一个办法：
+	
+	People spend their entire lives learning how to write effectively. It isn't something you can fake. It isn't something you can buy. You have to work at it.
+	That's exactly why people who are afraid they can't write should be blogging.
+	It's exercise. No matter how out of shape you are, if you exercise a few times a week, you're bound to get fitter. Write a small blog entry a few times every week and you're bound to become a better writer.
 
-    People spend their entire lives learning how to write effectively. It
-    isn't something you can fake. It isn't something you can buy. You have to
-    work at it.
+深入一些编程论坛也有帮助。用很少的几个词提出问题，回答别人的问题——但一定要以一个CCC的方式——这比写个一千来字的博文简单多了。另外，Hacker News <http://news.ycombinator.com/>是一个找感觉的好地方。
 
-    That's exactly why people who are afraid they can't write should be
-    blogging.
-
-    It's exercise. No matter how out of shape you are, if you exercise a few
-    times a week, you're bound to get fitter. Write a small blog entry a few
-    times every week and you're bound to become a better writer.
-
-
-And diving into some programming forums can also help, posting a question,
-trying to answer people's questions with small number of words, but do give
-them in a CCC way, this is much easier than a 1000 words blog entry. And
-[Hacker News][2] is a great place to go in this sense.
-
-You see writing is not so hard, like what I am doing here now. But I won't
-hide I am stealing ideas from [this nice post on writing][3]. 
-
-[1]: http://www.codinghorror.com/blog/2006/02/fear-of-writing.html
-[2]: http://news.ycombinator.com/
-[3]: http://www.codinghorror.com/blog/2011/02/how-to-write-without-writing.html
+写作并不是太难，就像我现在做的这样。但是我不会否认我从这篇漂亮的指导<http://www.codinghorror.com/blog/2011/02/how-to-write-without-writing.html>上面拿了一些观点。

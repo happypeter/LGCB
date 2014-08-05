@@ -8,7 +8,7 @@ layout: default
 
 <blockquote>
 <p>
-happypeter1983 at gmail.com
+happypeter1983@gmail.com
 </p>
 </blockquote>
 

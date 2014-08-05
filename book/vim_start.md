@@ -1,34 +1,35 @@
 ---
 layout: book
-title: Getting Started
+title: 准备开始
 ---
-The book text will serve as background knowledge of these screencasts, of
-course I am free to add anything that I think fits.
 
-So let's get started. Launch __vim__! 
+书里的介绍将会作为视频的背景知识，当然，我会加入我认为合适的东西。
+
+
+那么让我们开始吧。启动 __vim__ !
 
     peter@vostro:~$vim filename 
 
-## quit vim
+## 退出 vim
 
-Now in _normal mode_, you type 
+现在在__普通模式__下，输入
 
- - `:q!` quit with out change
- - `:wq` save and quit
- - `ZZ`  save and quit
+ - “:q!”放弃保存并退出
+ - “:wq”保存并退出
+ - “ZZ”保存并退出
 
 Maybe you do not know what is _normal mode_, do not worry I will
 explain soon.
+也许你不知道什么是__普通模式__，别担心，我很快回介绍的。
 
 ## vimtutor
 
-__vimtutor__ is a nice way to practice vim basic operations, but it is
-definitely not for absolute beginners, too difficult.  Still want to try?
-invoke it this way:
+__vimtutor__ 是一个联系 vim 基础操作的好渠道，但它不是为了纯粹的新手
+准备的，它比较难。如果你仍然想要试试的话：
 
     peter@vostro:~$ vimtutor
 
-check
+教学视频：
 
 1_start_vim.mov
 

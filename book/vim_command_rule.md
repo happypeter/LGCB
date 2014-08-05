@@ -1,22 +1,23 @@
 ---
 layout: book
-title: General Command rule
+title: 通用命令规则
 ---
 
 
-It is important to know what are _operators_ and _motions_ 
+知道_运算符_（_operators_）和_动令_（_motions_）是什么很重要。
+基本规则是：
 
-than the rule is:
-
+    运算符 数字 动令
+    
     operator number motion
 
-check
+教学视频：
 
     5_command_rule.mov
    
 
-## more useful things
+## 更多有用的东西
 
-check
+教学视频：
 
     6_big_small.mov

@@ -1,32 +1,26 @@
 ---
 layout: book
-title: Two Most Important Modes
+title: 两个重要的模式
 ---
-_vim_ is different from the editors you know largely in that it has something
-called _mode_.
+_vim_ 和大多数你们知道的编辑器不同，它有叫做_模式_（_mode_）的东东。
 
-The Vim editor is a modal editor.  That means that the editor behaves
-differently, depending on which mode you are in.  The two basic modes are
-called Normal mode and Insert mode.  In Normal mode the characters you type
-are commands.  In Insert mode the characters are inserted as text.
+Vim 是一个有“模式”之分的编辑器。这以为着在不同的模式下，它会有不同的表现。
+两个基本的模式是普通模式和插入模式。在普通模式下你键入的字符都被理解成命令，
+在插入模式下键入的字符则被理解成文本并插入到文件里。
 
-   Since you have just started Vim it will be in Normal mode.  To start Insert
-mode you type the "i" command (i for Insert).  Then you can enter
-the text.  It will be inserted into the file. 
+刚打开 Vim 的时候是在普通模式下的。要进入插入模式可以键入“i”（Instert的首字母），
+然后你就可以输入文本了。这些文本会被插入到文件当中去。
 
-## Getting out of trouble
+## 碰到麻烦了？
 
-One of the problems for Vim novices is mode confusion, which is caused by
-forgetting which mode you are in or by accidentally typing a command that
-switches modes.  To get back to Normal mode, no matter what mode you are in,
-press the __Esc__ key.  Sometimes you have to press it twice.  If Vim beeps back
-at you, you already are in Normal mode.
+Vim 初学者最容易碰到的就是模式上的困惑。比如忘记了自己正处在什么模式当中，
+或者不小心的按了转换模式的键。记住：想要回到普通模式——不管你在什么模式里——
+只要按下 __ESC__ 键就可以了。还有，有时候你需要连按两次。如果听见“嘟”的一声
+（根具机型有所不同），那么你已经在普通模式下了。
 
-Check 
-
+相关教学视频：
 
     2_two_modes.mov
 
-and 
 
     3_why_modes.mov

@@ -1,12 +1,11 @@
 ---
-layout: book
+layout: book-zh
 title: vimrc
 ---
 
-Everybody use __vim__ in different way, and if you do not know how to customize
-__vim__, it won't work as efficiently as it would.
+每个人用 vim 的方式都不同，如果你不知道怎样定制 vim 它就不会像传说中那么高效地工作。
 
-`vimrc` is the heart of __vim__ customization. I do all my customization in it.
-There are other __vim__ conf file out there, just do not touch them.
+`.vimrc` 是 vim定制的核心。我在那里面完成所有的定制工作。
+当然还有其它的 vim 的配置文件，别管它们就行了。
 
-
+<a href="http://happycasts.net/episodes/31">视频</a>

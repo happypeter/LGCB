@@ -1,189 +1,84 @@
 ---
-layout: book
-title: Navigation
+layout: book-zh
+title: 在文件系统中跳转
 ---
 
-The first thing we need to learn to do (besides just typing) is how to
-navigate the file system on our Linux system. In this lesson we will
-introduce the following commands:
+<a href="http://v.youku.com/v_show/id_XMzY2MDY3NjYw.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
 
-- __pwd__   
+我们需要学习的第一件事（除了打字之外）是怎样在文件系统树中跳转。
+
+### 理解文件系统树的结构
+
+<div class="slide">
+  <img src="/LGCB-assets/bash/nav_1.png" />
+</div>
+在Windows系统中，我们会把硬盘分为多个分区（C盘，D盘...）每个盘的最顶级都是多个文件夹（folder），每个文件夹下面有文件和子文件夹，子亦有孙，孙亦有子，形成一个树形结构。 每个分区会有自己的一个树。而且树的最顶端是多个文件夹。 
+<div class="slide">
+  <img src="/LGCB-assets/bash/nav_2.png" />
+</div>
+Linux系统下的情况类似，硬盘也会被分为多个分区（partition），但是名字不叫C盘D盘，而是叫sda1，sda2...。文件的组织也是一个树形结构。区别是，Linux下把文件夹（folder）叫做目录（directory），而且整个系统不管有多少个分区，文件系统却只会有一个文件系统树。树的顶端是一个目录（名字叫`/`）。各个硬盘分区都对应自己的一个挂载点（mount
+point）。
+
+例如，如果我么把sda1挂载到名为`/`的这个目录上（目录其实就是文件系统树上的一个“点”，所以叫做挂载点）。那么由于系统上的所有文件和目录都包含于`/`这个目录之中，所以这样的话我们所有的数据都会存储到sda1这个分区上。
+
+但是，如果我们在此基础之上，把sda2挂载到`/home/`这个目录上，那以后所有`/home/`下的数据就都存在sda2这个分区之上了。
+ 
+<div class="slide">
+  <img src="/LGCB-assets/bash/nav_3.png" />
+</div>
+一个重要的概念是“根目录”，根目录指的是文件系统树的最顶端的名为`/`的这个目录，之所以把它叫根目录，是因为文件系统是一个倒挂的树，`/`是整个树的根（root），所有其他的文件和目录都是由此衍生出的枝蔓。所以根目录也可叫做“老祖宗”目录。
+
+<div class="slide">
+  <img src="/LGCB-assets/bash/nav_4.png" />
+</div>
+ 另一个重要概念是“当前工作目录”（The Current Working Directory）。
+文件系统是一棵倒置的大树，我们能够站立在树中间某个点上。
+也就是位于一个目录中，我们能够看到这个目录所包含的文件
+还有子目录。那么，我们所处的这个目录就叫做“当前工作目录”。
+我们使用`pwd`（Print Working Directory，打印工作目录）命令，来显示当前工作目录名。
+
+    $ pwd
+      /home/peter/
+
+也可以用`ls`这个命令来列出当前工作目录中的内容。
+
+    $ ls
+      a.txt docs
+
+### 绝对路径和相对路径
+绝对路径名从根目录开始，其后跟随着一个个枝干（子目录）直到我们所期望的目录或文件。例如，系统中一个目录
+的绝对路径名是`/usr/bin`。这意思是从根目录开始（由路径名中开头的`/`表示），
+有一个叫做`usr`的目录，这个目录下包含一个叫做`bin`的子目录。
+
+一个绝对路径名从根目录开始到达目的地，而相对路径则是从工作目录开始。文件系统使用几个
+特殊的符号来表示在文件系统树中的相对位置。这些特殊符号是`.`和`..`。
+这个`.`符号是指当前工作目录，而`..`符号是指当前工作目录的父目录。
+
+### 更改当前工作目录（cd）
+更改你的工作目录（目录树中，我们所站之处），需要使用`cd`命令。为了实现目标，
+输入cd命令，其后跟所期望到的工作目录。路径名就是我们沿着目录树枝干到达
+我们所要目录所经过的路线。路径名可以用两种方式来指定，一个是绝对路径名，
+另一个是相对路径名。
+
+比如我们当前位置是`/home/peter/`如果我们想要把当前工作路径改为`/home/peter/docs`就可以有下面两种方式。
+
+指定绝对路径
+
+    $ cd /home/peter/docs
+    $ pwd
+      /home/peter/docs
+
+指定相对路径：
+
+    $ cd ./docs/
+    $ pwd
+      /home/peter/docs 
   
-  Print name of current working directory
-- __cd__     
-  
-  Change directory
-- __ls__     
-  
-  List directory contents
-                                 
-pretty easy commands.
+通常`./`是可以省略的，也就是可以
 
-## Understanding The File System Tree
-Like Windows, a Unix-like operating system such as Linux organizes its files
-in what is called a _hierarchical directory structure_. This means that they are
-organized in a tree-like pattern of directories (sometimes called folders in
-other systems), which may contain files and other directories. The first
-directory in the file system is called the root directory. The root directory
-contains files and subdirectories, which contain more files and subdirectories
-and so on and so on.  
+    $ cd docs/
+    $ pwd
+      /home/peter/docs 
 
-Note that unlike Windows, which has a separate file system tree for each
-storage device, Unix-like systems such as Linux always have a single file
-system tree, regardless of how many drives or storage devices are attached to
-the computer. Storage devices are attached (or more correctly, mounted) at
-various points on the tree according to the whims of the system administrator,
-the person (or persons) responsible for the maintenance of the system.  
-
-## The Current Working Directory 
-Most of us are probably familiar with a graphical
-file manager which represents the file system tree. Notice that the tree is
-usually with the root at the top and the various branches descending below.
-
-                           /
-                           |
-          +--------+-------+-------+--------+
-          |        |       |       |        |
-        /home    /bin     ...     /tmp    /etc
-          |                                 |
-    +-----+----+                      +-----+-----+
-    |          |                      |     |     |
-    peter     billie                 corntab ...   wgetrc
-
-Imagine that the file system is shaped like an upside-down tree and we are
-able to stand in the middle of it. At any given time, we are inside a single
-directory and we can see the files contained in the directory and the pathway
-to the directory above us (called the parent directory) and any subdirectories
-below us. The directory we are standing in is called the current working
-directory. To display the current working directory, we use the __pwd__ (print
-working directory) command.
-
-    peter@vostro:~/repo-farm/LGCB/book$ pwd
-    /home/peter/repo-farm/LGCB/book
-
-
-When we first log in to our system our current working directory is set to
-our home directory. Each user account is given its own home directory and when
-operating as a regular user, the home directory is the only place the user is
-allowed to write file.
-
-## Listing The Contents Of A Directory
-
-To list the files and directories in the current working directory, we use the
-`ls` command.
-
-    peter@vostro:~/repo-farm/LGCB/book$ ls
-    bash-intro.md  bash-navigation.md  bash-start.md  git.md  images  index.md
-
-
-## Changing The Current Working Directory
-
-To change your working directory (where we are standing in our tree) we use
-the cd command. To do this, type cd followed by the pathname of the desired
-working directory. A pathname is the route we take along the branches of the
-tree to get to the directory we want. Pathnames can be specified in one of two
-different ways; as absolute pathnames or as relative pathnames. Let's deal
-with absolute pathnames first.
-
-## Absolute Pathnames
-
-An absolute pathname begins with the root directory(/) and follows the tree
-branch by branch until the path to the desired directory or file is completed.
-For example, there is a directory on your system in which most of your
-system's programs are installed. The pathname of the directory is `/usr/bin`.
-This means from the root directory (represented by the leading slash in the
-pathname) there is a directory called "usr" which contains a directory called
-"bin".
-
-    peter@vostro:~/repo-farm/LGCB/book$ cd /usr/bin
-    peter@vostro:/usr/bin$ pwd
-    /usr/bin
-
-
-Now we can see that we have changed the current working directory to
-_/usr/bin_ and that it is full of files. Notice how the shell prompt has
-changed? As a convenience, it is usually set up to automatically display the
-name of the working directory.
-
-## Relative Pathnames
-
-Where an absolute pathname starts from the root directory and leads to its
-destination, a relative pathname starts from the working directory. To do
-this, it uses a couple of special symbols to represent relative positions in
-the file system tree. These special symbols are "." (dot) and ".." (dot dot).
-The "." symbol refers to the working directory and the ".." symbol refers to
-the working directory's parent directory. Here is how it works. Let's change
-the working directory to `/usr/bin` again:
-
-    peter@vostro:~/repo-farm/LGCB/book$ cd /usr/bin
-    peter@vostro:/usr/bin$ pwd
-    /usr/bin
-
-Okay, now let's say that we wanted to change the working directory to the
-parent of `/usr/bin` which is `/usr`. We could do that two different ways. Either
-with an absolute pathname:
-
-    peter@vostro:/usr/bin$ cd /usr/
-    peter@vostro:/usr$ pwd
-    /usr
-
-Or, with a relative pathname:
-
-    peter@vostro:/usr/bin$ cd ..
-    peter@vostro:/usr$ pwd
-    /usr
-
-different methods with identical results. Which one should we use? The one
-that requires the least typing!  Likewise, we can change the working directory
-from `/usr` to `/usr/bin` in two different ways. Either using an absolute
-pathname:
-
-    peter@vostro:/usr$ cd /usr/bin/
-    peter@vostro:/usr/bin$ pwd
-    /usr/bin
-
-Or, with a relative pathname:
-
-    peter@vostro:/usr$ cd ./bin/
-    peter@vostro:/usr/bin$ pwd
-    /usr/bin
-
-there is something important that I must point out here. In almost all cases,
-you can omit the "./". It is implied. Typing:
-
-    peter@vostro:/usr$ cd bin/
-    peter@vostro:/usr/bin$ pwd
-    /usr/bin
-
-does the same thing. In general, if you do not specify a pathname to
-something, the working directory will be assumed.
-
-## Some Helpful Shortcuts
-
-
-- __cd__       
-  
-  Changes the working directory to your home directory.
-
-- __cd -__     
-  
-  Changes the working directory to the previous working directory.
-
-## Important Facts About Filenames
-1. Filenames that begin with a period character are hidden. This only means
-   that ls will not list them unless you say `ls -a`.
-
-2. Filenames and commands in Linux, like Unix, are case sensitive. The
-   filenames _File1_ and _file1_ refer to different files.
-
-3. Linux has no concept of a "file extension" like some other operating
-   systems.  You may name files any way you like. The contents and/or purpose
-   of a file is needed by other means. Although Unix-like operating system don't
-   use file extensions to determine the contents/purpose of files, some
-   application programs do(e.g. vim.).
-
-4. Though Linux supports long filenames which may contain embedded spaces, do
-   NOT embed spaces in filenames. If you want to represent spaces between
-   words in a filename, use underscore characters. You will thank yourself
-   later.
+原因就是如果我们在目录名（这里是`docs`）之前不写路径的话（也就是不加`./`），那系统默认取当前工作目录。
 

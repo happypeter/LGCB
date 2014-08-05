@@ -1,35 +1,32 @@
 ---
 layout: book
-title: Basic Movement
+title: 基本光标移动
 ---
 
-## why normal mode first?
+## 为什么开始就是普通模式？
 
-When you already understand why __vim__ has different modes, you may still wonder,
-why __vim__ first takes us to _normal mode_(also called _command mode_) rather
-than _insert mode_?
+当你明白 __vim__ 有不同的模式之后，你可能人然想知道，为什么 __vim__ 一开始进入
+_普通模式_（也叫_命令模式_）而不是_插入模式_？
 
-It is because in a programmer's daily editing, most time are spent to modify
-things, not adding text. and in normal mode you can really move around much
-faster, and changing things much easier.
+这是因为在一个程序猿的日常编辑过程中，多是时间是用来修改原有的文本而不是加入
+新的文本。在普通模式下你可以更快地移动光标，更轻松地修改文本。
 
-## Moving around 
+## 光标移动
 
-After you return to _Normal mode_, you can move around by using these keys:
+在你回到_普通模式_之后，你可以用一下这些键来移动光标：
 
              ^
-             k              Hint:  The h key is at the left and moves left.
-       < h       l >               The l key is at the right and moves right.
-             j                     The j key looks like a down arrow.
+             k              提示：h 键在最左边——光标左移。
+       < h       l >              l 键在最右边——光标右移。 
+             j                    j 键像一个向下的箭头——光标下移
              v
 
 
-You can also move the cursor by using the arrow keys. But NEVER do it! 
-Because, you must move your hand from the text keys to the arrow keys.
+当然你也可以通过方向键来移动光标，但最好不要这么做。
+因为，你必须把你的手从主键盘上移开，这会影响效率。
 
 
-Check
-
+教学视频：
     4_basic_move.mov
 
 [basic_move-zh](http://v.youku.com/v_show/id_XMjQ5NzMxMzYw.html) 
@@ -37,17 +34,13 @@ Check
 
 ## FAQ
 
-__Q:__ How u move to the end of the line, i know one way : $, but this need to
-press shift button, i feel u do it fast , so i wonder whether you have better
-way ?
+__Q:__ 怎样把光标移到行尾？我知道一个方法：$，但是这需要按下 shift 键，有点慢，
+你有更快的办法吗？
 
-__A:__ I do not use $ very often.
-
-Usually when we go to the end of line, we actually want to append sth to the
-line, so it's best to have a shortcut that takes us to the end of line
-and switch to _insert mode_ at the same time. Luckily __vim__ has that and it is
+__A:__ 我不经常使用 $ 。
+通常我们把光标移动到行尾是为了加点什么东西，所以最好是有那么一个命令既把光标移动
+到行尾，又同时开启_插入模式_。好在 __vim__ 有这么一个命令
 
     A
 
-try it :)
-
+试试看吧 :)

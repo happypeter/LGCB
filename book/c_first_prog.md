@@ -1,94 +1,86 @@
 ---
 layout: book
-title: The First Program
+title: 第一个程序
 ---
-### Why learn C?
-So the question is why we learn C or any other so called programing
-language?
+### 为什么学C？
 
-To write programs, of course. And a computer program will run on our computer
-and help us do something, say, do some mathematical calculation, or download
-music for us from the Internet.
+问题来了：我们为什么要学C或者其它被叫做编程语言的东西？
 
-So the real answer is we want to TALK to our computer and get things done. 
+当然是为了写程序啦。一个电脑程序会运行在我们的电脑上，帮我们做一些事情，像算术
+计算啊或者从网上下载音乐什么的。
 
-### The first program
+所以学编程语言的真正原因就是我们想要和我们的计算机_对话_，让它们吧事情做掉。
 
-Let's first create a file
+### 第一个程序
+
+新建一个文件：
 
     vim file.c
 
-Now have the following in it:
+内容是：
 
     main()
     {
     }
 
-Save and quit now we have a file named _file.c_, which is our first program.
+保存并退出，我们就有了一个叫做 _file.c_ 的文件，就是我们第一个程序。
 
-So first we need to say, a programming Language is different from our natural
-languages in that 
+首先要说的是，编程语言和我们的自然语言是不一样的，表现在：
 
-### It has strict format
+### 它有严格的格式
 
-Compared to human brain, computers are far less smart, so the easily way to
-make it understand what you are saying is by talking in a very strictly
-formatted way, so that  thing is simple and clear.
+和人脑相比，计算机显然不那么聪明，所以让要它知道你在说什么，只有遵守严格的
+格式，这样对话才简单而清晰。
 
-In our first program, we followed the format, so even though it does nothing
-for us, it has certain format. Everything within this file is a empty
-_function_.
+在我们第一个程序里，我们遵守了这种格式，所以尽管它什么都没做，但它有明确的格式。
+这个文件里什么都没有，只有一个空的_函数_。
 
-### What is a function in C?
+### 在C语言里，函数是个什么东西？
 
-Again, we need to say computers are machines, which can only do one simple
-thing in one single step. The result is a very small task is divided into
-several steps of computation.
+再一次说明，计算机是个机器，只能一次做一件很简单的事情。结果就是一个很小的
+任务也会被分解成几个小步骤来执行。
 
-A function provides a convenient way to wrap some many-step computation up,
-now you can do all the steps as one. This make sense, because you always have
-steps to repeat.
+函数提供了一种便利——让你把若干步骤的操作包装起来，你就可以像做一个操作一样做
+包装起来的若干个步骤。这个很有用，因为你总是会有需要重复进行的操作。
 
-This is how it looks:
+函数看起来就像这样：
 
-    function_name()
+    function_name()		函数名称
     {
-        things to do
+        things to do		要做的事情
     }
 
-A legal (though simplified) function format.
+这是一个合法的（尽管是精简过的）函数的形式。
 
-So now we see in our first program, we have a function named "main", and it
-does nothing for us, because there is nothing between "{" and "}". OK, so if
-we only have one function in a C program, can we give it any other name, the
-answer is NO, since: 
+回过来看我们的第一个程序，里面有个叫做“main”的函数，它什么也没有做，因为在“{”
+和“}”之间什么都没有。
+那么如果在一个C程序里面只有一个函数，我们可以给它命一个别的名字吗？答案是不
+可以。因为：
 
-###  C program start with main function
+###  C程序以main函数开始
 
-So as a C program, it needs to have one(and only one) "main()", that's the
-point the execution begins.
+作为一个C程序，它必须要有且只能有一个“main()”，而它就是程序开始执行的地方。
 
 
-### run it!
-Until now all I mentioned seems to be nothing but the defense to say our first
-program is a real C program. That's bullshit, if we can not run it. Words are
-tedious, we need to see something fun.
+### 运行！
 
-But wait, our program is human-readable characters, so we usually call what's
-inside _file.c_ "source code". While computer is a simple machine, which only
-understanding 0 and 1 as you may know. So we need somebody who can translate
-the "source code" into "0 and 1"s. And here steps in the translator, another
-computer program named _compiler_ .
+到现在为止，所有我提到的东西似乎暗示我们的第一个程序并不是一个真正的C程序。
+如果它不能运行的话什么都是胡扯。这个时候文字是乏力的，我们要做点有趣的事情。
 
-On __ubuntu__ system, now we run this:
+
+但是，再等一等。我们的程序现在是人看得懂的字符，我们通常吧 _file.c_ 里面的东西
+叫做“源代码”。然而计算机是个机器，它只懂0和1。所以我们就需要谁来把“源代码”翻译
+成“0和1”。这时候这个翻译，就是另一个计算机程序，叫做_编译器_（_compiler_）就闪
+亮登场了。
+
+在 __ubuntu__ 系统里，我们可以输入这样的命令：
 
     peter@vostro:~$ gcc file.c 
 
-Note __gcc__ is the compiler.
+注意，__gcc__ 就是编译器。
 
-If you don't messed up anything, you should get a complied file named _a.out_
-in your current directory.   
+如果你没有弄错什么的话，你会在当前的目录里得到一个编译过的叫做 _a.out_ 的文件。
 
     peter@vostro:~$ ./a.out 
 
-It does nothing for us.  
+当然，这个程序什么也没有做……

@@ -1,48 +1,40 @@
 ---
 layout: book
-title: C Introduction
+title: C 介绍
 ---
 
-Back in 2002, when I was in college and given a course on C, I failed because
-I hated it. That is:
+2002年的时候，我在大学里学C语言。我没有通过那门课程因为我不喜欢它：
 
-    - C was hard to learn
-    - I did not know how it could be of any dame use!
+    - C 很难学
+    - 我不知道它到底有什么鸟用！
 
-So, OK, now is the year of 2011, I am trying to teach other people to use C,
-God bless!
+然后，好吧，今天是2011年，我正在尝试着教别人用C语言。神保佑我吧！
 
-I want to go LGCB story-telling style and try to make this lanaguage easy
-to learn, and make people understand that C is useful.
+我想把LGCB写得像在讲故事一样，试着让这门语言学起来更容易，并且让人们知道
+C很有用。
 
-## Learn C the easy way
+## 轻装上阵学C语言
 
-In most C books, you get a whole chapter on one single topic, say _data type_.
-Now you get whole lot of details about this. I won't say this is wrong, since
-this might be the only way to do a serious book. But I want to say, beginners
-ususally can't tell what is the most important part. So they learn it
-"systematically", soon forget everything "systematically". 
+在多数C语言的书里，你会看到一整个关于某一单独主题的章节，叫做_数据类型_。
+然后你就会看到关于数据类型的全部的细致的解说。我不能说这么写不对，因为对于一本
+严肃的书来说，这可能是唯一的写法。但我想要说的是，初学者通常分不清哪些是重点，
+所以只好“系统地”学。然后不久就“系统地”忘光了。
 
-For me it is better only to show the students _int_ and _char_, so that they
-they can 
+要我说，只告诉学生们什么是 _int_ 和 _char_ 更好，那样他们就可以
 
-    - do real code right now
-    - only to learn what is "float" when they need to
+    - 立即着手堆代码
+    - 只在需要的时候才去学习什么是“float”之类的
 
-This is what I called the easy way, so LGCB won't be a "serious book". It
-will just behave like a good friend showing you something cool about C, from
-easy to the difficult, step by step, because he knows otherwise you will kick
-him on the ass.
+这就是我指的“轻装上阵”，也就是说LGCB并不是一本“严肃的书”。它仅仅像个好朋友一样
+给你看点关于C的很酷的东西，由浅入深，一步一部，因为他知道不这么做的话你会给他
+来个“屁股向后平沙落雁式”。
 
-## Usefulness Brings Interests
+## 没用的东西却有乐趣
 
-If somebody wants me to learn what a "C function" is, he first needs to show me
-why function is cool, and makes what I want to do a lot easier(rather than make
-it more painful:). Because I started the easy way, and now already done some
-lines of code, so just show me with my OWN code!! 
+如果谁要要我去了解某个C函数，他首先要让我看到那个函数为什么那么酷，并且可以让
+我想要做的事情更简单（而不是做起来更痛苦）。我没有系统地学习，但却有一点堆代码的
+经验，因此，让我_自己_试试吧。
 
-So learning by doing, learn a new C feature when you feel the real need in
-your project. When enough interest are gathered, you are willing to learn
-more, becaue all what you learn bring elegance(not trouble) to your projects.
-you are alreay a good programmer, even though you still don't know float and
-double yet:-) 
+边用边学，只有在你的项目需要的时候才去学新的C要点。兴趣到了，你就会愿意去学更多，
+因为所有你学的东西都让你的活儿更轻松而不是更麻烦。这时候你就已经是一个很好的
+程序猿，尽管你人然不知道 float 和 double 是什么 :-)
