@@ -7,7 +7,7 @@
 #    a all-in-one big html file
 #    and then I can use htmldoc to
 #    get a nice pdf
-#    
+#
 #################################
 book_url="http://happypeter.github.com/LGCB/book/"
 OUTPUT_FILE=lgcb.html
