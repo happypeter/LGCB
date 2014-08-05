@@ -1,5 +1,5 @@
 ---
-layout: book-zh
+layout: book
 title: 在文件系统中跳转
 ---
 

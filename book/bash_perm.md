@@ -1,5 +1,5 @@
 ---
-layout: book-zh
+layout: book
 title: 权限
 ---
 <a href="http://v.youku.com/v_show/id_XMzYwNzc1MTY4.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
