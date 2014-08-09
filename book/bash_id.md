@@ -1,5 +1,5 @@
 ---
-layout: book-zh
+layout: book
 title: 改变用户身份
 ---
 
