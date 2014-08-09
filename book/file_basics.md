@@ -1,7 +1,16 @@
 ---
 layout: book
-title: 在文件系统中跳转
+title: 基本文件和目录操作
 ---
+
+
+要覆盖到得内容包括：
+
+http://billie66.github.io/TLCL/book/zh/chap05.html
+
+
+
+
 
 <a href="http://v.youku.com/v_show/id_XMzY2MDY3NjYw.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
 
@@ -12,7 +21,7 @@ title: 在文件系统中跳转
 <div class="slide">
   <img src="/LGCB-assets/bash/nav_1.png" />
 </div>
-在Windows系统中，我们会把硬盘分为多个分区（C盘，D盘...）每个盘的最顶级都是多个文件夹（folder），每个文件夹下面有文件和子文件夹，子亦有孙，孙亦有子，形成一个树形结构。 每个分区会有自己的一个树。而且树的最顶端是多个文件夹。 
+在Windows系统中，我们会把硬盘分为多个分区（C盘，D盘...）每个盘的最顶级都是多个文件夹（folder），每个文件夹下面有文件和子文件夹，子亦有孙，孙亦有子，形成一个树形结构。 每个分区会有自己的一个树。而且树的最顶端是多个文件夹。
 <div class="slide">
   <img src="/LGCB-assets/bash/nav_2.png" />
 </div>
@@ -22,7 +31,7 @@ point）。
 例如，如果我么把sda1挂载到名为`/`的这个目录上（目录其实就是文件系统树上的一个“点”，所以叫做挂载点）。那么由于系统上的所有文件和目录都包含于`/`这个目录之中，所以这样的话我们所有的数据都会存储到sda1这个分区上。
 
 但是，如果我们在此基础之上，把sda2挂载到`/home/`这个目录上，那以后所有`/home/`下的数据就都存在sda2这个分区之上了。
- 
+
 <div class="slide">
   <img src="/LGCB-assets/bash/nav_3.png" />
 </div>
@@ -72,25 +81,25 @@ point）。
 
     $ cd ./docs/
     $ pwd
-      /home/peter/docs 
-  
+      /home/peter/docs
+
 通常`./`是可以省略的，也就是可以
 
     $ cd docs/
     $ pwd
-      /home/peter/docs 
+      /home/peter/docs
 
 原因就是如果我们在目录名（这里是`docs`）之前不写路径的话（也就是不加`./`），那系统默认取当前工作目录。
 
 ---
 layout: book-zh
-title: 开始bash之旅 
+title: 开始bash之旅
 ---
 
 启动终端仿真器！一旦它运行起来，我们应该能看到类似
 下面的提示信息：
 
-    peter@vostro:~$ 
+    peter@vostro:~$
 
 这叫做shell提示符，当shell准备好接受输入的时候，它就会出现。通常，它包括你的
 “用户名＠主机名”，其后是当前工作目录，和一个美元符号。
