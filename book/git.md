@@ -1,5 +1,23 @@
 ---
 layout: book
+title: Git Introduction
+---
+
+When we write code, it's very nice to be able to keep track of all of our
+changes such that we can always go back to an earlier version when we mess
+something up. It's also really important to coordinate our changes with others
+working on the same code. For these reasons, programmers use programs called
+_Version Control Systems_ to manage their code. Git is a VCS.
+
+Git is the stupid content tracker, which means it tracks your data easily.
+
+
+## NOTE:
+
+<http://progit.org> already there, and it even has a Chinese version, so I hope I
+won't repeat what others already did.
+---
+layout: book
 title: Gittin Started
 ---
 
@@ -134,3 +152,30 @@ Good questions now are:
 
 My answer now is you can do these things, really easily, because git was made to
 do such jobs efficiently. 
+---
+layout: book
+title: About Version Control 
+---
+
+What is version control, and why should you care? 
+
+Version control is a system that records changes to a file or set of files
+over time so that you can recall specific versions later. As a programmer, you
+usually want to control software source code,though in reality you can do this
+with nearly any type of files.
+
+<center><img src="./images/rev.png"></center>
+<center>revisions</center>
+
+## Further Reading
+
+ - __progit:__
+   <http://progit.org/book/ch1-1.html>
+
+   This is not so useful 
+
+ - __wikipedia:__
+   <http://en.wikipedia.org/wiki/Revision_control>
+
+   I won't suggest your reading this though it is actually useful. Have this,
+   and read this later, if you find it is too difficult for you.
