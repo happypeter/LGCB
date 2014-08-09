@@ -6,6 +6,9 @@ title: 基本文件和目录操作
 
 要覆盖到得内容包括：
 
+第三章：文件系统中跳转
+第四章：探究操作系统
+第五章：操作文件和目录
 http://billie66.github.io/TLCL/book/zh/chap05.html
 
 
