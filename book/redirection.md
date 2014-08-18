@@ -18,7 +18,8 @@ _输入输出重定向_  把数据重定向。很简单是吧？但是从哪儿�
 Many of the programs that we have used so far produce output of some kind.
 This output often consists of two types.
 
-## 标准输入，标准输出，标准错误
+### 标准输入，标准输出，标准错误
+
 我们至今使用的很多程序提供某种输出。这些输出基本包括两种形式：
 
 - First, we have the program's results; that is, the data the program is
