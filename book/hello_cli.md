@@ -32,14 +32,16 @@ Ctrl++
 Ctrl-D 关闭一个 shell
 
 
-### 隐藏启动区
+### 简单更改一下系统设置
+
+隐藏启动区
 
 点击启动区的系统设置图标（ systerm settings ），到 Personal -> Appearance 条目下，选择 Behavior，这样就可以点击开启，“Auto hide Launcher" 这个选项即可。
 
 重新显示，可以用右侧的 Cmd 键，我现在的情况是在 Mac 机器上的虚拟机中安装的 Ubuntu，如果你用的是普通 PC 可能相应的就要使用 Window 键了。
 
 
-### 删除不必要的目录
+删除不必要的目录
 
 显示桌面  到 systerm settings -> keyboard 下面，点击 shortcut，然后找到 navigation 下面的 "hide all normal windows" 这一项，单击右侧的快捷键说明，我一般会改为 Ctrl-Alt-D，关闭后就生效了。
 
