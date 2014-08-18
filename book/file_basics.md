@@ -15,6 +15,11 @@ http://billie66.github.io/TLCL/book/zh/chap05.html
 Linux 的目录就是一个倒挂的数，所有的文件和目录（文件夹）都包含在一个老祖宗目录之下，名字叫 `/`
 
 
+`cp -r folder_name xxx`
+
+`cp -rf *`
+
+install tree
 
 <a href="http://v.youku.com/v_show/id_XMzY2MDY3NjYw.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
 

@@ -54,7 +54,11 @@ http://billie66.github.io/TLCL/book/zh/chap06.html 有详细的说明就好了�
 
 ### manpage
 
+如果要查看 ls 这个命令的文档，我们可以敲
+
+```
 man ls
+```
 
 /-xxx n
 

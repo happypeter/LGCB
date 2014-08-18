@@ -1,10 +1,10 @@
 ---
-layout: book-zh
+layout: book
 title: 重定向
 ---
 
 In this lesson we are going to check what may be the coolest feature of the
-command line. It's called _I/O redirection_. 
+command line. It's called _I/O redirection_.
 
 这章我们将会见到可能是命令行最酷的部分——_输入输出重定向_。
 
@@ -16,18 +16,18 @@ _输入输出重定向_  把数据重定向。很简单是吧？但是从哪儿�
 
 ## Standard Input, Output, And Error
 Many of the programs that we have used so far produce output of some kind.
-This output often consists of two types. 
+This output often consists of two types.
 
 ## 标准输入，标准输出，标准错误
 我们至今使用的很多程序提供某种输出。这些输出基本包括两种形式：
 
 - First, we have the program's results; that is, the data the program is
-  designed to produce 
+  designed to produce
 
 - 首先，我们会得到程序运行的结果，指的是那些程序被设计来给出的用户要的东西。
 
 - Second, we have status and error messages that tell us how the program is
-  getting along 
+  getting along
 
 - 其次，我们会得到告诉我们程序运行得怎么样的状态信息和错误信息。
 
@@ -55,12 +55,12 @@ but with I/O redirection, we can change that.
 上输出。但有了输入输出重定向，我们就可以改变这一点了。
 
 
-           +------------+              +------------+   
-           |  keyboard  |              |   screen   |   
-           +-----+------+              +------------+   
+           +------------+              +------------+
+           |  keyboard  |              |   screen   |
+           +-----+------+              +------------+
                  |                          ^  ^
                  |                          |  |
-                 v                 +--------+  +--------+       
+                 v                 +--------+  +--------+
            +-----+-----+     +-----+------+      +------+-----+
            |   stdin   |     |   stdout   |      |   stderr   |
            +-----------+     +------------+      +------------+
@@ -69,7 +69,7 @@ but with I/O redirection, we can change that.
 ## 管道
 
 Pipe is a form of redirection that is used to send the output of one program
-to another program for further processing. 
+to another program for further processing.
 
 管道是重定向的一种，它被用来在程序之间传递输出以达到进一步处理数据的目的。
 
