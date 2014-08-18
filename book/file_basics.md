@@ -12,6 +12,7 @@ title: 基本文件和目录操作
 http://billie66.github.io/TLCL/book/zh/chap05.html
 
 
+Linux 的目录就是一个倒挂的数，所有的文件和目录（文件夹）都包含在一个老祖宗目录之下，名字叫 `/`
 
 
 
