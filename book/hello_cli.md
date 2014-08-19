@@ -35,6 +35,12 @@ ubuntu 是现在非常流行的一款 Linux 发行版。目前我们可以拿到
 
 隐藏启动区
 
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
 点击启动区的系统设置图标（ systerm settings ），到 Personal -> Appearance 条目下，选择 Behavior，这样就可以点击开启，“Auto hide Launcher" 这个选项即可。
 
 重新显示，可以用右侧的 Cmd 键，我现在的情况是在 Mac 机器上的虚拟机中安装的 Ubuntu，如果你用的是普通 PC 可能相应的就要使用 Window 键了。
