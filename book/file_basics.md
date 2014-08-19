@@ -3,13 +3,28 @@ layout: book
 title: 基本文件和目录操作
 ---
 
+打开终端，要做的第一件事就是要理解 Linux 目录树的结构，学会在这棵树上自由跳转。
+
+理论部分大家自己看书，视频里面我们带大家实际动动手，完成一些常用的操作。
+
 
 要覆盖到得内容包括：
 
-第三章：文件系统中跳转
-第四章：探究操作系统
-第五章：操作文件和目录
-http://billie66.github.io/TLCL/book/zh/chap05.html
+- http://billie66.github.io/TLCL/book/zh/chap03.html
+  - 第三章：文件系统中跳转
+  - 没有什么比解释清楚绝对路径和相对路径更重要的了
+  - pwd .. .
+  - cd abs relative
+- http://billie66.github.io/TLCL/book/zh/chap04.html
+  - 第四章：探究操作系统
+  - 让大家看到 ls 的作用，了解文件和目录，用 GUI 给大家对应起来
+  - 这一章有各个主要目录的作用，要展示给大家
+- http://billie66.github.io/TLCL/book/zh/chap05.html
+  cp -rf xxx xxx
+  mv aaa bbb 你可以用 mv 命令来进行移动，也可以用它来改变文件或文件夹的名字
+  rm -rf aaa/
+  cp -rf * ../
+  rm *.txt
 
 
 Linux 的目录就是一个倒挂的数，所有的文件和目录（文件夹）都包含在一个老祖宗目录之下，名字叫 `/`
