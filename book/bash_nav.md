@@ -60,6 +60,14 @@ Linux 系统下的情况类似，硬盘也会被分为多个分区（ partition 
 
 比如我们当前位置是`/home/peter/`如果我们想要把当前工作路径改为`/home/peter/docs`就可以有下面两种方式。
 
+如果我们
+
+    $ cd .
+    $ pwd
+    /home/peter
+
+所以 cd . 是个愚蠢的操作，等于什么也没干
+
 指定绝对路径
 
     $ cd /home/peter/docs
@@ -70,12 +78,22 @@ Linux 系统下的情况类似，硬盘也会被分为多个分区（ partition 
 
     $ cd ./docs/
     $ pwd
-      /home/peter/docs
+    /home/peter/docs
 
 通常`./`是可以省略的，也就是可以
 
     $ cd docs/
     $ pwd
-      /home/peter/docs
+    /home/peter/docs
+
+如果我们
+
+    $ cd /
+    $ ls
+
+这是我们会看到很多系统默认就会有的很多目录，到底这些目录都是干嘛的呢？ 可以参考 <http://billie66.github.io/TLCL/book/zh/chap04.html> 中的 “
+表 4-4: Linux 系统中的目录”这部分。
 
 原因就是如果我们在目录名（这里是`docs`）之前不写路径的话（也就是不加`./`），那系统默认取当前工作目录。
+
+好这一节我们就聊这么多，更多内容可以看看 <http://billie66.github.io/TLCL/book/zh/chap03.html>。
