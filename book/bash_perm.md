@@ -3,6 +3,10 @@ layout: book
 title: 权限
 ---
 <a href="http://v.youku.com/v_show/id_XMzYwNzc1MTY4.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
+这一集我们集中火力，解决一个在 Linux 命令行实际操作中经常遇到的问题，"permission denied"。当我们想要创建或删除一个文件时，我们看到这个，当我们想要执行一个文件或者改动一个文件时也时不时的被这个报错信息虐待。好，我们受够了，这集视频之后，权限问题，我们将会驾轻就熟。
+
+今天的视频我们分三部分：...
+
 ### 什么是“权限”？
 <div class="slide">
   <img src="/LGCB-assets/bash/perm_1.png" />
