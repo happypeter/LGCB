@@ -44,7 +44,7 @@ Linux 系统下的情况类似，硬盘也会被分为多个分区（ partition 
 的绝对路径名是 `/usr/bin` 。这意思是从根目录开始（由路径名中开头的`/`表示），
 有一个叫做 `usr` 的目录，这个目录下包含一个叫做 `bin` 的子目录。
 
-![](http://media.happycasts.net/pic/lgcb/abs_path.ong)
+![](http://media.happycasts.net/pic/lgcb/abs_path.png)
 
 一个绝对路径名从根目录开始到达目的地，而相对路径则是从工作目录开始。文件系统使用几个
 特殊的符号来表示在文件系统树中的相对位置。这些特殊符号是`.`和`..`。
