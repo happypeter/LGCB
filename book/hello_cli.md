@@ -9,9 +9,9 @@ title: 你好，命令行
 
 ### 选择操作系统
 
-Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_distribution> 页面上我们可以看到各个 Linux 的发行版可谓多如牛毛。有 Redhat，CentOS，fedora 等等，但是 Redhat 和 CentOS 主要是在构建企业服务方面见长，我以前服务过的一间公司，其实基本上就是仿效 Redhat 的商业模式的。而在创业领域，我通过观察圈子内最著名的 VPS 提供商，例如 aliyun，和国外的 Linode，aws，digitalocean 这些公司，感觉 ubuntu 是最受欢迎的服务器平台。另外，如果你像我一样，把 ubuntu 安装在自己的机器上做开发平台用，那么其他的平台跟 ubuntu 是没法比的，我只见过极个别的朋友是用 fedora 的，其他的系统就更少见。
+Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_distribution> 页面上我们可以看到各个 Linux 的发行版可谓多如牛毛。有 Redhat，CentOS，fedora 等等，但是 Redhat 和 CentOS 主要是在构建企业服务方面见长，我以前服务过的一间公司，其实基本上就是仿效 Redhat 的商业模式的。而在创业领域，观察一下圈子内最著名的 VPS 提供商，例如 aliyun，和国外的 Linode，aws，digitalocean 这些公司，应该说 ubuntu 是最受欢迎的服务器部署平台。另外，如果你像我一样，把 ubuntu 安装在自己的机器上做开发机用，ubuntu 的表现也是非常优秀。
 
-目前我们可以拿到的 ubuntu LTS 长期支持版本有2012年发布的 12.04 系统，还有2014年4月发布的14.04版，这里我们选择使用12.04。之所以不采用 14.04 是因为他太新，很多东西网上还找不到资料，出了问题不容易解决。同时如果我们到 <https://wiki.ubuntu.com/LTS> 可以看到 12.04 支持期是 5 年，所以依旧是目前的依旧是可以放心使用的。可以到 <http://releases.ubuntu.com/12.04/> 的页面上我们可以进行下载。
+目前我们可以拿到的 ubuntu LTS 长期支持版本有2012年发布的12.04系统，还有2014年4月发布的14.04版，这里我们选择使用12.04。之所以不采用 14.04 是因为他太新，很多东西网上还找不到资料，出了问题不容易解决。同时如果我们到 <https://wiki.ubuntu.com/LTS> 可以看到12.04支持期是5年，所以依旧是目前的依旧是可以放心使用的。可以到 <http://releases.ubuntu.com/12.04/> 的页面上我们可以进行下载。
 
 ![](http://media.happycasts.net/pic/lgcb/ubuntu.png)
 
@@ -26,6 +26,13 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 使用命令行，我们先要打开一个叫做”终端“的软件，这个软件是系统已经预装的了，所以我们可以敲 Super 键（在我这里是右侧的 Cmd 键，如果你用的是 PC，那么可能是你右侧的 window 键）调出快速启动框，敲 terminal 也就是终端的英文，然后回车即可。
 
 其实，终端是指我们打开的这个窗口，里面我们看到的，真正运行的程序叫 shell，shell 有很多种，zsh csh 等等，但是在现在大部分最常见的 Unix 类的系统上，例如,苹果的 Mac 系统，红帽系统，包括我们这里的 ubuntu 系统，使用的都是一种叫 Bash 的 shell。
+
+如果我们在终端里执行
+
+    $ python
+    >>>
+
+这样，终端里运行的就不是 bash 了，而是 python 语言。Ctrl-D 可以退出 python 回到 bash 。
 
 下面更改一下终端样式，点击 edit -> profiles
 
@@ -54,7 +61,7 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 
 ### 如何学习命令
 
-命令一般都三部分组成，命令本身，命令参数，操作对象
+命令一般都三部分组成，命令本身，命令参数，操作对象。
 
 基本原则不必逐一学习，实际动手中学习就好了。如果要看书，千万不要看手册型的大部的课本，课本通常都讲的太深了而且也是总理论轻动手。也不要看用户手册，用户手册是给已经会用这个工具的人看的。而要看 toturial，像 TLCL 这种： <http://billie66.github.io/TLCL/> 。
 
