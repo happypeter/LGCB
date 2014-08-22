@@ -69,6 +69,8 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 
 作为开发者，入手一个新的工具的时候，基本原则不必每个知识点都逐一学习，实际动手中学习就好了。如果要看书，千万不要看手册型的大部的课本，课本通常都讲的太深了而且是重理论轻动手。也不要看用户手册，用户手册是给已经会用这个工具的人看的。而要看 toturial，因为教程比较简短，而且都是面向实用的。具体到命令行的学习，推荐的教程是 TLCL： <http://billie66.github.io/TLCL/> 。
 
+![](http://media.happycasts.net/pic/lgcb/nice_tutorial.png)
+
 对于已经基本学会的命令，如果忘了具体细节，可以使用 manpage，手册。如果要查看 rm 这个命令的文档，我们可以敲
 
 ```
