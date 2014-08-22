@@ -3,67 +3,59 @@ layout: book
 title: 基本文件和目录操作
 ---
 
-打开终端，要做的第一件事就是要理解 Linux 目录树的结构，学会在这棵树上自由跳转。
-
 理论部分大家自己看书，视频里面我们带大家实际动动手，完成一些常用的操作。
 
 
-要覆盖到得内容包括：
+### 日常文件操作
+大家平时用鼠标干的活，这里咱们用敲命令的方式快速做一遍。要覆盖到得内容包括：
+
+复制文件目录
+
+    $ cp -r dir1 dir2
+    $ cp file1 file2
+
+移动文件目录
+
+    $ mv dir1 Desktop/dir1
+
+重命名文件目录
+
+    $ mv file1 file2
+    $ mv dir1 dir2
+
+删除文件目录
+
+    $ rm file
+    $ rm -r dir
+
+创建文件目录
+
+    $ mkdir dir
+    $ touch file
+    $ >file
+    $ vim file
+
+查看文件内容
+
+    $ cat file # 适合比较短的文件
+    $ less file # 有快捷键，可以看比较长的文件
+    $ tail -f tmp.log # 开启另一个终端，执行 echo "first line" >> tmp.log 看看效果
+
+创建快捷方式（符号链接） ln -s
+
+    $ ln -s source symlink # 如果不加 -s 则创建”硬链接“
+      # 参考：TLCL
+
+查看文件类型 fiie
+
+    $ file symlink
+    $ file file1
+    $ file dir1
 
 - http://billie66.github.io/TLCL/book/zh/chap04.html
-  - 这一章有各个主要目录的作用，要展示给大家
+  - 这部分内容，前面的视频中已经让大家看了
+
+### 通配符的使用
+
 - http://billie66.github.io/TLCL/book/zh/chap05.html
-  cp -rf xxx xxx
-  mv aaa bbb 你可以用 mv 命令来进行移动，也可以用它来改变文件或文件夹的名字
-  rm -rf aaa/
-  cp -rf * ../
-  rm *.txt
-
-
-Linux 的目录就是一个倒挂的数，所有的文件和目录（文件夹）都包含在一个老祖宗目录之下，名字叫 `/`
-
-
-`cp -r folder_name xxx`
-
-`cp -rf *`
-
-install tree
-
-启动终端仿真器！一旦它运行起来，我们应该能看到类似
-下面的提示信息：
-
-    peter@vostro:~$
-
-这叫做shell提示符，当shell准备好接受输入的时候，它就会出现。通常，它包括你的
-“用户名＠主机名”，其后是当前工作目录，和一个美元符号。
-如上所示，`peter`是“用户名”，`vostro`是我主机的名字。
-
-
-### 第一次按键
-到目前为止，事情进展顺利，让我们试着输入一些东西。输入一些没有意义的字符，
-如下所示：
-
-    peter@vostro:~$ sddsdss
-    sddsdss: command not found
-
-因为这个命令没有任何意义，所以shell会告诉我们“命令没有找到”。
-
-
-### 命令历史
-如果我们按下上箭头按键，我们会看到前一个命令会重新出现在提示符之后。这就叫做命令
-历史。默认情况下，大多数Linux发行版可以记得最后运行过的500个命令。按下下箭头按键，
-前一个命令消失。
-
-### 移动光标
-再次按下上箭头按键，得到上一个命令。现在，试试左右按键。看一下我们怎样在命令行中
-移动光标。这样可以轻松地编辑命令。
-
-### 试试一些简单命令
-
-尽然我们已经知道怎样输入命令了，那么试试执行一些简单的命令吧。第一个命令是`date`
-显示当前时间和日期。
-
-    peter@vostro:~$ date
-    Tue Jan 18 21:46:56 CST 2011
-
-现在，Linux命令行对你来说就不再陌生了。
+  - wildcard 的细节
