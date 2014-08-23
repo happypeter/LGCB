@@ -5,7 +5,10 @@ title: 权限
 
 sudo adduser deluser 这些是必须讲的，看看有没有必要单独开一节课
 
-<a href="http://v.youku.com/v_show/id_XMzYwNzc1MTY4.html">视频<img width="20" height="20" src="http://happypeter.github.com/LGCB-assets/misc/youku.png" /></a>
+有一个概念必须明确：粗略的，用户在自己主目录下会拥有读写权限，主目录之外一般只有读权限。
+
+<a href="http://v.youku.com/v_show/id_XMzYwNzc1MTY4.html">视频</a>
+
 这一集我们集中火力，解决一个在 Linux 命令行实际操作中经常遇到的问题，"permission denied"。当我们想要创建或删除一个文件时，我们看到这个，当我们想要执行一个文件或者改动一个文件时也时不时的被这个报错信息虐待。好，我们受够了，这集视频之后，权限问题，我们将会驾轻就熟。
 
 今天的视频我们分三部分：...
