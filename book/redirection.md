@@ -111,20 +111,20 @@ Linux 有一个重要的传统，就是 Everything is a file 。一个普通文�
 
 来举一个比较大一点的例子，比如我们有这样一个文件
 
-   $ cat file.txt
-   d.txt
-   a.txt
-   c.html
-   b.txt
-   b.txt
+    $ cat file.txt
+    d.txt
+    a.txt
+    c.html
+    b.txt
+    b.txt
 
 现在我们要把这个文件处理一下，去除里面的重复内容（使用 uniq 命令），只保留 txt 文件（使用 grep ），然后按文件名字母顺序来排序（ sort 命令）
 
-   $ cat file.txt|uniq|grep txt|sort >output.txt
+    $ cat file.txt|uniq|grep txt|sort >output.txt
 
 最后聊一个好玩的，借助一个工具叫 tee 的帮助，咱们还能把数据流分成两股，一股到文件，一股还到 stdout
 
-   ls /bin|tee output.txt|grep less
+    $ ls /bin|tee output.txt|grep less
 
 
 ### 总结
