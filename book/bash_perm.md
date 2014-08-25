@@ -3,9 +3,12 @@ layout: book
 title: 权限
 ---
 
-sudo adduser deluser 这些是必须讲的，看看有没有必要单独开一节课
+sudo adduser deluser 这些是必须讲的，看看有没有必要单独开一节课。
+
+这一章也可以改名为 “用户和权限” 这样 sudo adduser deluser chown chgrp passwd 这些就都讲了吧，而且也应该放到一块讲。内容肯定太多，只要超出 10 分钟就分成两个视频：一个原理篇，一个实操篇。
 
 有一个概念必须明确：粗略的，用户在自己主目录下会拥有读写权限，主目录之外一般只有读权限。
+
 
 <a href="http://v.youku.com/v_show/id_XMzYwNzc1MTY4.html">视频</a>
 

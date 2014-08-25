@@ -3,71 +3,87 @@ layout: book
 title: 重定向
 ---
 
-In this lesson we are going to check what may be the coolest feature of the
-command line. It's called _I/O redirection_.
+我们先从实际干活的时候的几个常用操作开始聊起。例如
 
-这章我们将会见到可能是命令行最酷的部分——_输入输出重定向_。
+    ls >output.txt
 
-_I/O Redirection_ redirects data. Simple enough, ah? But from where to where?
-Before we talk about this, we need to understand this:
+这个挺好理解，就是把 ls 的输出，通过这个小漏斗，保存到文件中。但是为什么这样有时候就不灵呢？
 
-_输入输出重定向_  把数据重定向。很简单是吧？但是从哪儿重定向到哪儿呢？
-在讨论这个问题之前，我们必须明白这些东西：
+    ls shit >output.txt # shit 是一个根本不存在的目录
 
-## Standard Input, Output, And Error
-Many of the programs that we have used so far produce output of some kind.
-This output often consists of two types.
+另一个例子。开发中经常会用到 grep 命令来进行字符串查找，比如我们来找一下 /bin 目录下的所有可执行的程序中又那些是包含 less 字样的
 
-### 标准输入，标准输出，标准错误
+    ls /bin|grep less
 
-我们至今使用的很多程序提供某种输出。这些输出基本包括两种形式：
+这个也比较直观，这个竖线隔开前后两个命令，并且把前面命令的输出传递给后面那个命令作进一步的处理，但是为什么这样也能达成相同的效果呢
 
-- First, we have the program's results; that is, the data the program is
-  designed to produce
+   ls /bin > output.txt
+   grep less <output.txt
 
-- 首先，我们会得到程序运行的结果，指的是那些程序被设计来给出的用户要的东西。
+所以说有些时候，还是要把底层的道理搞搞清楚，干活的时候才能做到心中有数。
 
-- Second, we have status and error messages that tell us how the program is
-  getting along
-
-- 其次，我们会得到告诉我们程序运行得怎么样的状态信息和错误信息。
+本集将为你揭开谜底。一共还是三部分
 
 
-Keeping with the Unix theme of "everything is a file," programs such as ls
-actually send their results to a special file called standard output (often
-expressed as stdout) and their status messages to another file called standard
-error (stderr). By default, both standard output and standard error are linked
-to the screen and not saved into a disk file.  In addition, many programs take
-input from a facility called standard input (stdin) which is, by default,
-attached to the keyboard.
-
-Unix的传统是“一切都是文件”（"everything is a file"）。像 ls 这样的程序事实上
-把它们的结果送到一个叫做标准输出（standard outout, 常作 stdout ）的文件，
-把它们的错误信息送到另一个叫做标准错误（ standard error, 常作 stderr ）的文件。
-默认情况下，标准输出和标准错误都输出到屏幕上而不会保存在磁盘上。另外，很多程序
-从一个叫做标准输入（ standard input, 常作 stdin ）的设备读入数据，默认情况下
-就是键盘。
-
-I/O redirection allows us to change where output goes and where input comes
-from.  Normally, output goes to the screen and input comes from the keyboard,
-but with I/O redirection, we can change that.
-
-输入输出重定向允许我们决定从哪儿输入，往哪儿输出。一般来说，从键盘输入，往屏幕
-上输出。但有了输入输出重定向，我们就可以改变这一点了。
+<http://happycasts.net/episodes/23?autoplay=true>
 
 
-           +------------+              +------------+
-           |  keyboard  |              |   screen   |
-           +-----+------+              +------------+
-                 |                          ^  ^
-                 |                          |  |
-                 v                 +--------+  +--------+
-           +-----+-----+     +-----+------+      +------+-----+
-           |   stdin   |     |   stdout   |      |   stderr   |
-           +-----------+     +------------+      +------------+
+### 三个重要的文件
 
-## Pipes
-## 管道
+Linux 有一个重要的传统，就是 Everything is a file 。一个普通文件当然是文件，一个文件夹是一个目录文件，一个程序是一个可执行的文件，甚至一个硬件设备，硬盘，鼠标，键盘，在 /dev 下面都能找到它们各自对应的文件。
+
+每个文件自然都有文件名，但是系统还可以用另外一个东西来定位一个打开的文件，这就是“文件描述符”（ file descriptor ）。Linux 启动后，有三个文件很特殊，因为他们是一直打开的，所以系统就给他们分配了固定的文件描述符。
+
+文件描述符为 0 的文件叫做 stdin （标准输入文件），描述符为1的叫做 stdout （标准输出文件），为2的叫 stderr （标准错误输出文件）。系统默认情况下，我们的键盘输入都会写入 stdin 文件，而程序执行的正常输出写到 stdout 文件，报错信息写到 stderr 文件，同时这两个文件都是默认绑定显示器的，这也就是为啥我们可以在屏幕上看到程序输出和报错的信息了。
+
+正常情况下，在一个程序执行的时候，会从键盘也就是 stdin 中读取输入，正常的输出导入到 stdout，要是执行发生了错误，报错信息对流向 stdout。但是我们也可以动手改变这三股数据流的流向，这个就是重定向。
+
+图图图
+
+
+我们以 cowsay 这个程序为例。命令行中执行 cowsay 命令
+
+    $ cowsay
+
+这样程序会等待我们输入文字，敲 hello peter 然后用 Ctrl-D 结束输入，这样可以得到这样的输出。
+
+     _____________
+    < hello peter >
+     -------------
+            \   ^__^
+             \  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
+
+这样我们完成了一个从 stdin 读入，stdout 输出的基本过程。stderr 的情况我们先卖个关子，后面我们马上就会看到它的妙用。
+
+### 各种拐弯的方式
+
+先说最简单的，同时也是最常用的一种重定向，标准输出重定向。
+
+    $ ls >output.txt
+
+这样我们就把 ls 命令的输出数据流的流向，从 stdout 改为了流向文件。可以用 cat 命令进行查看。这时如果我们执行
+
+    $ ls ..>output.txt
+
+想要把上级目录的内容也添加到 output.txt 文件中，但是却发现上次的内容被覆盖了。这个是重定向符 `>` 的特点了，如果想保留原有内容不被覆盖，可以这样
+
+    $ ls .. >>output.txt
+
+现在，咱们就可以把任何一个正常的输出，重定向到一个文件中保存起来了。很多时候，一个程序是在全天候执行的，例如 web 服务器，相应的会有各种各样的正常输入产生，我们通常会把这些内容重定向到一个 log 文件中备用。但是也有时候出现了异常情况，程序出错了，那么这个信息我们是不希望被重定向掉的，而是希望能够立即在屏幕上看到输出，那么这时就是 stderr 大显身手的时候了。
+
+    $ ls shit/ >output.txt # shit 是一个根本不存在的目录
+
+这时我们就会看到，报错信息打印到屏幕上了，查看 output.txt 里面是没有的。这个就是我们期待的结果。不过，如果我们也想把错误输出保存到文件中，应该怎么操作呢？
+
+    $ ls shit 2>output.txt #2是标准错误输出的文件描述符
+
+甚至还可以重定向输入
+
+    $ cowsay <file.txt
+### 管道线
 
 Pipe is a form of redirection that is used to send the output of one program
 to another program for further processing.
@@ -87,3 +103,7 @@ For example:
     gzip
 
 把 ls /bin/ 的输出中包含“zip”的行筛选出来了。
+
+借助一个工具叫 tee 的帮助，咱们还能把数据流分成两股，一股到文件，一股还到 stdout
+
+   ls /bin|tee output.txt|grep less
