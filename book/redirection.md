@@ -66,7 +66,7 @@ Linux 有一个重要的传统，就是 Everything is a file 。一个普通文�
 
 这样我们就把 ls 命令的输出数据流的流向，从 stdout 改为了流向文件。可以用 cat 命令进行查看。这时如果我们执行
 
-    $ ls ..>output.txt
+    $ ls .. >output.txt
 
 想要把上级目录的内容也添加到 output.txt 文件中，但是却发现上次的内容被覆盖了。这个是重定向符 `>` 的特点了，如果想保留原有内容不被覆盖，可以这样
 
@@ -80,31 +80,53 @@ Linux 有一个重要的传统，就是 Everything is a file 。一个普通文�
 
     $ ls shit 2>output.txt #2是标准错误输出的文件描述符
 
-甚至还可以重定向输入
+
+有了重定向符我们还可把两个文件弄成一个：
+
+    $ cat file1 file2 >file.txt
+
+
+还可以重定向输入
 
     $ cowsay <file.txt
 
+
 ### 管道线
 
-Pipe is a form of redirection that is used to send the output of one program
-to another program for further processing.
+更多的时候，我们希望把前一个程序的输出，直接作为后一个程序的输入来使用，这个就是管道线了。
 
-管道是重定向的一种，它被用来在程序之间传递输出以达到进一步处理数据的目的。
+    command1|command2|command3
 
-    command1|command2
+管道线是 Linux 命令行哲学的一块基石。有了管道线的联通，各个程序就可以专注于自己的那个小任务，同时把这个小任务做的非常完善，这也就是为啥 Linux 的命令都有那么多参数了。各个小程序通过管道线，一样可以完成很复杂多样的任务，但是同时又保证了每个小程序自己都非常的简单，方便调试。
 
-For example:
-例如：
+现在，我们启动字符串查找程序 grep
 
-    peter@vostro:~$ ls /bin/ |grep zip
-    bunzip2
-    bzip2
-    bzip2recover
-    gunzip
-    gzip
+    $ grep less
 
-把 ls /bin/ 的输出中包含“zip”的行筛选出来了。
+这样我们可以从键盘输入一行字符串并回车，如果字符串中包含 less，那 grep 就会把这一行打印出来。实际中 grep 经常作为管道线上的一步而存在，比如
 
-借助一个工具叫 tee 的帮助，咱们还能把数据流分成两股，一股到文件，一股还到 stdout
+    $ ls /bin/ |grep less
+
+可以帮我们找到 /bin 下的所有文件中，那些是文件名中有 less 字样的。
+
+来举一个比较大一点的例子，比如我们有这样一个文件
+
+   $ cat file.txt
+   d.txt
+   a.txt
+   c.html
+   b.txt
+   b.txt
+
+现在我们要把这个文件处理一下，去除里面的重复内容（使用 uniq 命令），只保留 txt 文件（使用 grep ），然后按文件名字母顺序来排序（ sort 命令）
+
+   $ cat file.txt|uniq|grep txt|sort >output.txt
+
+最后聊一个好玩的，借助一个工具叫 tee 的帮助，咱们还能把数据流分成两股，一股到文件，一股还到 stdout
 
    ls /bin|tee output.txt|grep less
+
+
+### 总结
+
+这集咱们就聊这些，其实各种重定向的方式还有一些不太常用的没讲，打开可以看 TLCL 的重定向那一章。
