@@ -9,6 +9,8 @@ sudo adduser deluser 这些是必须讲的，看看有没有必要单独开一�
 
 有一个概念必须明确：粗略的，用户在自己主目录下会拥有读写权限，主目录之外一般只有读权限。
 
+能否举出实际创建 VPS 时，创建新用户的那几步作为实例
+
 
 <a href="http://v.youku.com/v_show/id_XMzYwNzc1MTY4.html">视频</a>
 
