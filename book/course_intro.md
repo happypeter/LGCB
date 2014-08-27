@@ -9,7 +9,7 @@ title: 内容简介
 
 ![](http://media.happycasts.net/pic/lgcb/peter_github.png)
 
-Hey 你好，我是 Peter，不过网上我一般叫 happypeter，比如这是我的 github 账号，就是 github.com/happypeter。我每天都会打开看的电子邮箱地址是 happypeter1983@gmail.co 。我是个 RubyOnRails 全栈性网站开发人员，平时开发平台是苹果的 Mac 和 ubuntu Linux，当程序部署到服务器上，服务器操作系统我也选择 ubuntu 。
+Hey 你好，我是 Peter，不过网上我一般叫 happypeter，比如这是我的 github 账号，就是 <github.com/happypeter> 。我每天都会打开看的电子邮箱地址是 happypeter1983@gmail.com 。我是个 [RubyOnRails](http://rubyonrails.org/) 全栈型网站开发人员，平时开发平台是苹果的 Mac 和 ubuntu Linux，当程序部署到服务器上，服务器操作系统我也选择 ubuntu 。
 
 ### 课程简介
 
