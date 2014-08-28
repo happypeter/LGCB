@@ -3,13 +3,15 @@ layout: book
 title: 权限
 ---
 
-sudo adduser deluser 这些是必须讲的，看看有没有必要单独开一节课。
+sudo 是必须讲的。
 
-这一章也可以改名为 “用户和权限” 这样 sudo adduser deluser chown chgrp passwd 这些就都讲了吧，而且也应该放到一块讲。内容肯定太多，只要超出 10 分钟就分成两个视频：一个原理篇，一个实操篇。
+sudo !!
+
+adduser deluser passwd 这些命令可以给大家快速的过一下，让大家知道还可以这么弄，然后给出参考资料就行了。
+
 
 有一个概念必须明确：粗略的，用户在自己主目录下会拥有读写权限，主目录之外一般只有读权限。
 
-能否举出实际创建 VPS 时，创建新用户的那几步作为实例
 
 
 <a href="http://v.youku.com/v_show/id_XMzYwNzc1MTY4.html">视频</a>
@@ -134,3 +136,5 @@ Linux对同一文件的权限控制，也是分了这三类人进行讨论的。
 最后如果想回`-rw-r--r--`的状态呢，可能用这种符号表示法，就不如数字表示方便了，所以我们用
 
     $ chmod 644 a.txt
+
+另外我们也可以用 chown 来改变用户 owner，chgrp 来改变文件 group，具体实用参考：
