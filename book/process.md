@@ -17,9 +17,7 @@ Linux 系统上有一个命令叫 ps 用来查看当前系统上的进程。打�
 
     $ ps aux|less
 
-这样我们看到，第一个字段 USER 代码是哪个用户执行的这个进程，第二个 PID （ Porcess ID ）就是我们要的进程号了。敲 `/vim` 可以查找到我们想要找得 vim 这个进程。
-
-<http://billie66.github.io/TLCL/book/zh/chap11.html>
+这样我们看到，第一个字段 USER 代码是哪个用户执行的这个进程，第二个 PID （ Porcess ID ）就是我们要的进程号了。敲 `/vim` 可以查找到我们想要找得 vim 这个进程。其他那些内容我不太关心，表 11-1，11-2 上也有清晰的说明。<http://billie66.github.io/TLCL/book/zh/chap11.html>
 
 当你知道那一部分代表进程好之后，后面一般用管道线加 grep 来进行查找
 
