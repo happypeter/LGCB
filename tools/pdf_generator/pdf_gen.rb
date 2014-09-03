@@ -1,16 +1,24 @@
 #encoding: utf-8
-
 require 'kramdown'
 require 'erb'
 
 @tex = ""
 
 Dir.glob("../../book/*.md") do |x|
-  str = IO.read(x)
-  reg = /---\nlayout:.*\ntitle:(\p{Any}+)\n---\n/
+  str = IO.read(x).lstrip
+  reg = /^---\nlayout:.*\ntitle:(\p{Any}+)\n---\n/
+
   title = reg.match(str).to_s.gsub!(reg, '\1').strip
   text = str.gsub!(reg, '')
-  doc = Kramdown::Document.new(text, :input => 'GFM', :hard_wrap => false).to_latex
+
+  doc = Kramdown::Document.new(
+    text,
+    :input => 'GFM',
+    :hard_wrap => false,
+    :auto_ids => true,
+    :header_offset => -3
+  ).to_latex
+
   @tex += "\\chapter{#{title}}\n\n" + doc
 end
 
@@ -21,5 +29,10 @@ File.open("lgcb.tex", "w+") do |f|
 end
 
 system("xelatex lgcb.tex")
+
+# produce the contents of this book
+system("xelatex lgcb.tex")
+
+# remove useless files
 system("./clean")
 
