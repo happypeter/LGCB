@@ -51,6 +51,8 @@ title: 查找
 
 find 命令就是你给它指定一个目录，它就帮你翻个底朝天。
 
+![](http://media.happycasts.net/pic/lgcb/find.png)
+
 这里有一个目录 mydir，里面的情况是
 
     $ ls
