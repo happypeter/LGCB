@@ -23,7 +23,7 @@ title: 查找
 
       locate pattern
 
-这样会找到系统上的任何路径中包含 pattern 的文件和目录，用通配符表示就是 *pattern* ( pattern 前后可以有0个或是多个任意字符)。
+这样会找到系统上的任何路径中包含 `pattern` 的文件和目录，用通配符表示就是 `*pattern*` ( pattern 前后可以有0个或是多个任意字符)。
 
 举个例子
 
