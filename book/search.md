@@ -3,12 +3,12 @@ layout: book
 title: 查找
 ---
 
-作为开发者，每天都在敲敲打打一些文件。每天我们在编辑器里都会搞上几百次的动作：查找文件和字符串，这里看看如何在命令行里实现。
+作为开发者，每天都在敲敲打打一些文件。在代码编辑器里经常涉及查找文件和字符串的操作，这里看看如何在命令行里实现。
 
 本集主要涉三个命令：
 
-- locate 在全系统范围内定位一个文件
-- find 在一个目录之内定位一个文件
+- locate 在全系统范围内定位文件
+- find 在一个目录之内定位文件
 - grep 查找一个字符串
 
 要聊的内容分三部分：
@@ -41,7 +41,7 @@ title: 查找
 
 这里面有一句：“ locate 查找的是由 updatedb 这个命令生成的数据库“，这个也解释了为何 locate 找东西会那么快。
 
-可惜，updatedb 命令一般每天自动运行一次。所以最近我们才创建的文件是找不到的，解决方法，也简单，手动运行一下
+可惜，updatedb 命令一般每天自动运行一次。所以最近我们才创建的文件是找不到的，解决方法也简单，手动运行一下
 
     $ updatedb
 
@@ -61,7 +61,7 @@ find 命令就是你给它指定一个目录，它就帮你翻个底朝天。
     b.txt
     subdir/
 
-在当前目录找到文件名中包含 string 的文件
+在当前目录找到文件后缀为 .txt 的文件
 
     $ cd mydir
     $ find .|grep .txt
@@ -70,7 +70,7 @@ find 命令就是你给它指定一个目录，它就帮你翻个底朝天。
 
     $ find . -type f
 
-find 找到文件是为了操作文件
+找到文件是为了操作文件
 
     $ find . -type f -exec ls -l '{}' ';'
 
@@ -86,12 +86,11 @@ find 找到文件是为了操作文件
 
     $ find . -exec grep -n string '{}' ';' -print
 
-
-另外，实现一个代码项目内查找，ack-grep 比 grep 更方便。参考 <http://happycasts.net/episodes/26>
+另外，如果在一个代码项目内查找，ack-grep 比 grep 更方便。参考 <http://happycasts.net/episodes/26>
 
 ### happygrep
 
-上面 find 命令的输出有点乱，不好看。而且我也希望能很快的用编辑器打开那一行，所以就自己写了个工具，叫 happygrep <https://github.com/happypeter/happygrep> 。
+上面 find 命令的输出有点乱，不好看，并且我也希望能很快的用编辑器打开匹配项进行编辑，所以就自己写了个工具，叫 happygrep <https://github.com/happypeter/happygrep> 。
 
 可以使用 git clone 的方式来下载，让后按照 README 上给出的方式进行安装。
 
