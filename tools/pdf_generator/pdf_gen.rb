@@ -4,7 +4,7 @@ require 'erb'
 
 @tex = ""
 
-Dir.glob("../../book/*.md") do |x|
+Dir.glob("../../book/*.md").sort.each do |x|
   str = IO.read(x).lstrip
   reg = /^---\nlayout:.*\ntitle:(\p{Any}+)\n---\n/
 
