@@ -13,9 +13,9 @@ title: 查找
 
 要聊的内容分三部分：
 
-1. locate
-2. find
-3. happygrep
+- locate
+- find
+- happygrep
 
 ### locate
 
