@@ -3,7 +3,7 @@ layout: book
 title: 查找
 ---
 
-作为开发者，每天都在敲敲打打一些文件。每天我们在编辑器里都会搞上几百次的动作：如何快速找到一个文件或者特定字符串，这里看看如何在命令行里实现。
+作为开发者，每天都在敲敲打打一些文件。每天我们在编辑器里都会搞上几百次的动作：查找文件和字符串，这里看看如何在命令行里实现。
 
 本集主要涉三个命令：
 
@@ -74,27 +74,28 @@ find 找到文件是为了操作文件
 
     $ find . -type f -exec ls -l '{}' ';'
 
-打印当前目录下，所有包含字符串 string 的文件，以及行号
+查找当前目录下的文件内容，打印所有包含字符串 string 的行
 
     $ find . -exec grep string '{}' ';'
 
-打印出行号
+打印出行号，加 -n
 
     $ find . -exec grep -n string '{}' ';'
 
-打印出文件名
+打印出文件名，加 -print
 
     $ find . -exec grep -n string '{}' ';' -print
 
 
-另外，实现一个代码项目目录内查找，ack-grep 比 grep 方便。参考 <http://happycasts.net/episodes/26>
+另外，实现一个代码项目内查找，ack-grep 比 grep 更方便。参考 <http://happycasts.net/episodes/26>
 
 ### happygrep
 
-上面 find 命令的输出有点乱，不好看。而且我也希望能很快的用编辑器打开那一行，所以就自己写了个工具
+上面 find 命令的输出有点乱，不好看。而且我也希望能很快的用编辑器打开那一行，所以就自己写了个工具，叫 happygrep <https://github.com/happypeter/happygrep> 。
 
+可以使用 git clone 的方式来下载，让后按照 README 上给出的方式进行安装。
 
-<https://github.com/happypeter/happygrep>
+装好之后，就可以进入一个目录，例如 edocs，查找我们想要的字符串，例如 keynote
 
     $ cd edocs
     $ xxx keynote
@@ -102,9 +103,9 @@ find 找到文件是为了操作文件
 
 ![](http://media.happycasts.net/pic/lgcb/happygrep.png)
 
-如果我们使用 vim 或 sublime 这样强大的代码编辑器，那么类似于 happygrep 的这种操作是可以在编辑器内部实现的。
+可以敲 e 就可以打开相应的匹配项用 vim 来编辑了。
 
-要聊的就是这些啦，更多内容大家参考：
+好，这次要聊的就是这些啦，更多内容大家参考：
 
 - 查找 ch18 <http://billie66.github.io/TLCL/book/zh/chap18.html>
 - 正则表达式 ch20 <http://billie66.github.io/TLCL/book/zh/chap20.html>
