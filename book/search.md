@@ -99,7 +99,6 @@ find 命令就是你给它指定一个目录，它就帮你翻个底朝天。
     $ cd edocs
     $ xxx keynote
 
-
 ![](http://media.happycasts.net/pic/lgcb/happygrep.png)
 
 可以敲 e 就可以打开相应的匹配项用 vim 来编辑了。
