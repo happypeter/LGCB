@@ -4,18 +4,17 @@
     gem install kramdown
     
     
-2. 安装 latex
+2. 安装 latex，具体可以参考 http://happycasts.net/episodes/19
 
 
     sudo apt-get install texlive
 
-    
-具体可以参考 http://happycasts.net/episodes/19
 
 3. 一些准备条件
 
 
 * 文件命名规则：
+
 
     00_course_intro.md
     01_book_thanks.md
