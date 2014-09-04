@@ -4,8 +4,8 @@ require 'erb'
 
 @tex = ""
 
-Dir.glob("../../book/*.md").sort.each do |x|
-  str = IO.read(x).lstrip
+Dir.glob("../../book/*.md").sort.each do |f|
+  str = IO.read(f).lstrip
   reg = /^---\nlayout:.*\ntitle:(\p{Any}+)\n---\n/
 
   title = reg.match(str).to_s.gsub!(reg, '\1').strip
@@ -14,9 +14,7 @@ Dir.glob("../../book/*.md").sort.each do |x|
   doc = Kramdown::Document.new(
     text,
     :input => 'GFM',
-    :hard_wrap => false,
-    :auto_ids => true,
-    :header_offset => -3
+    :hard_wrap => false
   ).to_latex
 
   @tex += "\\chapter{#{title}}\n\n" + doc
