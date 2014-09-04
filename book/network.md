@@ -40,51 +40,48 @@ scp 是一次把整个的目录内容都拷贝了。如果要把本地的一个�
 
 本地新添加文件后，如果要让远端也同步
 
-   $ rsync -r mydir/ happycasts.net:mydir/
+    $ rsync -r mydir/ happycasts.net:mydir/
 
 为保留更完整的文件信息，通常把 -r 参数改为 -a，-a 的具体功能，可以参考 manpage
 
 要把本地删除的文件，在远端机器上也删除，可以使用 --delete
 
-   $ rsync -a --delete mydir/ happycasts.net:mydir/
+    $ rsync -a --delete mydir/ happycasts.net:mydir/
 
 但是这样有个问题，万一在本地误删了文件，一同步，那远端的备份也被删了，加 -v 参数可以有信息提醒我们会增加或删除那些文件，但是看到信息的时候后悔也晚了。好在还有一个贴心的参数 --dry-run
 
-  $ rsync -av --delete mydir/ happycasts.net:mydir/ --dry-run
+    $ rsync -av --delete mydir/ happycasts.net:mydir/ --dry-run
 
 这样就可以只报告信息，但是不真正进行同步了。实际中，每次我要同步数据的时候，都是先 dry-run 一次，看看没有误删除东西，然后再同步。每次都敲命令太麻烦，所以写了一个脚本：
 
-  sync_dryrun()
-  {
-      echo
-      echo -e "\033[1m ...dryrun...\033[0m"
-      rsync -av --delete ~/Desktop/lgcb/video/ peter@happycasts.net:~/media/lgcb/ --dry-run
-      echo -e "\033[1m ...dryrun...\033[0m"
-      echo
-  }
-  sync_dryrun
+    sync_dryrun()
+    {
+        echo
+        echo -e "\033[1m ...dryrun...\033[0m"
+        rsync -av --delete ~/Desktop/lgcb/video/ peter@happycasts.net:~/media/lgcb/ --dry-run
+        echo -e "\033[1m ...dryrun...\033[0m"
+        echo
+    }
+    sync_dryrun
 
-  sync_server()
-  {
-      echo
-      echo -e "\033[1m ...syncing...\033[0m"
-      rsync -av --delete --progress ~/Desktop/lgcb/video/ peter@happycasts.net:~/media/lgcb/
-      echo -e "\033[1m ...done...\033[0m"
-      echo
-  }
+    sync_server()
+    {
+        echo
+        echo -e "\033[1m ...syncing...\033[0m"
+        rsync -av --delete --progress ~/Desktop/lgcb/video/ peter@happycasts.net:~/media/lgcb/
+        echo -e "\033[1m ...done...\033[0m"
+        echo
+    }
 
-  echo -n "Want to sync? (Y/n): "
-  read AAA
-  if [ "${AAA:-y}" = "y" ];then
-      sync_server
-  else
-      echo Nothing done, bye.
-  fi
+    echo -n "Want to sync? (Y/n): "
+    read AAA
+    if [ "${AAA:-y}" = "y" ];then
+        sync_server
+    else
+        echo Nothing done, bye.
+    fi
 
 
 http://happycasts.net/episodes/48?autoplay=true
 
 没有 ssh 权限呢？还有 wget。
-
-
-
