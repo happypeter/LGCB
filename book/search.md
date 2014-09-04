@@ -17,7 +17,7 @@ title: 查找
 - find
 - happygrep
 
-### locate
+# locate
 
 先来个超级简单的。
 
@@ -47,7 +47,7 @@ title: 查找
 
 就好了。
 
-### find
+# find
 
 find 命令就是你给它指定一个目录，它就帮你翻个底朝天。
 
@@ -88,7 +88,7 @@ find 命令就是你给它指定一个目录，它就帮你翻个底朝天。
 
 另外，如果在一个代码项目内查找，ack-grep 比 grep 更方便。参考 <http://happycasts.net/episodes/26>
 
-### happygrep
+# happygrep
 
 上面 find 命令的输出有点乱，不好看，并且我也希望能很快的用编辑器打开匹配项进行编辑，所以就自己写了个工具，叫 happygrep <https://github.com/happypeter/happygrep> 。
 

@@ -13,7 +13,7 @@ title: 你好，命令行
 
 这一集里，首先带大家选择一款合适的 Linux 操作系统，演示一下如何配置命令行终端软件，然后宏观介绍一下什么是 Linux 系统的命令，应该如何学习各种各样命令。
 
-### 选择操作系统
+# 选择操作系统
 
 Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_distribution> 页面上我们可以看到各个 Linux 的发行版可谓多如牛毛，常见有 Redhat，CentOS，fedora 等等。但是 Redhat 和 CentOS 主要是在大企业服务方面见长，我以前服务过的一间公司，其实基本上就是仿效 Redhat 的商业模式的。而在创业领域，观察一下圈子内最著名的 VPS 提供商，例如 aliyun，和国外的 Linode，aws，digitalocean 这些公司，我感觉 ubuntu 是最受欢迎的服务器部署平台，至少是之一。另外，如果你像我一样，把 ubuntu 安装在自己的机器上做开发机用，ubuntu 的表现也是非常优秀。
 
@@ -23,7 +23,7 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 
 安装过程可以参考我录的一个视频： <http://happycasts.net/episodes/11>
 
-### 打开并设置终端
+# 打开并设置终端
 
 好，如果我们已经把系统装好，启动之后就是这个样子。
 
@@ -51,7 +51,7 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 隐藏启动区。点击启动区的系统设置图标（ systerm settings ），到 Personal -> Appearance 条目下，选择 Behavior，这样就点击开启 “Auto hide Launcher" 这个选项即可。重新唤醒启动区，敲右侧的 Cmd 键。
 
 
-### 如何学习命令
+# 如何学习命令
 
 命令提示符（ shell prompt ） "username@machinename" 后面跟上当前工作目录，例子
 
@@ -83,7 +83,7 @@ man rm
 
 好，这一集就聊到这里，主要是让大家对命令行有一个初步的认识。
 
-### 参考资料：
+# 参考资料：
 
 - TLCL 第二章：什么是 shell <http://billie66.github.io/TLCL/book/zh/chap02.html>
 - TLCL 第六章：使用命令 <http://billie66.github.io/TLCL/book/zh/chap06.html>

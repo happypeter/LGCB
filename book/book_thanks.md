@@ -3,7 +3,7 @@ layout: book
 title: 感谢
 ---
 
-### 贡献者
+# 贡献者
 
 下面的各位都曾为本书贡献过内容，Peter 在这里深表谢意
 
@@ -12,11 +12,11 @@ title: 感谢
 	Author: Li Yana <liyana880525@163.com>
 	Author: Meng Fangfang <1030630954@qq.com>
 
-### 来加入我们吧
+# 来加入我们吧
 
 我们欢迎任何人纠正书中错误，添加内容，给出建议。书的源码是在 github 网站上开源的 <https://github.com/happypeter/LGCB>
 
-### 联系 Peter
+# 联系 Peter
 
 ![](http://media.happycasts.net/pic/lgcb/peter.jpg)
 
