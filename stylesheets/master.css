@@ -138,6 +138,10 @@ div.slide {
   padding: 2em;
 }
 
+.content h1 {
+  font-size: 1.2em;
+}
+
 .content h2 {
   margin: 0 0 0.5em 0;
   color: #595959;
