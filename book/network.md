@@ -31,7 +31,12 @@ ubuntu 的 desktop 版，就是我本地用的这个带图形界面的系统，�
 
 id_rsa 是 private key 这个是要严格保密的，id_rsa.pub 这个上传到服务器的指定位置上。
 
-    $ ssh
+    $ ssh-copy-id peter@happycasts.net
+    
+    
+     ~/.ssh/authorized_keys
+     
+     
 ssh 后，使用 tmux
 
 ssh 登陆后，使用 vim
