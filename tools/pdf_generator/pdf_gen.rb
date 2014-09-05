@@ -3,11 +3,11 @@ require 'kramdown'
 require 'erb'
 
 @tex = ""
+reg = /^---\nlayout:.*\ntitle:(\p{Any}+)\n---\n/
+graphic_options = '[width=10cm,height=10cm,keepaspectratio]'
 
 Dir.glob("../../book/*.md").sort.each do |f|
   str = IO.read(f).lstrip
-  reg = /^---\nlayout:.*\ntitle:(\p{Any}+)\n---\n/
-
   title = reg.match(str).to_s.gsub!(reg, '\1').strip
   text = str.gsub!(reg, '')
 
@@ -21,9 +21,13 @@ Dir.glob("../../book/*.md").sort.each do |f|
 end
 
 renderer = ERB.new(File.read("lgcb.tex.erb"))
+tex = renderer.result()
+
+# setup graphic
+tex.gsub!(/\n(\\begin\{figure\})\n/, "\n\\1[htb]\n" ).gsub!(/\n(\\includegraphics)/, "\n\\1#{graphic_options}")
 
 File.open("lgcb.tex", "w+") do |f|
-  f.write(renderer.result())
+  f.write(tex)
 end
 
 system("xelatex lgcb.tex")
