@@ -3,16 +3,35 @@ layout: book
 title: 网络操作
 ---
 
+我是个网站开发者，写代码就在我本地的 ubuntu 机器上，但是网站写好了就要部署到服务器上了。我一般是花 10 美元一个月，买国外的 vps 也装上 ubuntu 。问题就出来了：第一如何远程操作我的服务器？第二如果传输数据？
+
+引出了这次我们要聊的两个强大的工具： 远程操作工具 ssh，数据传输工具 rsync 。
+
 # ssh 远程操作
 
 首先 ssh 是网络上两台机器互联的一套协议，默认走 22 端口，就跟 http 类似， http 默认走 80 端口。
-ubuntu 的 desktop 版，就是我本地用的这个带图形界面的系统默认只是安装可 ssh 客户端，也就是我可访问被人
+22 端口开了，我们的通道就有了，但是还是要求，请求这一方要安装 ssh client，被访问的这一边要安装 ssh server 。
+
+ubuntu 的 desktop 版，就是我本地用的这个带图形界面的系统，默认安装了 ssh 客户端，也就是我可访问他人
 
     $ ssh peter@happycasts.net
 
 如果本地用户，和远端服务器上用户同名，这里的 peter 也可以省略。另外，happycasts.net 的机器是我在 Linode 上申请的一台 VPS 。上面我装了 ubuntu 12.04 的 server 版，默认是有 ssh 的服务器端的，所以我们才可以访问它。
 
 
+每次都要输入密码挺讨厌的，可以通过添加 ssh key 的方式解决。首先在我自己的机器上
+
+    $ ssh-keygen
+
+会出现几个问题，都直接回车取默认值就可以了。这样
+
+    $ cd ~/.ssh
+    $ ls
+    id_rsa id_rsa.pub
+
+id_rsa 是 private key 这个是要严格保密的，id_rsa.pub 这个上传到服务器的指定位置上。
+
+    $ ssh
 ssh 后，使用 tmux
 
 ssh 登陆后，使用 vim
