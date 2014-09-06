@@ -41,6 +41,16 @@ title: 使用 apt-get 来安装软件
 
 hello 还是太复杂。我的 happygrep 更简单，便于把道理说清楚。
 
+
+~~~Makefile
+all:
+^Igcc happygrep.c -o happygrep -lncursesw  -Wall
+
+install:
+^Imv happygrep /bin
+~~~
+
+
 # 软件 deb 包
 
 - 省去了编译步骤
