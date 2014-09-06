@@ -41,46 +41,65 @@ title: 使用 apt-get 来安装软件
 
 hello 还是太复杂。我的 happygrep 更简单，便于把道理说清楚。
 
+Makefile 是这样的
 
-~~~Makefile
-all:
-^Igcc happygrep.c -o happygrep -lncursesw  -Wall
+    all:
+      gcc happygrep.c -o happygrep -lncursesw  -Wall
 
-install:
-^Imv happygrep /bin
-~~~
+    install:
+      mv happygrep /bin
 
+首先执行 make ，得到可执行的输出 happygrep ，再执行 make install 就会把可执行程序安装到 /bin 目录之下。
+
+思路放宽一下，就会发现这种安装方式，如果安装的软件多了，我肯定会忘了都装了那些软件了，更记不得一个软件都在系统上安装了那些文件。这样卸载软件时岂不是一场噩梦。所以一个有用的想法是，在安装软件的时候就把关于这个软件的又用信息都存放到一个数据库中，以后对各个软件的管理就会有章可循了。这样恭喜你，你已经有了 Linux 系统"包管理"的基本思想了。
 
 # 软件 deb 包
 
-- 省去了编译步骤
-- 安装后可管理
+ubuntu 下一班都会把软件做成 deb 的包来安装。为啥叫 deb ？ 因为 ubuntu 是 debian 系统的一个变体。
+
+下载 chrome 浏览器进行安装：
+
+    $ dpkg -i chrome.deb
+
+查看系统上所有的安装包
 
     $ dpkg -l
+
+搜索 chrome 的包
+
+    $ dpkg -l|grep chrome
+
+查看这个包都安装了那些文件
+
     $ dpkg -L packagename
-    $ dpkg -S filename
-    $ dpkg -remove xxx # 保留配置文件
-    $ dpkg -purge xxx # 连配置文件也不留
 
-以 chrome 为例
+查看某个特定文件来自于哪个软件包
 
-    $ dpkg -i xxx.deb
+    $ dpkg -S /usr/bin/git
 
+删除 chrome 包，当然也可以用 dpkg 来做，不过我的做法还是使用 apt-get 来删除，下面马上就介绍。
 
 打造自己的 deb 包，参考 <http://happycasts.net/episodes/14>
 
 # 软件 apt-get 仓库
 
-- 定期有人为我们更新
-- 有人帮我们解决依赖问题
-- 自动下载
+大部分的常用软件，都可以直接去 ubuntu 官方的 apt 仓库里直接下载安装。故事是这样，最早是软件原作者把自己的代码放到一些网站上。用户可以自己下载安装，但是 ubuntu 是个好心的公司，会有专人把源码下载下来，打造成一个 deb 的包，然后上传到工作的软件仓库中。这样我要做的就是敲
 
-我们也可以添加其他的仓库进来
+    $ sudo apt-get install -y git
 
-当然有时候官方仓库中的包可能并不全，我们也可以添加其他的仓库进来。而且版本可能更新的不是特别及时，如果你必须要用新的版本，有时候也可以自己去下载源码编译安装。
+那 git 这个软件的 deb 包就被 apt-get 下载到本地，同时 apt-get 也包裹了 dpkg 命令，所以直接把安装配置过程也完成了。也就是一个命令，git 就直接可以用了。
+
+国内默认使用的仓库地址是：<http://cn.archive.ubuntu.com/ubuntu> 这个在系统 /etc/apt/sources.list 中制定的，我也可以自己修改使用其他的镜像。另外，有些包没有放在官方仓库中，也可以添加其他的仓库进来，google 一下 ubuntu ”add ppa“ 就可以找到方法了。
 
 查找需要安装的软件包包名，ubuntu 的仓库的包列表页面：
 
-    $ apt-get search git
+    $ apt-cache search ncurse
+    $ sudo apt-get install libncurse<tab>
+
+卸载软件包：
+
+    $ sudo apt-get remove git
 
 自己动手搭建软件仓库：<http://happycasts.net/episodes/15>
+
+当然有时候官方仓库中的包版本可能更新的不是特别及时，如果你必须要用新的版本，有时候也可以自己去下载源码编译安装。所以前面咱们讲的手动安装还是会偶尔用上的。
