@@ -24,10 +24,12 @@ tex = ERB.new(File.read("template.tex.erb")).result()
 
 # setup code blocks
 tex.gsub!(/(\\begin\{verbatim\}.*?\\end\{verbatim\})/m, '{\footnotesize\1}').
-  gsub!(/(\\begin\{verbatim\}.*?\\end\{verbatim\})/m, '\begin{shaded}\1\end{shaded}') 
+  gsub!(/(\\begin\{verbatim\}.*?\\end\{verbatim\})/m, '\begin{shaded}\1\end{shaded}').
+  gsub!(/(\\begin\{lstlisting\})\[(.*?)frame=tlbr\]/, '\1[\2frame=none]').
+  gsub!(/(\\begin\{lstlisting\}.*?\\end\{lstlisting\})/m, '\begin{shaded}\1\end{shaded}')
 
 # setup graphic
-tex.gsub!(/\n(\\begin\{figure\})\n/, "\n\\1[htb]\n" ).
+tex.gsub!(/\n(\\begin\{figure\})\n/, "\n\\1[htb]\n").
   gsub!(/\n(\\includegraphics)/, "\n\\1#{graphic_options}")
 
 File.open("lgcb.tex", "w+") do |f|
@@ -40,4 +42,3 @@ end
 
 # remove useless files
 system("./clean")
-

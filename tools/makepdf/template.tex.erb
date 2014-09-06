@@ -1,10 +1,16 @@
 \documentclass[11pt, a4paper]{book}
-\usepackage[urlcolor = blue, colorlinks = true, linkcolor = black ]{hyperref}
+\usepackage[
+  urlcolor = blue,
+  colorlinks = true,
+  linkcolor = black
+]{hyperref}
 \usepackage{graphicx}
 \usepackage{fullpage}
 \usepackage{framed,color}
 \usepackage{xeCJK}
 \setCJKmainfont{AR PL UMing CN}
+\usepackage{listings}
+\lstset{breaklines = true} % break long code lines
 
 \definecolor{shadecolor}{gray}{0.9}
 
@@ -14,5 +20,6 @@
 \date{2014.9.3}
 \maketitle
 \tableofcontents\newpage
+
 <%= @tex %>
 \end{document}
