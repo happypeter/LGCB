@@ -2,6 +2,9 @@
 require 'kramdown'
 require 'erb'
 
+here = File.expand_path(File.dirname(__FILE__))
+root = File.join("#{here}", '../..')
+
 def replace(string, &block)
   string.instance_eval do
     alias :s :gsub!
@@ -23,13 +26,14 @@ def post_tex(string)
     # setup graphic
     s /\n(\\begin\{figure\})\n/, "\n\\1[htb]\n"
     s /\n(\\includegraphics)/, "\n\\1#{graphic_options}"
+    s /(\\caption\{\})/, ''
   end
 end
 
 @tex = ""
 layout = /^---\nlayout:.*\ntitle:(\p{Any}+)\n---\n/
 
-Dir.glob("../../book/*.md").sort.each do |f|
+Dir.glob("#{root}/book/*.md").sort.each do |f|
   str = IO.read(f).lstrip
   title = layout.match(str).to_s.gsub!(layout, '\1').strip
   text = str.gsub!(layout, '')
@@ -43,17 +47,17 @@ Dir.glob("../../book/*.md").sort.each do |f|
   @tex += "\\chapter{#{title}}\n\n" + doc
 end
 
-tex = ERB.new(File.read("template.tex.erb")).result()
+tex = ERB.new(File.read("#{here}/template.tex.erb")).result()
 
 post_tex(tex)
 
-File.open("lgcb.tex", "w+") do |f|
+File.open("#{here}/lgcb.tex", "w+") do |f|
   f.write(tex)
 end
 
 2.times do |i|
-  system("xelatex lgcb.tex")
+  system("xelatex #{here}/lgcb.tex")
 end
 
 # remove useless files
-system("./clean")
+system("bash #{here}/clean")
