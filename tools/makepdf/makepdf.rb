@@ -55,7 +55,7 @@ File.open("#{here}/lgcb.tex", "w+") do |f|
   f.write(tex)
 end
 
-2.times do |i|
+2.times do
   system("xelatex #{here}/lgcb.tex")
 end
 
