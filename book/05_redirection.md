@@ -34,7 +34,7 @@ Linux 有一个重要的传统，就是 Everything is a file 。一个普通文�
 
 正常情况下，在一个程序执行的时候，会从键盘也就是 stdin 中读取输入，正常的输出导入到 stdout，要是执行发生了错误，报错信息流向 stdout 。但是我们也可以动手改变这三股数据流的流向，这个就是重定向。
 
-![](http://media.happycasts.net/pic/lgcb/redirection.png)
+![](images/redirection.png)
 
 我们以 cowsay 这个程序为例。命令行中执行 cowsay 命令
 
@@ -95,7 +95,7 @@ Linux 有一个重要的传统，就是 Everything is a file 。一个普通文�
 
 管道线是 Linux 命令行哲学的一块基石。有了管道线的联通，各个程序就可以专注于自己的那个小任务，同时把这个小任务做的非常完善，这也就是为啥 Linux 的命令都有那么多参数了。各个小程序通过管道线，一样可以完成很复杂多样的任务，但是同时又保证了每个小程序自己都非常的简单，方便调试。
 
-![](http://media.happycasts.net/pic/lgcb/pipeline.png)
+![](images/pipeline.png)
 
 
 来举一个比较大一点的例子，比如我们有这样一个文件

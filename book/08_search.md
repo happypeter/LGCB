@@ -33,7 +33,7 @@ title: 查找
 
 但是，我们也会遇到奇怪的现象，比如现在有一个文件叫 happygrep.c ，但是如果运行 locate 去查找却找不到，奇怪，奇怪。
 
-![](http://media.happycasts.net/pic/lgcb/locate.png)
+![](images/locate.png)
 
 这个就要说到 locate 命令的运行原理了，打开它的 manpage
 
@@ -51,7 +51,7 @@ title: 查找
 
 find 命令就是你给它指定一个目录，它就帮你翻个底朝天。
 
-![](http://media.happycasts.net/pic/lgcb/find.png)
+![](images/find.png)
 
 这里有一个目录 mydir，里面的情况是
 
@@ -99,7 +99,7 @@ find 命令就是你给它指定一个目录，它就帮你翻个底朝天。
     $ cd edocs
     $ xxx keynote
 
-![](http://media.happycasts.net/pic/lgcb/happygrep.png)
+![](images/happygrep.png)
 
 可以敲 e 就可以打开相应的匹配项用 vim 来编辑了。
 

@@ -38,6 +38,10 @@ Dir.glob("#{root}/book/*.md").sort.each do |f|
   title = layout.match(str).to_s.gsub!(layout, '\1').strip
   text = str.gsub!(layout, '')
 
+  if /\n\!\[\]\((images\/.*?)\)\n/.match(text)
+    text = text.gsub!(/\n\!\[\]\((images\/.*?)\)\n/, "\n![](../../book/\\1)\n")
+  end
+
   doc = Kramdown::Document.new(
     text,
     :input => 'GFM',

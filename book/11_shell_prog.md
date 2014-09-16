@@ -76,13 +76,13 @@ if 都会认为条件为真，而如果跟一个执行会出错误的命令
 
 `$#` 代表命令执行的时候，一共有几个参数。 $0 代表命令名，$1 代码第一个参数，$2 代表第二个参数，以此类推。位置参数在编程中是极为常用的，尤其是 $1，稍后会有例子。
 
-![](http://media.happycasts.net/pic/lgcb/pos.png)
+![](images/pos.png)
 
 # 脚本不在当前 shell 里执行
 
 每次启动一个脚本，系统都会专门另起一个当前 shell 的子 shell，来执行脚本中的语句。
 
-![](http://media.happycasts.net/pic/lgcb/subshell.png)
+![](images/subshell.png)
 
 
 例如，当脚本里导出一个环境变量
@@ -131,7 +131,7 @@ if 都会认为条件为真，而如果跟一个执行会出错误的命令
 
 前面我聊 ssh 的时候介绍过，你先登录到服务器上，然后再执行命令就可以操作服务器了。实际中每次都登录再操作也是太麻烦，能不能在我自己机器上执行一个脚本就把服务器上的事给办了呢？
 
-![](http://media.happycasts.net/pic/lgcb/remote.png)
+![](images/remote.png)
 
 可以。脚本里这样写
 

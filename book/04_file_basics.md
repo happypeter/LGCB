@@ -10,7 +10,7 @@ title: 基本文件和目录操作
 # 日常文件操作
 大家平时用鼠标干的活，这里咱们用敲命令的方式快速做一遍。要覆盖到得内容包括，文件的 copy，move，rename，remove 操作，那相应的命令其实超级好记啦，基本就是这些英文单词的缩写。
 
-![](http://media.happycasts.net/pic/lgcb/copy_delete.png)
+![](images/copy_delete.png)
 
 复制文件目录
 
@@ -142,7 +142,7 @@ less 中可以使用 `j` `k` `gg` `G` 来进行跳转，用 `/-xxx` 来进行查
 都会发现里面的参数都是成片成片的，跟本不可能都记住。好在呢，系统的设计者根本就没有期待我们都记住，只需要记住几个最常用的，作为日常命令行使用就行。其他的那么多的参数，大部分是日常用的比较少，在写 shell 脚本的时候才会用到。因为没有人工的参与，语句需要写得比较严谨才行。如果要达到对字符串的比较精准的匹配，我们就会用到不是特别常用的通配符了，甚至还会用到正则表达式 <http://billie66.github.io/TLCL/book/zh/chap20.html>，正则表达式自己就够写一本书了，所有在我们这套课程里不深究。
 
 
-![](http://media.happycasts.net/pic/lgcb/two_brain.png)
+![](images/two_brain.png)
 
 我们可以把要记住的东西分类：
 
@@ -166,7 +166,7 @@ less 中可以使用 `j` `k` `gg` `G` 来进行跳转，用 `/-xxx` 来进行查
 参考，TLCL 第19章：归档和备份 <http://billie66.github.io/TLCL/book/zh/chap19.html>
 文章中各种压缩的方式很多，得到的压缩包格式也不少，看起来也稍微让人眼晕，所以我们这里还是按我自己一贯的风格来讲解，不求甚解，但求实用，给大家展示出实际开发中用的最多的几个实例。
 
-![](http://media.happycasts.net/pic/lgcb/tar.png)
+![](images/tar.png)
 
 例子一，网上下载源码，我们需要进行解压缩。<https://github.com/happypeter/happygrep> 上面 "download zip"
 

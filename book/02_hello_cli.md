@@ -19,7 +19,7 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 
 目前我们可以拿到的 ubuntu LTS 长期支持版本有，2012年发布的12.04系统，还有2014年4月发布的14.04版，这里我们选择使用12.04。之所以不采用 14.04 是因为太新，很多东西网上还找不到资料，出了问题不容易解决。同时如果我们到 <https://wiki.ubuntu.com/LTS> 可以看到12.04支持期是5年，所以依旧是可以放心使用的。可以到 <http://releases.ubuntu.com/12.04/> 的页面上进行下载。
 
-![](http://media.happycasts.net/pic/lgcb/ubuntu.png)
+![](images/ubuntu.png)
 
 安装过程可以参考我录的一个视频： <http://happycasts.net/episodes/11>
 
@@ -27,7 +27,7 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 
 好，如果我们已经把系统装好，启动之后就是这个样子。
 
-![](http://media.happycasts.net/pic/lgcb/ubuntu_fresh.png)
+![](images/ubuntu_fresh.png)
 
 使用命令行，我们先要打开一个叫做”终端“的软件，这个软件是系统已经预装的了，所以我们可以敲 Super 键（在我这里是右侧的 Cmd 键，如果你用的是 PC，那么可能是你右侧的 window 键）调出快速启动框，敲 terminal 也就是终端的英文，然后回车即可。
 
@@ -42,7 +42,7 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 
 下面更改一下终端样式，点击 edit -> profiles
 
-![](http://media.happycasts.net/pic/lgcb/set_profile.png)
+![](images/set_profile.png)
 
 打开的界面中点击 “new” 来创建一个新的 profile 比如起名字叫 'imooc' 这样我们就可以随意的设置这个 profile 对应的颜色和字体了，比如，我们把颜色设置为 “black on white”，字体设为 “font-size: 20”，关闭当前选项卡，设置 “Profile used when launching a new terminal:" 为 "imooc"，这样以后每次启动终端的时候，咱们刚才的设置就会被应用了。
 
@@ -69,7 +69,7 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 
 作为开发者，入手一个新的工具的时候，基本原则不必每个知识点都逐一学习，实际动手中学习就好了。如果要看书，千万不要看手册型的大部的课本，课本通常都讲的太深了而且是重理论轻动手。也不要看用户手册，用户手册是给已经会用这个工具的人看的。而要看 toturial，因为教程比较简短，而且都是面向实用的。具体到命令行的学习，推荐的教程是 TLCL： <http://billie66.github.io/TLCL/> 。
 
-![](http://media.happycasts.net/pic/lgcb/nice_tutorial.png)
+![](images/nice_tutorial.png)
 
 对于已经基本学会的命令，如果忘了具体细节，可以使用 manpage，手册。如果要查看 rm 这个命令的文档，我们可以敲
 
@@ -83,7 +83,7 @@ man rm
 
 好，这一集就聊到这里，主要是让大家对命令行有一个初步的认识。
 
-# 参考资料：
+# 参考资料
 
 - TLCL 第二章：什么是 shell <http://billie66.github.io/TLCL/book/zh/chap02.html>
 - TLCL 第六章：使用命令 <http://billie66.github.io/TLCL/book/zh/chap06.html>

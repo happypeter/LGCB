@@ -18,7 +18,7 @@ title: 感谢
 
 # 联系 Peter
 
-![](http://media.happycasts.net/pic/lgcb/peter.jpg)
+![](images/peter.png)
 
     happypeter1983@gmail.com
 

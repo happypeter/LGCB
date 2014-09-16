@@ -12,7 +12,7 @@ title: 网络操作
 首先 ssh 是网络上两台机器互联的一套协议，默认走 22 端口，就跟 http 类似， http 默认走 80 端口。
 22 端口开了，我们的通道就有了，但是还是要求，请求这一方要安装 ssh client，被访问的这一边要安装 ssh server 。
 
-![](http://media.happycasts.net/pic/lgcb/ssh_port.png)
+![](images/ssh_port.png)
 
 ubuntu 的 desktop 版，就是我本地用的这个带图形界面的系统，默认安装了 ssh 客户端，也就是我可访问他人
 
@@ -66,7 +66,7 @@ scp 是一次把整个的目录内容都拷贝了。如果要把本地的一个�
 
 特别注意，mydir 后面不能有 / 不然会直接把 mydir 中的文件上传，而不上传 mydir 目录本身。另外，最后面的 `:` 是不能省略的。
 
-![](http://media.happycasts.net/pic/lgcb/rsync.png)
+![](images/rsync.png)
 
 要从服务器上，往本地下载数据，基本上就是把 rsync 后面的两个参数颠倒位置
 

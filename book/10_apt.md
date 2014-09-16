@@ -50,7 +50,7 @@ Makefile 是这样的
 
 首先执行 make ，得到可执行的输出 happygrep ，再执行 make install 就会把可执行程序安装到 /bin 目录之下。
 
-![](http://media.happycasts.net/pic/lgcb/make.png)
+![](images/make.png)
 
 思路放宽一下，就会发现这种安装方式，如果安装的软件多了，我肯定会忘了都装了那些软件了，更记不得一个软件都在系统上安装了那些文件。这样卸载软件时岂不是一场噩梦。你可能会想，在安装软件的时候就把关于这个软件的有用信息都存放到一个数据库中，以后对各个软件的管理就会有章可循了。这样恭喜你，你已经有了 Linux 系统"包管理"的基本思想了。
 
@@ -58,7 +58,7 @@ Makefile 是这样的
 
 ubuntu 下一班都会把软件做成 deb 的包来安装。为啥叫 deb ？ 因为 ubuntu 是 debian 系统的一个变体。一个 deb 包中会包含下面的信息：
 
-![](http://media.happycasts.net/pic/lgcb/deb.png)
+![](images/deb.png)
 
 下载 chrome 浏览器进行安装：
 
@@ -92,7 +92,7 @@ ubuntu 下一班都会把软件做成 deb 的包来安装。为啥叫 deb ？ �
 
 那 git 这个软件的 deb 包就被 apt-get 下载到本地，同时 apt-get 也包裹了 dpkg 命令，所以直接把安装配置过程也完成了。也就是一个命令，git 就直接可以用了。
 
-![](http://media.happycasts.net/pic/lgcb/repo.png)
+![](images/repo.png)
 
 国内默认使用的仓库地址是：<http://cn.archive.ubuntu.com/ubuntu> 。这个在系统 /etc/apt/sources.list 中指定的，我也可以自己修改使用其他的镜像。另外，有些包没有放在官方仓库中，也可以添加其他的仓库进来，google 一下 ubuntu ”add ppa“ 就可以找到方法了。
 
