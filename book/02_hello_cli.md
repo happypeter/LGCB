@@ -21,6 +21,7 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 14.04 是因为太新，很多东西网上还找不到资料，出了问题不容易解决。同时如果我们到
 <https://wiki.ubuntu.com/LTS>
 可以看到12.04支持期是5年，所以依旧是可以放心使用的。可以到这个页面上进行下载
+
 <http://releases.ubuntu.com/12.04/>
 
 ![](images/ubuntu.png)
