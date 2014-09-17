@@ -86,7 +86,9 @@ find 命令就是你给它指定一个目录，它就帮你翻个底朝天。
 
     $ find . -exec grep -n string '{}' ';' -print
 
-另外，如果在一个代码项目内查找，ack-grep 比 grep 更方便。参考 <http://happycasts.net/episodes/26>
+另外，如果在一个代码项目内查找，ack-grep 比 grep 更方便。请参考：
+
+<http://happycasts.net/episodes/26>
 
 # happygrep
 

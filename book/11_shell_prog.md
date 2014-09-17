@@ -139,23 +139,25 @@ if 都会认为条件为真，而如果跟一个执行会出错误的命令
 
 那引号里面的命令，就都会在服务器上执行。
 
-实际例子，把新写的代码跟新到服务器 <https://gist.github.com/happypeter/4f6425afa7527e433cb6>
+实际例子，把新写的代码更新到服务器
+
+<https://gist.github.com/happypeter/4f6425afa7527e433cb6>
 
 # 确认执行
 
 让程序在半路停下，报告一些信息，用户根据信息判断下一步是否要执行一个操作，这就是确认执行。
 
-  #!/usr/bin/env bash
+    #!/usr/bin/env bash
 
-  echo -n "Want to say hello? (Y/n): "
-  read AAA
-  if [ "${AAA:-y}" = "y" ];then
-      echo hello
-  else
-      echo Nothing done, bye.
-  fi
+    echo -n "Want to say hello? (Y/n): "
+    read AAA
+    if [ "${AAA:-y}" = "y" ];then
+        echo hello
+    else
+        echo Nothing done, bye.
+    fi
 
-实际例子： <https://gist.github.com/happypeter/4248241>
+实际例子：<https://gist.github.com/happypeter/4248241>
 
 
 # 其他语言也可以写脚本

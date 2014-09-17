@@ -17,7 +17,12 @@ title: 你好，命令行
 
 Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_distribution> 页面上我们可以看到各个 Linux 的发行版可谓多如牛毛，常见有 Redhat，CentOS，fedora 等等。但是 Redhat 和 CentOS 主要是在大企业服务方面见长，我以前服务过的一间公司，其实基本上就是仿效 Redhat 的商业模式的。而在创业领域，观察一下圈子内最著名的 VPS 提供商，例如 aliyun，和国外的 Linode，aws，digitalocean 这些公司，我感觉 ubuntu 是最受欢迎的服务器部署平台，至少是之一。另外，如果你像我一样，把 ubuntu 安装在自己的机器上做开发机用，ubuntu 的表现也是非常优秀。
 
-目前我们可以拿到的 ubuntu LTS 长期支持版本有，2012年发布的12.04系统，还有2014年4月发布的14.04版，这里我们选择使用12.04。之所以不采用 14.04 是因为太新，很多东西网上还找不到资料，出了问题不容易解决。同时如果我们到 <https://wiki.ubuntu.com/LTS> 可以看到12.04支持期是5年，所以依旧是可以放心使用的。可以到 <http://releases.ubuntu.com/12.04/> 的页面上进行下载。
+目前我们可以拿到的 ubuntu LTS
+长期支持版本有，2012年发布的12.04系统，还有2014年4月发布的14.04版，这里我们选择使用12.04。之所以不采用
+14.04 是因为太新，很多东西网上还找不到资料，出了问题不容易解决。同时如果我们到
+<https://wiki.ubuntu.com/LTS>
+可以看到12.04支持期是5年，所以依旧是可以放心使用的。可以到这个页面上进行下载
+<http://releases.ubuntu.com/12.04/>
 
 ![](images/ubuntu.png)
 

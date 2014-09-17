@@ -88,9 +88,10 @@ Linux 系统下的情况类似，硬盘也会被分为多个分区（ partition 
     $ cd /
     $ ls
 
-这是我们会看到很多系统默认就会有的目录，到底这些目录都是干嘛的呢？ 可以参考 <http://billie66.github.io/TLCL/book/zh/chap04.html> 中的 “
-表 4-4: Linux 系统中的目录”这部分。
+这是我们会看到很多系统默认就会有的目录，到底这些目录都是干嘛的呢？ 可以参考 <http://billie66.github.io/TLCL/book/zh/chap04.html> 中的 “表 4-4: Linux 系统中的目录”这部分。
 
 下面有个小技巧分享给大家，就是 ”tab 补齐“功能。不管我用绝对路径还是相对路径，只要我们的路径前面部分没有敲错，那么后面的部分是可能通过敲 tab 键自动补齐的。比如我们想跳转到当前目录下的 media 目录中，就可以敲 `cd me<tab>` 就可以了。如果匹配项不唯一那么也可以敲两下 tab 直接显示出所有备选项。
 
-好这一节我们就聊这么多，更多内容可以看看 <http://billie66.github.io/TLCL/book/zh/chap03.html> 。
+好这一节我们就聊这么多，更多内容可以看看
+
+<http://billie66.github.io/TLCL/book/zh/chap03.html> 

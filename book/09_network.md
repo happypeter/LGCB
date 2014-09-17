@@ -117,4 +117,6 @@ scp 是一次把整个的目录内容都拷贝了。如果要把本地的一个�
 
 
 
-这两个大工具就介绍到这里，实际中还有一些是总会偶尔用到的，如 ftp curl ping ifconfig 等等。可以用到的时候 google 一下，或者参考 TLCL 17 网络：<http://billie66.github.io/TLCL/book/zh/chap17.html>
+这两个大工具就介绍到这里，实际中还有一些是总会偶尔用到的，如 ftp curl ping ifconfig 等等。可以用到的时候 google 一下，或者参考 TLCL 17 网络：
+
+<http://billie66.github.io/TLCL/book/zh/chap17.html>

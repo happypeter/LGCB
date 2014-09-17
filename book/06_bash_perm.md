@@ -125,4 +125,6 @@ Linux对同一文件的权限控制，也是分了这三类人进行讨论的。
 
 另外，改变权限问题其实还有另外一个角度，我们也可以用 chown 来改变文件 owner 和 group ，这样也是可以改变特定用户对给文件的权限情况的。
 
-具体使用我们就不演示了，您要是感兴趣可以看书：<http://billie66.github.io/TLCL/book/zh/chap10.html>
+具体使用我们就不演示了，您要是感兴趣可以看书：
+
+<http://billie66.github.io/TLCL/book/zh/chap10.html>

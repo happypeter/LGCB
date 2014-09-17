@@ -94,7 +94,10 @@ ubuntu 下一班都会把软件做成 deb 的包来安装。为啥叫 deb ？ �
 
 ![](images/repo.png)
 
-国内默认使用的仓库地址是：<http://cn.archive.ubuntu.com/ubuntu> 。这个在系统 /etc/apt/sources.list 中指定的，我也可以自己修改使用其他的镜像。另外，有些包没有放在官方仓库中，也可以添加其他的仓库进来，google 一下 ubuntu ”add ppa“ 就可以找到方法了。
+国内默认使用的仓库地址是：<http://cn.archive.ubuntu.com/ubuntu>
+。这个需要在系统文件 /etc/apt/sources.list
+中指定，我也可以自己修改使用其他的镜像。另外，有些包没有放在官方仓库中，也可以添加其他的仓库进来，google
+一下 ubuntu “add ppa” 就可以找到方法了。
 
 查找需要安装的软件包包名：
 
