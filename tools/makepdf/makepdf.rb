@@ -31,16 +31,14 @@ def post_tex(string)
 end
 
 @tex = ""
+@graphicspath = "#{root}/book/" 
+
 layout = /^---\nlayout:.*\ntitle:(\p{Any}+)\n---\n/
 
 Dir.glob("#{root}/book/*.md").sort.each do |f|
   str = IO.read(f).lstrip
   title = layout.match(str).to_s.gsub!(layout, '\1').strip
   text = str.gsub!(layout, '')
-
-  if /\n\!\[\]\((images\/.*?)\)\n/.match(text)
-    text = text.gsub!(/\n\!\[\]\((images\/.*?)\)\n/, "\n![](../../book/\\1)\n")
-  end
 
   doc = Kramdown::Document.new(
     text,
