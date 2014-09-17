@@ -56,7 +56,7 @@ title: 基本文件和目录操作
 
 更多内容，参考 TLCL 的 《操作文件和目录》这一章：
 
-<http://billie66.github.io/TLCL/book/zh/chap05.html> 。
+<http://billie66.github.io/TLCL/book/zh/chap05.html>
 
 下面开始实际操作游戏。把 terminal 窗口拉成半屏的，露出桌面来。现在我们敲
 
