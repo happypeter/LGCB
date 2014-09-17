@@ -6,7 +6,6 @@ title: 你好，命令行
 现在我们一起走入 Linux 命令行的精彩世界。学 Linux 应该说主要就是学命令行。有句话说得好：
 
 >图形界面让简单的任务变得更简单，但是命令行让复杂的任务变得可能
-
 > Graphical user interfaces make easy tasks easy, while command line interfaces make difficult tasks possible
 
 作为 developer 使用好命令行是基本功之一。Windows 下的 dos 命令行功能太少了，开发中根本没法用。

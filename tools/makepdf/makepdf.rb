@@ -24,9 +24,12 @@ def post_tex(string)
     s /(\\begin\{lstlisting\}.*?\\end\{lstlisting\})/m, '\begin{shaded}\1\end{shaded}'
 
     # setup graphic
-    s /\n(\\begin\{figure\})\n/, "\n\\1[htb]\n"
+    s /\n(\\begin\{figure\})\n/, "\n\\1[H]\n"
     s /\n(\\includegraphics)/, "\n\\1#{graphic_options}"
     s /(\\caption\{\})/, ''
+
+    # setup quote
+    s /(\\begin\{quote\}.*?\\end\{quote\})/m, '\begin{shaded}\1\end{shaded}'
   end
 end
 
