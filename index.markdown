@@ -7,9 +7,10 @@ Hi，你好，我是 Peter，LGCB 这本书是我摘取了 [The Linux Commandlin
 
 这本书还配有视频课程，在 imooc 网站上，名字叫做 [Linux For Developers](http://www.imooc.com/learn/181)
 
-- [pdf]()
+- [pdf](http://media.happycasts.net/lgcb/lgcb.pdf)
 - [html](book)
-<p><br /><b>有问题随时联系我，不要不好意思:</b></p>
+
+<p><br /><b>有问题随时联系我:</b></p>
 
 <blockquote>
 <p>
