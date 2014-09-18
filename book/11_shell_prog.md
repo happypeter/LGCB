@@ -165,6 +165,6 @@ if 都会认为条件为真，而如果跟一个执行会出错误的命令
 shell 脚本的语法很机器化，很多细节可以说是晦涩。对于使用 ruby，perl 或者 python 的开发者，也可以用自己喜欢的语言来写脚本。
 LGCB 这本书的转换 pdf 的工作最早是用 bash 脚本，现在开始用 ruby 重写了。ruby 确实人性化，写东西比较快。文件链接：<https://github.com/happypeter/LGCB/tree/gh-pages/tools>
 
-有比如 [happygrep](https://github.com/happypeter/happygrep) 项目最早是一个 bash 脚本，但是后来用 C 语言重写了，当然这个是为了追求更好的用户体验了。
+又比如 [happygrep](https://github.com/happypeter/happygrep) 项目最早是一个 bash 脚本，但是后来用 C 语言重写了，当然这个是为了追求更好的用户体验了。
 
 好，更多学习资源参考 TLCL 的 shell 编程的相关章节。
