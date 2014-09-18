@@ -3,7 +3,7 @@ layout: book
 title: 在文件系统中跳转
 ---
 
-[视频](http://www.imooc.com/video/3529)
+[观看视频](http://www.imooc.com/video/3529)
 
 系统准备好了之后，我们需要学习的第一件事就是怎样在文件系统树中跳转。这次课我们的主要内容有三小部分，首先用大概3分钟时间介绍一下文件系统树形结构，接下来是绝对路径和相对路径的概念，最后作为这些内容的实战，我们演示一下 cd 命令的使用。
 
@@ -94,4 +94,4 @@ Linux 系统下的情况类似，硬盘也会被分为多个分区（ partition 
 
 好这一节我们就聊这么多，更多内容可以看看
 
-<http://billie66.github.io/TLCL/book/zh/chap03.html> 
+<http://billie66.github.io/TLCL/book/zh/chap03.html>
