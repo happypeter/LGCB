@@ -36,7 +36,7 @@ end
 @tex = ""
 @graphicspath = "#{root}/book/" 
 
-layout = /^---\nlayout:.*\ntitle:(\p{Any}+)\n---\n/
+layout = /^---\nlayout:.*\ntitle:(\p{Any}+?)\n---\n/
 
 Dir.glob("#{root}/book/*.md").sort.each do |f|
   str = IO.read(f).lstrip
