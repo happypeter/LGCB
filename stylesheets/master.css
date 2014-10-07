@@ -398,5 +398,6 @@ h3.subtitle small {
 }
 .index-table .episode-index {
    text-align: center;
+   width: 60px;
 }
 
