@@ -354,24 +354,49 @@ h3.subtitle small {
 }
 
 /* sections/book-index.css*/
-
-.listing {
-  padding: 0 40px;
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-.listing li {
-  /* this has to come after .content li {} */
-  list-style-type: none;
-  margin-bottom: 0;
-  padding: 7px 5px;
-  font-size: 18px;
+::selection {
+  background: #c0865e;
+  color: #fff
 }
-
-.listing span {
-  padding-top: 2px;
-  float: right;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #999;
+.index-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.index-table>tbody>tr>td {
+  border: 1px solid #ddd;
+  line-height: 1.5;
+  padding: 20px;
+  vertical-align: middle;
+}
+.index-table .episode-title {
+  padding: 0 !important;
+}
+.index-table .odd {
+  background-color: #f9f9f9;
+}
+.episode-wrap:hover {
+  background-color: #7EB6AD;
+  color: white;
+}
+.episode-wrap:hover a{
+  color: #fff;
+}
+.index-table .episode-title a {
+  display: block;
+  padding: 20px;
+  color: #c0865e;
+}
+.index-table .episode-length {
+  width: 100px;
+  text-align: center;
+}
+.index-table .episode-index {
+   text-align: center;
 }
 
