@@ -385,7 +385,7 @@ h3.subtitle small {
   color: white;
 }
 .episode-wrap:hover a{
-  color: #fff;
+  color: #fff !important;
 }
 .index-table .episode-title a {
   display: block;
