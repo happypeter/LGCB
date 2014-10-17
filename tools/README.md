@@ -1,16 +1,16 @@
 1. 安装 kramdown
 
-    gem install kramdown
+     gem install kramdown
 
 2. 安装 latex，具体可以参考 http://happycasts.net/episodes/19
 
-    sudo apt-get install texlive
-    sudo apt-get install texlive-latex-extra
+     sudo apt-get install texlive
+     sudo apt-get install texlive-latex-extra
 
 3. 中文字体
 
-    fc-list :lang=zh|grep CN
-    sudo apt-get install ttf-arphic-uming
+     fc-list :lang=zh|grep CN
+     sudo apt-get install ttf-arphic-uming
 
 4. 一些准备条件
 
