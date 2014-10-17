@@ -20,7 +20,7 @@ sudo apt-get install ttf-arphic-uming
 
 * 一些准备条件
 
-1. 文件命名规则：
+文件命名规则：
 
 ```
 00_course_intro.md
@@ -29,9 +29,9 @@ sudo apt-get install ttf-arphic-uming
 ...
 ```
 
-2. 文件内容格式使用 jekyll 支持的 GFM：
+文件内容格式使用 jekyll 支持的 GFM：
 
-3. 文章每一节的标题从一级标题开始
+文章每一节的标题从一级标题开始
 
 以上工作完成之后，就可以运行 `tools/makepdf` 目录下的 `makepdf.rb` 文件生成 pdf 了，
 
