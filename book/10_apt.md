@@ -82,7 +82,7 @@ ubuntu 下一班都会把软件做成 deb 的包来安装。为啥叫 deb ？ �
 
 卸载 chrome 包，当然也可以用 dpkg 来做，不过我的做法还是使用 apt-get 来删除，下面马上就介绍。
 
-打造自己的 deb 包，参考 <http://happycasts.net/episodes/14>
+打造自己的 deb 包，参考 <http://haoduoshipin.com/episodes/14>
 
 # 软件 apt-get 仓库
 
@@ -109,7 +109,7 @@ ubuntu 下一班都会把软件做成 deb 的包来安装。为啥叫 deb ？ �
     $ sudo apt-get remove git # 保留配置文件
     $ sudo apt-get purge git  # 连配置文件一起清除
 
-自己动手搭建软件仓库：<http://happycasts.net/episodes/15>
+自己动手搭建软件仓库：<http://haoduoshipin.com/episodes/15>
 
 另外，在使用 apt-get 装包的时候，如果 A 依赖于 B 才能运行，那么 sudo apt-get install A 的时候 B 包也会自动被安装上，也就是能自动处理依赖问题。
 

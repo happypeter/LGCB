@@ -4,7 +4,7 @@
  gem install kramdown
 ```
 
-* 安装 latex，具体可以参考 http://happycasts.net/episodes/19
+* 安装 latex，具体可以参考 http://haoduoshipin.com/episodes/19
 
 ```
 sudo apt-get install texlive

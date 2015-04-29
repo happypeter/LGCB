@@ -135,7 +135,7 @@ if 都会认为条件为真，而如果跟一个执行会出错误的命令
 
 可以。脚本里这样写
 
-   ssh -t peter@happycasts.net 'touch aa'
+   ssh -t peter@haoduoshipin.com 'touch aa'
 
 那引号里面的命令，就都会在服务器上执行。
 

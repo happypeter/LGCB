@@ -29,7 +29,7 @@ Linux 其实是分很多版本的，在 <http://en.wikipedia.org/wiki/Linux_dist
 
 ![](images/ubuntu.png)
 
-安装过程可以参考我录的一个视频： <http://happycasts.net/episodes/11>
+安装过程可以参考我录的一个视频： <http://haoduoshipin.com/episodes/11>
 
 # 打开并设置终端
 
