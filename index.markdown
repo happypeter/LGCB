@@ -9,8 +9,7 @@ Hi，你好，我是 Peter，也叫 [happypeter](http://github.com/happypeter) �
 
 这本书还配有视频课程，在 imooc 网站上，名字叫做 [Linux For Developers](http://www.imooc.com/learn/181)
 
-- [pdf](http://media.haoduoshipin.com/lgcb/lgcb.pdf)
-- [html](book)
+- [开始阅读](book)
 
 <p><br /><b>更多我制作的课程：</b></p>
 
