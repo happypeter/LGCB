@@ -178,13 +178,13 @@ less 中可以使用 `j` `k` `gg` `G` 来进行跳转，用 `/-xxx` 来进行查
 
 例子二，<http://ftp.gnu.org/gnu/wget/> 下载一个 xxx.tar.gz
 
-    $ tar jxvf xxx.tar.gz
-    $ tar jcvf xxx.tar.gz xxx/
+    $ tar zxvf xxx.tar.gz
+    $ tar zcvf xxx.tar.gz xxx/
 
 例子三，<http://ftp.gnu.org/gnu/wget/> 下载 xxx.tar.bz2
 
-    $ tar zxvf xxx.tar.bz2
-    $ tar zcvf xxx.tar.bz2 xxx/
+    $ tar jxvf xxx.tar.bz2
+    $ tar jcvf xxx.tar.bz2 xxx/
 
 
 好，这一集就到这里了。
