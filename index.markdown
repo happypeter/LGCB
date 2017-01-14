@@ -12,14 +12,10 @@ Hi，你好，我是 Peter，也叫 [happypeter](http://github.com/happypeter) �
 - [pdf](http://media.haoduoshipin.com/lgcb/lgcb.pdf)
 - [html](book)
 
-<p><br /><b>有问题随时联系我:</b></p>
+<p><br /><b>更多我制作的课程：</b></p>
 
 <blockquote>
-<p>
-happypeter1983@gmail.com
-</p>
+<a href="http://haoqicat.com">
+  好奇猫
+</a>
 </blockquote>
-
-
-
-
