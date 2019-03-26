@@ -119,4 +119,4 @@ Linux 有一个重要的传统，就是 Everything is a file 。一个普通文�
 
 # 总结
 
-这集咱们就聊这些，其实各种重定向的方式还有一些不太常用的没讲，打开可以看 TLCL 的重定向那一章。
+这集咱们就聊这些，其实各种重定向的方式还有一些不太常用的没讲，大家可以看 [TLCL](http://billie66.github.io/TLCL/book/chap07.html) 的重定向那一章。
