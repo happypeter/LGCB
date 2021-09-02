@@ -3,8 +3,6 @@ layout: book
 title: 内容简介
 ---
 
-[观看视频](http://www.imooc.com/video/3524)
-
 <!-- 3 min read -->
 
 # Peter 是谁？

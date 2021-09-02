@@ -3,8 +3,6 @@ layout: book
 title: 重定向
 ---
 
-[观看视频](http://www.imooc.com/video/3530)
-
 我们先从实际干活的时候的几个常用操作开始聊起。例如
 
     $ date >output.txt
